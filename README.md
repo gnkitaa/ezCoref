@@ -12,7 +12,7 @@ This repository contains a demo of [ezCoref in action](), code for launching ezC
 ### Citation Information
 If you use ezCoref, please cite it as follows:
 ```
-@article{gupta-etal-ezcoref-2022,
+@article{ezcoref-2022,
   title={ezCoref: Towards unifying annotation guidelines for coreference resolution},
   author={Ankita Gupta, Marzena Karpinska, Wenlong Zhao, Kalpesh Krishna, Jack Merullo, Luke Yeh, Mohit Iyyer, Brendan O'Connor},
   journal={arXiv preprint arXiv:},
