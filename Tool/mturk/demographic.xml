@@ -1,0 +1,50 @@
+<HTMLQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2011-11-11/HTMLQuestion.xsd">
+	<HTMLContent><![CDATA[
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+		<script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+		</head>
+		<body>
+		<form name='mturk_form' method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>
+		<input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+		<h1>Coreference Annotation: Survey</h1>
+		<p> Thank you for completing the "Coreference Tutorial" and participating in the "Large-scale Coreference Annotation Task" last month. </p>
+		<p>In order to include your submissions in our study and invite you to more upcoming HITs, we would like to request you to <b>fill in the following short survey (paid extra)</b>.</p>
+		<br/>
+		<p>What is your <b>gender</b>?</p>
+		<textarea name="gender" rows="1" style="resize: none; border:none; outline: none; border-bottom: 1px solid black;" required></textarea>
+
+		<p>What is your <b>age</b>?</p>
+		<textarea name="age" rows="1" style="resize: none; border:none; outline: none; border-bottom: 1px solid black;" required></textarea>
+
+		<p>What is your <b>native language</b>?</p>
+		<textarea name="language" rows="1" style="resize: none; border:none; outline: none; border-bottom: 1px solid black;" required></textarea>
+
+		<p>How is your <b>English level</b>?</p>
+		<input type="radio" id="level4" name="English" value="4" required><label for="4"> Beginner &nbsp &nbsp </label><br/>
+		<input type="radio" id="level3" name="English" value="3" required><label for="3"> Intermediate &nbsp &nbsp </label><br/>
+		<input type="radio" id="level2" name="English" value="2" required><label for="2"> Advanced (near native) &nbsp &nbsp </label><br/>
+		<input type="radio" id="level1" name="English" value="1" required><label for="1"> Native speaker &nbsp &nbsp </label><br/>
+
+		<p>What is your <b>education level</b>?</p>
+		<input type="radio" id="level1" name="education" value="1" required><label for="1"> Primary &nbsp &nbsp </label><br/>
+		<input type="radio" id="level2" name="education" value="2" required><label for="2"> Secondary &nbsp &nbsp </label><br/>
+		<input type="radio" id="level3" name="education" value="3" required><label for="3"> College &nbsp &nbsp </label><br/>
+		<input type="radio" id="level4" name="education" value="4" required><label for="4"> Graduate School &nbsp &nbsp </label>
+
+		<p>Please agree to the following <a href="https://docs.google.com/document/d/1y9dFf0ah5wLU49UnGIED06BuNuJgwx0oGNEhbq3VONg/edit?usp=sharing" target="_blank">consent form</a>.</p>
+		<input type="radio" id="consent" name="consent" value="1" required><label for="1"> Agree &nbsp &nbsp </label><br/>
+
+		<p><input type='submit' id='submitButton' value='Submit'></p>
+		</form>
+	<script language='Javascript'>turkSetAssignmentID();</script>
+		</body>
+		</html>
+		]]>
+	</HTMLContent>
+	<FrameHeight>
+		0
+	</FrameHeight>
+</HTMLQuestion>

@@ -1,0 +1,74 @@
+<HTMLQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2011-11-11/HTMLQuestion.xsd">
+	<HTMLContent><![CDATA[
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+		<script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+		</head>
+		<body>
+		<form name='mturk_form' method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>
+		<input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+		<h1>Coreference Tutorial</h1>
+		<div style="padding: 5px; align-items: center; border: 2px solid green; width: 1000px;">
+		<p>Welcome! </p>
+		<p> This is a <b>paid tutorial</b> for the <b>"Large-Scale Coreference Annotation Task."</b></p>
+		<p> In this tutorial you will learn how to annotate <b>coreferences</b>, that is, words and phrases that refer to the same people or things.</p>
+		<p>Upon completing the tutorial, you will get <b>a completion code.</b> You <b>MUST enter this code</b> in the textbox below and <b>submit the HIT</b> in order to receive the payment.
+		<p>Depending on your performance, you might be invited to participate in our "Large-Scale Coreference Annotation Task.”</p>
+</div>
+<br/>
+		<p>Before proceeding to the tutorial, please <b>fill in the following survey</b>:</p>
+
+		<p>What is your <b>gender</b>?</p>
+		<textarea name="gender" rows="1" style="resize: none; border:none; outline: none; border-bottom: 1px solid black;" required></textarea>
+
+		<p>What is your <b>age</b>?</p>
+		<textarea name="age" rows="1" style="resize: none; border:none; outline: none; border-bottom: 1px solid black;" required></textarea>
+
+		<p>What is your <b>native language</b>?</p>
+		<textarea name="language" rows="1" style="resize: none; border:none; outline: none; border-bottom: 1px solid black;" required></textarea>
+
+		<p>How is your <b>English level</b>?</p>
+		<input type="radio" id="level4" name="English" value="4" required><label for="4"> Beginner &nbsp &nbsp </label><br/>
+		<input type="radio" id="level3" name="English" value="3" required><label for="3"> Intermediate &nbsp &nbsp </label><br/>
+		<input type="radio" id="level2" name="English" value="2" required><label for="2"> Advanced (near native) &nbsp &nbsp </label><br/>
+		<input type="radio" id="level1" name="English" value="1" required><label for="1"> Native speaker &nbsp &nbsp </label><br/>
+
+		<p>What is your <b>education level</b>?</p>
+		<input type="radio" id="level1" name="education" value="1" required><label for="1"> Primary &nbsp &nbsp </label><br/>
+		<input type="radio" id="level2" name="education" value="2" required><label for="2"> Secondary &nbsp &nbsp </label><br/>
+		<input type="radio" id="level3" name="education" value="3" required><label for="3"> College &nbsp &nbsp </label><br/>
+		<input type="radio" id="level4" name="education" value="4" required><label for="4"> Graduate School &nbsp &nbsp </label>
+
+
+		<p><a id="url" target="_blank">Click this link to begin.</a></p>
+		<p>[OPTIONAL] We would love to hear <b>your feedback</b> about <b>this tutorial.</b></p>
+        <p><textarea name='comment' cols='80' rows='3'></textarea></p>
+		<script language='Javascript'>
+            var vars = {};
+            window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            console.log(vars['assignmentId']);
+            if(vars['assignmentId']==="ASSIGNMENT_ID_NOT_AVAILABLE") {
+                document.getElementById("url").innerHTML = "Link will become available once you accept the HIT.";
+            }
+            else{
+                document.getElementById("url").href = "http://azkaban.cs.umass.edu:8877/tutorial?hitId="+ vars.hitId +"&assignmentId=" + vars.assignmentId + "&workerId=" + vars.workerId;
+            }
+		</script>
+		<p><b>Submit your code below:</b></p>
+		<p><textarea name='comment' cols='80' rows='3' required></textarea></p>
+
+		<p><input type='submit' id='submitButton' value='Submit'></p>
+		</form>
+	<script language='Javascript'>turkSetAssignmentID();</script>
+		</body>
+		</html>
+		]]>
+	</HTMLContent>
+	<FrameHeight>
+		0
+	</FrameHeight>
+</HTMLQuestion>
