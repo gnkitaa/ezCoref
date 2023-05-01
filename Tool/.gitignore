@@ -1,0 +1,30 @@
+annotation_manager_B.py
+annotation_manager_C.py
+
+# vim
+*.swp
+.vim/
+
+# vscode
+.vscode/
+
+# pycharm
+.idea
+
+# python 
+__pycache__/
+
+# sqlite
+database.db
+
+# node 
+node_modules/
+client/client/dist/
+
+# data
+ontonotes5_conll_format/
+experiments/*
+debug_passage.json
+
+# mac
+.DS_Store

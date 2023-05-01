@@ -1,0 +1,45 @@
+{
+  "name": "coref-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "bootstrap": "^4.6.0",
+    "install": "^0.13.0",
+    "node-fetch": "^2.6.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^16.14.0",
+    "react-fontawesome": "^1.7.1",
+    "react-keyboard-event-handler": "^1.5.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.1.1",
+    "react-toggle": "^4.1.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2"
+  },
+  "scripts": {
+    "start": "HOST=0.0.0.0 PORT=8877 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

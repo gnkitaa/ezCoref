@@ -1,0 +1,324 @@
+{
+  "annots": [
+    {
+      "0": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    {
+      "0": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    }
+  ],
+  "preAnnots": [
+    {
+      "3": [1]
+    },
+    {
+      "0": [1],
+      "4": [1],
+      "10": [0]
+    },
+    {
+      "0": [0],
+      "2": [1]
+    }
+  ],
+  "fileName": "tutorial_singleton",
+  "sents": [
+    [
+      {
+        "word": "Alice",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "had",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "a",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "dog",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ],
+    [
+      {
+        "word": "It",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "passed",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "away",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "ADP",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "yesterday.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "It",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "NOUN",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "has",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "NOUN",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "been",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "very",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "hard",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "for",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "her",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      }
+    ],
+    [
+      {
+        "word": "She",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "loved",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "the",
+        "left_offset": 0,
+        "right_offset": 2,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "dog",
+        "left_offset": -1,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "very",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "much.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ]
+  ],
+    "targets": [
+    [
+      0
+    ],
+    [
+      3
+    ]
+  ],
+  "validMoves": {
+  "step": [
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 1,
+        "validWordIndex": 4,
+        "validEntity": 1,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 2,
+        "validWordIndex": 0,
+        "validEntity": 0,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 1,
+        "validWordIndex": 10,
+        "validEntity": 0,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 1,
+        "validWordIndex": 4,
+        "validEntity": 2,
+        "continue": 1
+      }
+    ]
+  }
+}

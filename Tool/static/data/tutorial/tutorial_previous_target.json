@@ -1,0 +1,283 @@
+{
+  "annots": [
+    {
+      "0": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    },
+    {
+      "0": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    }
+  ],
+  "preAnnots": [
+    {
+      "2": [1]
+    },
+    {
+      "0": [0],
+      "3": [1]
+    },
+    {
+      "1": [1],
+      "3": [0],
+      "5": [1]
+    }
+  ],
+  "fileName": "tutorial_prev_target",
+  "sents": [
+    [
+      {
+        "word": "Robert",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "loves",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "Alice",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ],
+    [
+      {
+        "word": "He",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "talks",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "to",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "ADP",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "her",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "everyday.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "NOUN",
+        "colorIndex": [],
+        "hover": false
+      }
+    ],
+    [
+      {
+        "word": "Sadly,",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "Alice",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "likes",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "Fred",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "because",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "he",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "is",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "very",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "nice.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ]
+  ],
+    "targets": [
+    [
+      0
+    ],
+    [
+      2
+    ]
+  ],
+  "validMoves": {
+  "step": [
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 0,
+        "validWordIndex": 0,
+        "validEntity": 0,
+        "continue":0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 2,
+        "validWordIndex": 3,
+        "validEntity": 0,
+        "continue":1
+      },
+      {
+        "validClickType": "continue",
+        "validSentIndex": -1,
+        "validWordIndex": -1,
+        "validEntity": -1,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 0,
+        "validWordIndex": 2,
+        "validEntity": 1,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 2,
+        "validWordIndex": 5,
+        "validEntity": 1,
+        "continue": 1
+      }
+    ]
+  }
+}

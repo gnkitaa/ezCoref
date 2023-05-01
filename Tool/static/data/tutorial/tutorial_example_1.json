@@ -1,0 +1,185 @@
+{
+  "annots": [],
+  "preAnnots": [],
+  "fileName": "example_1",
+  "sents": [
+    [
+      {
+        "word": "John",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "doesn't",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "AUX",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "like",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "ADJ",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "Fred",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "ADJ",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": ",",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "but",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "AUX",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "he",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "NN",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "still",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "invited",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "him",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "AUX",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "to",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "NN",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "the",
+        "left_offset": 0,
+        "right_offset": 2,
+        "candidate": true,
+        "target": true,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "party",
+        "left_offset": -1,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      }
+    ]
+  ],
+  "targets": [],
+  "validMoves": {
+    "step": [
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 0,
+        "validWordIndex": 6,
+        "validEntity": 0,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 0,
+        "validWordIndex": 3,
+        "validEntity": 1,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 0,
+        "validWordIndex": 9,
+        "validEntity": 1,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 0,
+        "validWordIndex": 11,
+        "validEntity": 2,
+        "continue": 1
+      }
+    ]
+  }
+}

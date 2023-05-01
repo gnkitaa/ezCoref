@@ -1,0 +1,16 @@
+.annotation__text {
+  height: 750px;
+  max-height: 500px;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-y: auto;
+}
+
+.modal-content {
+  height: 100%
+}
+
+.modal-dialog {
+  margin: 0em;
+}

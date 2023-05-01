@@ -1,0 +1,418 @@
+{
+  "annots": [],
+  "preAnnots": [
+    {
+      "2": [1]
+    },
+    {
+      "0": [1]
+    },
+    {
+      "0": [1],
+      "3": [0],
+      "5": [2],
+      "8":[3]
+    },
+    {
+        "4": [1],
+        "7": [0],
+        "9": [1],
+        "12": [4]
+    }
+  ],
+  "fileName": "tutorial_singleton",
+  "sents": [
+    [
+      {
+        "word": "Alice",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "likes",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "Fred",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ],
+    [
+      {
+        "word": "He",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "is",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "very",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "ADP",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "handsome.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ],
+    [
+      {
+        "word": "He",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "usually",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "invites",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "her",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "for",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "lunch",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "at",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "the",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "nearby",
+        "left_offset": 0,
+        "right_offset": 2,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "restaurant",
+        "left_offset": -1,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ],
+    [
+      {
+        "word": "The",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "truth",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "VERB",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "is",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "that",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "Fred",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "also",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "likes",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "her",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "but",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "she",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "doesn't",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "know",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "it",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      }
+    ]
+  ],
+  "targets": [],
+  "validMoves": {
+  "step": [
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 3,
+        "validWordIndex": 9,
+        "validEntity": 1,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 3,
+        "validWordIndex": 7,
+        "validEntity": 0,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 3,
+        "validWordIndex": 9,
+        "validEntity": 0,
+        "continue": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "annots": [
+    {
+      "0": [
+        0
+      ]
+    },
+    {
+      "0": [
+        0
+      ]
+    }
+  ],
+  "preAnnots": [],
+  "fileName": "left_click_tutorial",
+  "sents": [
+    [
+      {
+        "word": "Mary",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PROPN",
+        "colorIndex": [],
+        "skipped": false,
+        "hover": false
+      },
+      {
+        "word": "is",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "AUX",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "fun.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "ADJ",
+        "colorIndex": [],
+        "hover": false
+      }
+    ],
+    [
+      {
+        "word": "She",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "jokes",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "AUX",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "a",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "NN",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "lot.",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      }
+    ],
+    [
+      {
+        "word": "That's",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PRON",
+        "colorIndex": [],
+        "hover": false,
+        "skipped": false
+      },
+      {
+        "word": "why",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "AUX",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "Mark",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "NN",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "likes",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": "her",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": true,
+        "target": true,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      },
+      {
+        "word": ".",
+        "left_offset": 0,
+        "right_offset": 1,
+        "candidate": false,
+        "target": false,
+        "pos": "PUNCT",
+        "colorIndex": [],
+        "hover": false
+      }
+    ]
+  ],
+  "targets": [],
+  "validMoves": {
+    "step": [
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 1,
+        "validWordIndex": 0,
+        "validEntity": 0,
+        "continue": 0
+      },
+      {
+        "validClickType": "leftClick",
+        "validSentIndex": 2,
+        "validWordIndex": 4,
+        "validEntity": 0,
+        "continue": 1
+      }
+    ]
+  }
+}
