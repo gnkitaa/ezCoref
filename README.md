@@ -14,11 +14,23 @@ Try out annotating a portion of ["Alice in Wonderland"](http://azkaban.cs.umass.
 ### Citation Information
 If you use ezCoref, please cite it as follows:
 ```
-@article{ezcoref-2022,
-  title={ezCoref: Towards unifying annotation guidelines for coreference resolution},
-  author={Ankita Gupta, Marzena Karpinska, Wenlong Zhao, Kalpesh Krishna, Jack Merullo, Luke Yeh, Mohit Iyyer, Brendan O'Connor},
-  journal={arXiv preprint arXiv:},
-  year={2022}
+@inproceedings{gupta-etal-2023-ezcoref,
+    title = "ez{C}oref: Towards Unifying Annotation Guidelines for Coreference Resolution",
+    author = "Gupta, Ankita  and
+      Karpinska, Marzena  and
+      Zhao, Wenlong  and
+      Krishna, Kalpesh  and
+      Merullo, Jack  and
+      Yeh, Luke  and
+      Iyyer, Mohit  and
+      O{'}connor, Brendan",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-eacl.24",
+    pages = "312--330",
 }
 ```
 
