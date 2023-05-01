@@ -1,0 +1,1642 @@
+
+<meta charset="utf-8"> 
+<style>
+.sentid { font-size: 100%; }
+.mention { font-size: 100%; }
+.entid { position: relative; top: 0.5em; font-size: 95%; font-family: helvetica,sans-serif;}
+.ner { color: #555; font-size: 110%; }
+.nertype { font-size: 80%; font-style: italic; vertical-align: sub; font-family: helvetica,sans-serif; }
+
+.pos_PRP { font-weight: bold; }
+.pos_PRP_DOLLAR_ { font-weight: bold; }
+
+/* Dark2 from http://colorbrewer2.org/ */
+.c0 { color: rgb(27,158,119); } 
+.c1 { color: rgb(217,95,2); }
+.c2 { color: rgb(117,112,179); }
+.c3 { color: rgb(255, 0, 0); }
+.c4 { color: rgb(102,166,30); }
+.c5 { color: rgb(230,171,2); }
+.c6 { color: rgb(166,118,29); }
+.c7 { color: rgb(102,102,102); }
+.c8 { color: rgb(112, 61, 61);}
+.c9 { color: rgb(0, 71, 171);}
+.c10 { color: rgb(202, 44, 146);}
+.c11 { color: rgb(0, 128, 128);}
+</style>
+<div class='sentid'><h3>S0</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>Perfect</span>
+<span class='token'>Teeth</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+</div></div><div class='sentid'><h3>S1</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>wanted</span>
+<span class='token'>to</span>
+<span class='token'>be</span>
+<span class='mention c6'>[</span>
+<span class='token'>a</span>
+<span class='token'>dentist</span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S2</h3></div><div class='sentence'><span class='mention c7'>[</span>
+<span class='token'>It</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='token'>was</span>
+<span class='token'>pretty</span>
+<span class='token'>much</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>first</span>
+<span class='token'>thing</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>told</span>
+<span class='mention c10'>[</span>
+<span class='token'>us</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>when</span>
+<span class='token'>,</span>
+<span class='token'>as</span>
+<span class='mention c4'>[</span>
+<span class='token'>first</span>
+<span class='token'>years</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>we</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>were</span>
+<span class='token'>all</span>
+<span class='token'>bunched</span>
+<span class='token'>together</span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>unfamiliar</span>
+<span class='token'>dusty</span>
+<span class='token'>classroom</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S3</h3></div><div class='sentence'><span class='token'>When</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>couple</span>
+<span class='token'>of</span>
+<span class='token'>weeks</span>
+<span class='token'>later</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='mention c10'>[</span>
+<span class='token'>we</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>were</span>
+<span class='token'>invited</span>
+<span class='token'>over</span>
+<span class='token'>to</span>
+<span class='mention c0'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>house</span>
+<span class='mention c0'>]<span class='entid c0'>e22</span></span>
+<span class='mention c10'>[</span>
+<span class='token'>we</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>saw</span>
+<span class='token'>that</span>
+<span class='mention c7'>[</span>
+<span class='token'>this</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='token'>was</span>
+<span class='token'>not</span>
+<span class='mention c7'>[</span>
+<span class='token'>an</span>
+<span class='token'>idle</span>
+<span class='token'>remark</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S4</h3></div><div class='sentence'><span class='token'>Where</span>
+<span class='mention c7'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>our</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='mention c8'>[</span>
+<span class='token'>bedroom</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>walls</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>were</span>
+<span class='token'>decorated</span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='token'>posters</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>pop</span>
+<span class='token'>stars</span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='token'>and</span>
+<span class='mention c4'>[</span>
+<span class='token'>footballers</span>
+<span class='mention c4'>]<span class='entid c4'>e37</span></span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>had</span>
+<span class='mention c9'>[</span>
+<span class='token'>diagrams</span>
+<span class='token'>setting</span>
+<span class='token'>out</span>
+<span class='mention c10'>[</span>
+<span class='token'>tooth</span>
+<span class='token'>implementations</span>
+<span class='mention c10'>]<span class='entid c10'>e43</span></span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>anatomical</span>
+<span class='token'>drawings</span>
+<span class='token'>of</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>jaw</span>
+<span class='mention c1'>]<span class='entid c1'>e45</span></span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='token'>brightly</span>
+<span class='token'>coloured</span>
+<span class='token'>nerves</span>
+<span class='mention c2'>]<span class='entid c2'>e46</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>muscle</span>
+<span class='mention c3'>]<span class='entid c3'>e47</span></span>
+<span class='token'>,</span>
+<span class='mention c6'>[</span>
+<span class='token'>blood</span>
+<span class='token'>vessels</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>bones</span>
+<span class='mention c7'>]<span class='entid c7'>e51</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>,</span>
+<span class='token'>of</span>
+<span class='token'>course</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>teeth</span>
+<span class='mention c8'>]<span class='entid c8'>e52</span></span>
+<span class='mention c0'>]<span class='entid c0'>e44</span></span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S5</h3></div><div class='sentence'><span class='token'>Where</span>
+<span class='mention c10'>[</span>
+<span class='token'>we</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>had</span>
+<span class='mention c4'>[</span>
+<span class='token'>shelves</span>
+<span class='token'>of</span>
+<span class='mention c5'>[</span>
+<span class='token'>plastic</span>
+<span class='token'>dinosaurs</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>and</span>
+<span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>superhero</span>
+<span class='mention c7'>]<span class='entid c7'>e62</span></span>
+<span class='token'>figurines</span>
+<span class='token'>from</span>
+<span class='mention c10'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>cornflake</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>boxes</span>
+<span class='mention c10'>]<span class='entid c10'>e65</span></span>
+<span class='mention c6'>]<span class='entid c6'>e61</span></span>
+<span class='mention c4'>]<span class='entid c4'>e59</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>had</span>
+<span class='mention c5'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>plaster</span>
+<span class='mention c6'>]<span class='entid c6'>e72</span></span>
+<span class='token'>casts</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='token'>jawbones</span>
+<span class='mention c7'>]<span class='entid c7'>e73</span></span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>gums</span>
+<span class='mention c8'>]<span class='entid c8'>e74</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>teeth</span>
+<span class='mention c9'>]<span class='entid c9'>e75</span></span>
+<span class='token'>grinning</span>
+<span class='token'>down</span>
+<span class='token'>at</span>
+<span class='mention c10'>[</span>
+<span class='token'>us</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='mention c5'>]<span class='entid c5'>e71</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S6</h3></div><div class='sentence'><span class='mention c9'>[</span>
+<span class='token'>The</span>
+<span class='token'>instruments</span>
+<span class='mention c9'>]<span class='entid c9'>e86</span></span>
+<span class='token'>were</span>
+<span class='token'>locked</span>
+<span class='token'>away</span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>glass</span>
+<span class='mention c0'>]<span class='entid c0'>e88</span></span>
+<span class='token'>cabinets</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>and</span>
+<span class='token'>only</span>
+<span class='mention c3'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>parents</span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>had</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>key</span>
+<span class='mention c6'>]<span class='entid c6'>e94</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S7</h3></div><div class='sentence'><span class='token'>“</span>
+<span class='mention c3'>[</span>
+<span class='token'>They</span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>do</span>
+<span class='token'>n’t</span>
+<span class='token'>exactly</span>
+<span class='token'>encourage</span>
+<span class='mention c9'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>my</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>interest</span>
+<span class='mention c9'>]<span class='entid c9'>e97</span></span>
+<span class='token'>,</span>
+<span class='token'>”</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>shrugged</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S8</h3></div><div class='sentence'><span class='token'>“</span>
+<span class='mention c3'>[</span>
+<span class='token'>They</span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>sort</span>
+<span class='token'>of</span>
+<span class='token'>tolerate</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e97</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S9</h3></div><div class='sentence'><span class='token'>But</span>
+<span class='mention c10'>[</span>
+<span class='token'>Dad</span>
+<span class='mention c10'>]<span class='entid c10'>e98</span></span>
+<span class='token'>says</span>
+<span class='mention c9'>[</span>
+<span class='token'>they</span>
+<span class='mention c9'>]<span class='entid c9'>e86</span></span>
+<span class='token'>’re</span>
+<span class='mention c1'>[</span>
+<span class='token'>a</span>
+<span class='token'>sort</span>
+<span class='token'>of</span>
+<span class='token'>collection</span>
+<span class='mention c1'>]<span class='entid c1'>e111</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>too</span>
+<span class='token'>expensive</span>
+<span class='token'>for</span>
+<span class='mention c3'>[</span>
+<span class='token'>me</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>to</span>
+<span class='token'>play</span>
+<span class='token'>with</span>
+<span class='token'>.</span>
+<span class='token'>”</span>
+</div></div><div class='sentid'><h3>S10</h3></div><div class='sentence'><span class='token'>Of</span>
+<span class='token'>course</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>we</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>tried</span>
+<span class='token'>to</span>
+<span class='token'>pick</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>locks</span>
+<span class='mention c6'>]<span class='entid c6'>e116</span></span>
+<span class='token'>,</span>
+<span class='token'>but</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>spikes</span>
+<span class='token'>and</span>
+<span class='token'>saws</span>
+<span class='token'>and</span>
+<span class='token'>drillheads</span>
+<span class='mention c1'>]<span class='entid c1'>e111</span></span>
+<span class='token'>remained</span>
+<span class='token'>—</span>
+<span class='token'>tantalisingly</span>
+<span class='token'>—</span>
+<span class='token'>out</span>
+<span class='token'>of</span>
+<span class='token'>reach</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S11</h3></div><div class='sentence'><span class='mention c10'>[</span>
+<span class='token'>We</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>did</span>
+<span class='token'>n’t</span>
+<span class='token'>see</span>
+<span class='mention c9'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='token'>’s</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>interest</span>
+<span class='mention c9'>]<span class='entid c9'>e97</span></span>
+<span class='token'>as</span>
+<span class='token'>strange</span>
+<span class='token'>,</span>
+<span class='token'>well</span>
+<span class='token'>,</span>
+<span class='token'>not</span>
+<span class='token'>that</span>
+<span class='token'>much</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S12</h3></div><div class='sentence'><span class='mention c10'>[</span>
+<span class='token'>We</span>
+<span class='token'>all</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>had</span>
+<span class='mention c9'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>our</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>own</span>
+<span class='token'>interests</span>
+<span class='token'>—</span>
+<span class='mention c9'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>drawing</span>
+<span class='mention c1'>]<span class='entid c1'>e122</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>electronics</span>
+<span class='mention c2'>]<span class='entid c2'>e123</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>collecting</span>
+<span class='mention c8'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>beer</span>
+<span class='mention c9'>]<span class='entid c9'>e130</span></span>
+<span class='token'>caps</span>
+<span class='mention c8'>]<span class='entid c8'>e129</span></span>
+<span class='mention c7'>]<span class='entid c7'>e128</span></span>
+<span class='mention c9'>]<span class='entid c9'>e119</span></span>
+<span class='token'>—</span>
+<span class='token'>that</span>
+<span class='mention c10'>[</span>
+<span class='token'>each</span>
+<span class='mention c10'>]<span class='entid c10'>e131</span></span>
+<span class='token'>appeared</span>
+<span class='token'>obscure</span>
+<span class='token'>to</span>
+<span class='mention c4'>[</span>
+<span class='token'>anyone</span>
+<span class='token'>else</span>
+<span class='mention c4'>]<span class='entid c4'>e136</span></span>
+<span class='mention c9'>]<span class='entid c9'>e119</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S13</h3></div><div class='sentence'><span class='mention c5'>[</span>
+<span class='token'>DIY</span>
+<span class='token'>Dentistry</span>
+<span class='mention c5'>]<span class='entid c5'>e137</span></span>
+<span class='token'>was</span>
+<span class='token'>just</span>
+<span class='mention c6'>[</span>
+<span class='token'>something</span>
+<span class='token'>that</span>
+<span class='token'>had</span>
+<span class='token'>never</span>
+<span class='token'>crossed</span>
+<span class='mention c7'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>our</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>horizon</span>
+<span class='mention c7'>]<span class='entid c7'>e139</span></span>
+<span class='token'>before</span>
+<span class='mention c6'>]<span class='entid c6'>e138</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S14</h3></div><div class='sentence'><span class='token'>And</span>
+<span class='token'>if</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>did</span>
+<span class='token'>n’t</span>
+<span class='token'>see</span>
+<span class='mention c6'>[</span>
+<span class='token'>it</span>
+<span class='mention c6'>]<span class='entid c6'>e138</span></span>
+<span class='token'>as</span>
+<span class='token'>weird</span>
+<span class='token'>,</span>
+<span class='token'>or</span>
+<span class='token'>no</span>
+<span class='token'>weirder</span>
+<span class='token'>than</span>
+<span class='mention c8'>[</span>
+<span class='token'>Andy</span>
+<span class='mention c8'>]<span class='entid c8'>e140</span></span>
+<span class='token'>showing</span>
+<span class='mention c10'>[</span>
+<span class='token'>us</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='mention c8'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>his</span>
+<span class='mention c8'>]<span class='entid c8'>e140</span></span>
+<span class='mention c0'>[</span>
+<span class='token'>Eastern</span>
+<span class='token'>-</span>
+<span class='token'>Block</span>
+<span class='mention c0'>]<span class='entid c0'>e154</span></span>
+<span class='mention c9'>[</span>
+<span class='token'>beer</span>
+<span class='mention c9'>]<span class='entid c9'>e130</span></span>
+<span class='token'>caps</span>
+<span class='mention c8'>]<span class='entid c8'>e151</span></span>
+<span class='token'>all</span>
+<span class='token'>laid</span>
+<span class='token'>out</span>
+<span class='token'>neatly</span>
+<span class='token'>on</span>
+<span class='mention c3'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>cork</span>
+<span class='mention c4'>]<span class='entid c4'>e158</span></span>
+<span class='token'>boards</span>
+<span class='token'>with</span>
+<span class='mention c7'>[</span>
+<span class='token'>little</span>
+<span class='token'>hand</span>
+<span class='token'>-</span>
+<span class='token'>written</span>
+<span class='token'>labels</span>
+<span class='mention c7'>]<span class='entid c7'>e161</span></span>
+<span class='mention c3'>]<span class='entid c3'>e157</span></span>
+<span class='token'>,</span>
+<span class='token'>why</span>
+<span class='token'>should</span>
+<span class='mention c6'>[</span>
+<span class='token'>it</span>
+<span class='mention c6'>]<span class='entid c6'>e138</span></span>
+<span class='token'>bother</span>
+<span class='mention c10'>[</span>
+<span class='token'>us</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>?</span>
+</div></div><div class='sentid'><h3>S15</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='token'>I</span>
+<span class='mention c8'>]<span class='entid c8'>e162</span></span>
+<span class='token'>suppose</span>
+<span class='token'>that</span>
+<span class='token'>,</span>
+<span class='token'>in</span>
+<span class='mention c4'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>our</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>own</span>
+<span class='token'>way</span>
+<span class='mention c4'>]<span class='entid c4'>e169</span></span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>we</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>were</span>
+<span class='token'>all</span>
+<span class='token'>collectively</span>
+<span class='token'>strange</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S16</h3></div><div class='sentence'><span class='mention c10'>[</span>
+<span class='token'>The</span>
+<span class='token'>bunch</span>
+<span class='token'>that</span>
+<span class='mention c9'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>no</span>
+<span class='token'>one</span>
+<span class='mention c10'>]<span class='entid c10'>e175</span></span>
+<span class='token'>picked</span>
+<span class='token'>for</span>
+<span class='mention c0'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>their</span>
+<span class='mention c10'>]<span class='entid c10'>e175</span></span>
+<span class='token'>side</span>
+<span class='mention c0'>]<span class='entid c0'>e176</span></span>
+<span class='token'>at</span>
+<span class='mention c1'>[</span>
+<span class='token'>football</span>
+<span class='mention c1'>]<span class='entid c1'>e177</span></span>
+<span class='token'>or</span>
+<span class='mention c2'>[</span>
+<span class='token'>hockey</span>
+<span class='mention c2'>]<span class='entid c2'>e178</span></span>
+<span class='mention c9'>]<span class='entid c9'>e174</span></span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='mention c3'>[</span>
+<span class='token'>that</span>
+<span class='mention c3'>]<span class='entid c3'>e179</span></span>
+<span class='token'>was</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>glue</span>
+<span class='token'>that</span>
+<span class='token'>held</span>
+<span class='mention c1'>[</span>
+<span class='token'>us</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>together</span>
+<span class='mention c3'>]<span class='entid c3'>e179</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S17</h3></div><div class='sentence'><span class='token'>Besides</span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>had</span>
+<span class='mention c6'>[</span>
+<span class='token'>some</span>
+<span class='token'>really</span>
+<span class='token'>good</span>
+<span class='token'>stuff</span>
+<span class='mention c6'>]<span class='entid c6'>e193</span></span>
+<span class='token'>:</span>
+<span class='mention c7'>[</span>
+<span class='token'>sweets</span>
+<span class='token'>that</span>
+<span class='token'>stained</span>
+<span class='mention c8'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>teeth</span>
+<span class='mention c8'>]<span class='entid c8'>e195</span></span>
+<span class='mention c1'>[</span>
+<span class='token'>bright</span>
+<span class='token'>red</span>
+<span class='mention c1'>]<span class='entid c1'>e199</span></span>
+<span class='mention c7'>]<span class='entid c7'>e194</span></span>
+<span class='token'>—</span>
+<span class='token'>well</span>
+<span class='token'>,</span>
+<span class='token'>technically</span>
+<span class='token'>,</span>
+<span class='token'>not</span>
+<span class='mention c8'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>teeth</span>
+<span class='mention c8'>]<span class='entid c8'>e195</span></span>
+<span class='token'>,</span>
+<span class='token'>just</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>plaque</span>
+<span class='mention c4'>]<span class='entid c4'>e202</span></span>
+<span class='token'>,</span>
+<span class='token'>but</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>result</span>
+<span class='mention c5'>]<span class='entid c5'>e203</span></span>
+<span class='token'>was</span>
+<span class='token'>often</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>same</span>
+<span class='mention c6'>]<span class='entid c6'>e204</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S18</h3></div><div class='sentence'><span class='token'>It</span>
+<span class='token'>took</span>
+<span class='mention c7'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>few</span>
+<span class='token'>days</span>
+<span class='mention c8'>]<span class='entid c8'>e206</span></span>
+<span class='token'>good</span>
+<span class='token'>brushing</span>
+<span class='mention c7'>]<span class='entid c7'>e205</span></span>
+<span class='token'>to</span>
+<span class='token'>get</span>
+<span class='mention c1'>[</span>
+<span class='token'>it</span>
+<span class='mention c1'>]<span class='entid c1'>e199</span></span>
+<span class='token'>off</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S19</h3></div><div class='sentence'><span class='token'>Well</span>
+<span class='token'>,</span>
+<span class='token'>most</span>
+<span class='token'>of</span>
+<span class='mention c1'>[</span>
+<span class='token'>it</span>
+<span class='mention c1'>]<span class='entid c1'>e199</span></span>
+<span class='token'>anyway</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S20</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>He</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>had</span>
+<span class='mention c4'>[</span>
+<span class='token'>effervescent</span>
+<span class='token'>tablets</span>
+<span class='token'>that</span>
+<span class='token'>turned</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='mention c6'>[</span>
+<span class='token'>canteen</span>
+<span class='mention c6'>]<span class='entid c6'>e215</span></span>
+<span class='token'>drinking</span>
+<span class='token'>water</span>
+<span class='mention c5'>]<span class='entid c5'>e214</span></span>
+<span class='token'>into</span>
+<span class='mention c9'>[</span>
+<span class='token'>that</span>
+<span class='token'>exact</span>
+<span class='token'>same</span>
+<span class='token'>pink</span>
+<span class='token'>mixture</span>
+<span class='token'>that</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>dentist</span>
+<span class='mention c10'>]<span class='entid c10'>e219</span></span>
+<span class='token'>gave</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>to</span>
+<span class='token'>rinse</span>
+<span class='mention c2'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>mouth</span>
+<span class='mention c2'>]<span class='entid c2'>e222</span></span>
+<span class='token'>out</span>
+<span class='token'>after</span>
+<span class='token'>scraping</span>
+<span class='token'>around</span>
+<span class='token'>inside</span>
+<span class='mention c9'>]<span class='entid c9'>e218</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>guaranteed</span>
+<span class='token'>to</span>
+<span class='token'>make</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>other</span>
+<span class='token'>kids</span>
+<span class='mention c5'>]<span class='entid c5'>e225</span></span>
+<span class='token'>splutter</span>
+<span class='token'>and</span>
+<span class='token'>spit</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e218</span></span>
+<span class='token'>out</span>
+<span class='token'>when</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>taste</span>
+<span class='mention c8'>]<span class='entid c8'>e228</span></span>
+<span class='token'>slowly</span>
+<span class='token'>percolated</span>
+<span class='token'>through</span>
+<span class='token'>and</span>
+<span class='token'>met</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>memory</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>their</span>
+<span class='mention c5'>]<span class='entid c5'>e225</span></span>
+<span class='token'>last</span>
+<span class='token'>checkup</span>
+<span class='mention c10'>]<span class='entid c10'>e230</span></span>
+<span class='mention c9'>]<span class='entid c9'>e229</span></span>
+<span class='mention c4'>]<span class='entid c4'>e213</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S21</h3></div><div class='sentence'><span class='token'>Then</span>
+<span class='token'>there</span>
+<span class='token'>was</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>event</span>
+<span class='token'>that</span>
+<span class='token'>became</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>rite</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>passage</span>
+<span class='mention c2'>]<span class='entid c2'>e233</span></span>
+<span class='token'>into</span>
+<span class='mention c6'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>our</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>group</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='token'>misfits</span>
+<span class='mention c7'>]<span class='entid c7'>e238</span></span>
+<span class='token'>and</span>
+<span class='mention c8'>[</span>
+<span class='token'>outcasts</span>
+<span class='mention c8'>]<span class='entid c8'>e239</span></span>
+<span class='mention c6'>]<span class='entid c6'>e237</span></span>
+<span class='mention c3'>]<span class='entid c3'>e234</span></span>
+<span class='token'>:</span>
+<span class='mention c3'>[</span>
+<span class='token'>making</span>
+<span class='mention c4'>[</span>
+<span class='token'>a</span>
+<span class='token'>mould</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>teeth</span>
+<span class='mention c8'>]<span class='entid c8'>e195</span></span>
+<span class='mention c4'>]<span class='entid c4'>e246</span></span>
+<span class='mention c3'>]<span class='entid c3'>e234</span></span>
+<span class='mention c2'>]<span class='entid c2'>e233</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S22</h3></div><div class='sentence'><span class='mention c5'>[</span>
+<span class='token'>It</span>
+<span class='mention c5'>]<span class='entid c5'>e247</span></span>
+<span class='token'>was</span>
+<span class='token'>inevitable</span>
+<span class='mention c5'>[</span>
+<span class='token'>that</span>
+<span class='mention c10'>[</span>
+<span class='token'>one</span>
+<span class='token'>of</span>
+<span class='mention c1'>[</span>
+<span class='token'>us</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='mention c10'>]<span class='entid c10'>e252</span></span>
+<span class='token'>,</span>
+<span class='token'>seeing</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='mention c6'>[</span>
+<span class='token'>plaster</span>
+<span class='mention c6'>]<span class='entid c6'>e72</span></span>
+<span class='token'>casts</span>
+<span class='token'>on</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>shelf</span>
+<span class='token'>by</span>
+<span class='mention c5'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='token'>’s</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>bed</span>
+<span class='mention c5'>]<span class='entid c5'>e258</span></span>
+<span class='mention c4'>]<span class='entid c4'>e257</span></span>
+<span class='mention c5'>]<span class='entid c5'>e71</span></span>
+<span class='token'>would</span>
+<span class='token'>ask</span>
+<span class='token'>how</span>
+<span class='mention c5'>[</span>
+<span class='token'>they</span>
+<span class='mention c5'>]<span class='entid c5'>e71</span></span>
+<span class='token'>were</span>
+<span class='token'>done</span>
+<span class='mention c5'>]<span class='entid c5'>e247</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S23</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>It</span>
+<span class='mention c6'>]<span class='entid c6'>e259</span></span>
+<span class='token'>was</span>
+<span class='token'>just</span>
+<span class='token'>as</span>
+<span class='token'>inevitable</span>
+<span class='token'>that</span>
+<span class='mention c6'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>a</span>
+<span class='token'>few</span>
+<span class='token'>minutes</span>
+<span class='mention c0'>]<span class='entid c0'>e264</span></span>
+<span class='token'>later</span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>would</span>
+<span class='token'>be</span>
+<span class='token'>mixing</span>
+<span class='token'>up</span>
+<span class='mention c3'>[</span>
+<span class='token'>various</span>
+<span class='token'>powders</span>
+<span class='token'>and</span>
+<span class='token'>liquids</span>
+<span class='mention c3'>]<span class='entid c3'>e267</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>pouring</span>
+<span class='mention c3'>[</span>
+<span class='token'>them</span>
+<span class='mention c3'>]<span class='entid c3'>e267</span></span>
+<span class='token'>into</span>
+<span class='mention c6'>[</span>
+<span class='token'>a</span>
+<span class='mention c7'>[</span>
+<span class='token'>horse</span>
+<span class='token'>-</span>
+<span class='token'>shoe</span>
+<span class='mention c7'>]<span class='entid c7'>e271</span></span>
+<span class='token'>shaped</span>
+<span class='token'>contraption</span>
+<span class='mention c6'>]<span class='entid c6'>e270</span></span>
+<span class='mention c6'>]<span class='entid c6'>e259</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S24</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='token'>It</span>
+<span class='mention c8'>]<span class='entid c8'>e272</span></span>
+<span class='token'>was</span>
+<span class='token'>n’t</span>
+<span class='token'>dangerous</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S25</h3></div><div class='sentence'><span class='token'>At</span>
+<span class='token'>least</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>I</span>
+<span class='mention c8'>]<span class='entid c8'>e162</span></span>
+<span class='token'>suppose</span>
+<span class='token'>so</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S26</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='token'>It</span>
+<span class='mention c8'>]<span class='entid c8'>e272</span></span>
+<span class='token'>was</span>
+<span class='token'>vaguely</span>
+<span class='token'>uncomfortable</span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>appeared</span>
+<span class='token'>sufficiently</span>
+<span class='token'>disturbing</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>we</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>all</span>
+<span class='token'>volunteered</span>
+<span class='mention c1'>[</span>
+<span class='token'>each</span>
+<span class='token'>other</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>in</span>
+<span class='token'>turn</span>
+<span class='token'>until</span>
+<span class='token'>,</span>
+<span class='token'>at</span>
+<span class='token'>last</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>Andy</span>
+<span class='mention c8'>]<span class='entid c8'>e140</span></span>
+<span class='token'>said</span>
+<span class='mention c8'>[</span>
+<span class='token'>he</span>
+<span class='mention c8'>]<span class='entid c8'>e140</span></span>
+<span class='token'>was</span>
+<span class='token'>game</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S27</h3></div><div class='sentence'><span class='token'>And</span>
+<span class='mention c1'>[</span>
+<span class='token'>we</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>were</span>
+<span class='token'>off</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S28</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>The</span>
+<span class='token'>hardest</span>
+<span class='token'>part</span>
+<span class='mention c1'>]<span class='entid c1'>e287</span></span>
+<span class='token'>was</span>
+<span class='token'>probably</span>
+<span class='token'>to</span>
+<span class='token'>overcome</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>gagging</span>
+<span class='token'>reflex</span>
+<span class='token'>that</span>
+<span class='token'>set</span>
+<span class='token'>in</span>
+<span class='token'>when</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>bit</span>
+<span class='token'>down</span>
+<span class='token'>into</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>acrid</span>
+<span class='mention c6'>[</span>
+<span class='token'>resin</span>
+<span class='mention c6'>]<span class='entid c6'>e292</span></span>
+<span class='token'>jelly</span>
+<span class='mention c5'>]<span class='entid c5'>e291</span></span>
+<span class='token'>and</span>
+<span class='mention c5'>[</span>
+<span class='token'>it</span>
+<span class='mention c5'>]<span class='entid c5'>e291</span></span>
+<span class='token'>flowed</span>
+<span class='token'>out</span>
+<span class='token'>and</span>
+<span class='token'>up</span>
+<span class='token'>and</span>
+<span class='token'>around</span>
+<span class='token'>,</span>
+<span class='token'>over</span>
+<span class='mention c8'>[</span>
+<span class='token'>teeth</span>
+<span class='mention c8'>]<span class='entid c8'>e195</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>gums</span>
+<span class='mention c7'>]<span class='entid c7'>e293</span></span>
+<span class='token'>and</span>
+<span class='mention c8'>[</span>
+<span class='token'>tongue</span>
+<span class='mention c8'>]<span class='entid c8'>e294</span></span>
+<span class='mention c2'>]<span class='entid c2'>e288</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S29</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>Your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>nose</span>
+<span class='mention c8'>]<span class='entid c8'>e305</span></span>
+<span class='token'>filled</span>
+<span class='token'>with</span>
+<span class='token'>what</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>imagined</span>
+<span class='token'>were</span>
+<span class='mention c2'>[</span>
+<span class='token'>fumes</span>
+<span class='token'>from</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>warm</span>
+<span class='token'>paste</span>
+<span class='mention c5'>]<span class='entid c5'>e291</span></span>
+<span class='mention c2'>]<span class='entid c2'>e310</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S30</h3></div><div class='sentence'><span class='token'>And</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>seemed</span>
+<span class='token'>to</span>
+<span class='token'>be</span>
+<span class='token'>suddenly</span>
+<span class='token'>drowning</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>own</span>
+<span class='token'>saliva</span>
+<span class='mention c5'>]<span class='entid c5'>e313</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S31</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>Things</span>
+<span class='mention c6'>]<span class='entid c6'>e314</span></span>
+<span class='token'>generally</span>
+<span class='token'>got</span>
+<span class='token'>better</span>
+<span class='token'>when</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>reminded</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>that</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>could</span>
+<span class='token'>actually</span>
+<span class='token'>breathe</span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>swallow</span>
+<span class='token'>,</span>
+<span class='token'>normally</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S32</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>He</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>watched</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='mention c9'>[</span>
+<span class='token'>second</span>
+<span class='mention c9'>]<span class='entid c9'>e328</span></span>
+<span class='token'>hand</span>
+<span class='mention c8'>]<span class='entid c8'>e327</span></span>
+<span class='token'>trotting</span>
+<span class='token'>round</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>dial</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>watch</span>
+<span class='mention c2'>]<span class='entid c2'>e332</span></span>
+<span class='mention c1'>]<span class='entid c1'>e331</span></span>
+<span class='token'>mouthing</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>quarters</span>
+<span class='mention c5'>]<span class='entid c5'>e335</span></span>
+<span class='token'>,</span>
+<span class='token'>before</span>
+<span class='token'>poking</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>setting</span>
+<span class='token'>goo</span>
+<span class='mention c5'>]<span class='entid c5'>e291</span></span>
+<span class='token'>to</span>
+<span class='token'>check</span>
+<span class='mention c6'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>its</span>
+<span class='mention c5'>]<span class='entid c5'>e291</span></span>
+<span class='token'>consistency</span>
+<span class='mention c6'>]<span class='entid c6'>e336</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S33</h3></div><div class='sentence'><span class='token'>Then</span>
+<span class='token'>,</span>
+<span class='token'>when</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>gave</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>nod</span>
+<span class='mention c2'>]<span class='entid c2'>e343</span></span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>tried</span>
+<span class='token'>to</span>
+<span class='token'>prise</span>
+<span class='mention c5'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>jaws</span>
+<span class='mention c5'>]<span class='entid c5'>e346</span></span>
+<span class='token'>apart</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S34</h3></div><div class='sentence'><span class='token'>As</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>seal</span>
+<span class='token'>around</span>
+<span class='mention c9'>[</span>
+<span class='mention c10'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>gums</span>
+<span class='mention c10'>]<span class='entid c10'>e351</span></span>
+<span class='token'>and</span>
+<span class='mention c8'>[</span>
+<span class='token'>teeth</span>
+<span class='mention c8'>]<span class='entid c8'>e195</span></span>
+<span class='mention c9'>]<span class='entid c9'>e350</span></span>
+<span class='mention c8'>]<span class='entid c8'>e349</span></span>
+<span class='token'>was</span>
+<span class='token'>pretty</span>
+<span class='token'>solid</span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>you</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>thought</span>
+<span class='mention c4'>[</span>
+<span class='token'>it</span>
+<span class='mention c4'>]<span class='entid c4'>e246</span></span>
+<span class='token'>would</span>
+<span class='token'>never</span>
+<span class='token'>come</span>
+<span class='token'>off</span>
+<span class='token'>,</span>
+<span class='token'>as</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>others</span>
+<span class='mention c8'>]<span class='entid c8'>e360</span></span>
+<span class='token'>giggled</span>
+<span class='token'>at</span>
+<span class='mention c9'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>expressions</span>
+<span class='token'>and</span>
+<span class='token'>grimaces</span>
+<span class='mention c9'>]<span class='entid c9'>e361</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S35</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>jiggled</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>handle</span>
+<span class='token'>that</span>
+<span class='token'>stuck</span>
+<span class='token'>out</span>
+<span class='token'>beyond</span>
+<span class='mention c4'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>front</span>
+<span class='token'>teeth</span>
+<span class='mention c4'>]<span class='entid c4'>e367</span></span>
+<span class='token'>like</span>
+<span class='mention c7'>[</span>
+<span class='token'>some</span>
+<span class='token'>metallic</span>
+<span class='mention c8'>[</span>
+<span class='token'>duck</span>
+<span class='token'>’s</span>
+<span class='mention c8'>]<span class='entid c8'>e371</span></span>
+<span class='token'>bill</span>
+<span class='mention c7'>]<span class='entid c7'>e370</span></span>
+<span class='mention c3'>]<span class='entid c3'>e366</span></span>
+<span class='token'>,</span>
+<span class='token'>turning</span>
+<span class='token'>and</span>
+<span class='token'>twisting</span>
+<span class='mention c3'>[</span>
+<span class='token'>it</span>
+<span class='mention c3'>]<span class='entid c3'>e366</span></span>
+<span class='token'>most</span>
+<span class='token'>professionally</span>
+<span class='token'>and</span>
+<span class='token'>murmuring</span>
+<span class='mention c9'>[</span>
+<span class='token'>encouragements</span>
+<span class='mention c9'>]<span class='entid c9'>e372</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S36</h3></div><div class='sentence'><span class='token'>And</span>
+<span class='token'>,</span>
+<span class='token'>then</span>
+<span class='token'>,</span>
+<span class='token'>with</span>
+<span class='mention c3'>[</span>
+<span class='token'>an</span>
+<span class='token'>awful</span>
+<span class='token'>sucking</span>
+<span class='token'>slurp</span>
+<span class='mention c3'>]<span class='entid c3'>e377</span></span>
+<span class='token'>,</span>
+<span class='mention c4'>[</span>
+<span class='token'>it</span>
+<span class='mention c4'>]<span class='entid c4'>e246</span></span>
+<span class='token'>came</span>
+<span class='token'>free</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S37</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>The</span>
+<span class='token'>initiated</span>
+<span class='mention c6'>]<span class='entid c6'>e380</span></span>
+<span class='token'>then</span>
+<span class='token'>revelled</span>
+<span class='token'>in</span>
+<span class='token'>retelling</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>gross</span>
+<span class='token'>sensation</span>
+<span class='token'>of</span>
+<span class='token'>having</span>
+<span class='mention c8'>[</span>
+<span class='token'>this</span>
+<span class='token'>evil</span>
+<span class='token'>-</span>
+<span class='token'>smelling</span>
+<span class='mention c9'>[</span>
+<span class='token'>plastic</span>
+<span class='mention c9'>]<span class='entid c9'>e383</span></span>
+<span class='token'>slug</span>
+<span class='mention c8'>]<span class='entid c8'>e382</span></span>
+<span class='token'>invade</span>
+<span class='mention c2'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>your</span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>mouth</span>
+<span class='mention c2'>]<span class='entid c2'>e222</span></span>
+<span class='mention c7'>]<span class='entid c7'>e381</span></span>
+<span class='token'>,</span>
+<span class='token'>while</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>others</span>
+<span class='mention c8'>]<span class='entid c8'>e360</span></span>
+<span class='token'>waited</span>
+<span class='mention c3'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>their</span>
+<span class='mention c8'>]<span class='entid c8'>e360</span></span>
+<span class='token'>turn</span>
+<span class='mention c3'>]<span class='entid c3'>e388</span></span>
+<span class='token'>with</span>
+<span class='mention c6'>[</span>
+<span class='token'>mixed</span>
+<span class='token'>trepidation</span>
+<span class='token'>and</span>
+<span class='token'>excitement</span>
+<span class='mention c6'>]<span class='entid c6'>e391</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S38</h3></div><div class='sentence'><span class='mention c7'>[</span>
+<span class='token'>Raucous</span>
+<span class='token'>laughter</span>
+<span class='mention c7'>]<span class='entid c7'>e392</span></span>
+<span class='token'>greeted</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>suggestions</span>
+<span class='token'>of</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>other</span>
+<span class='mention c10'>[</span>
+<span class='token'>body</span>
+<span class='mention c10'>]<span class='entid c10'>e395</span></span>
+<span class='token'>parts</span>
+<span class='token'>that</span>
+<span class='token'>could</span>
+<span class='token'>receive</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>same</span>
+<span class='token'>treatment</span>
+<span class='mention c2'>]<span class='entid c2'>e398</span></span>
+<span class='mention c9'>]<span class='entid c9'>e394</span></span>
+<span class='mention c8'>]<span class='entid c8'>e393</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S39</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>The</span>
+<span class='token'>next</span>
+<span class='token'>part</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>proceedings</span>
+<span class='mention c4'>]<span class='entid c4'>e400</span></span>
+<span class='mention c3'>]<span class='entid c3'>e399</span></span>
+<span class='token'>was</span>
+<span class='token'>less</span>
+<span class='token'>thrilling</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S40</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>measured</span>
+<span class='token'>and</span>
+<span class='token'>mixed</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>plaster</span>
+<span class='token'>of</span>
+<span class='token'>Paris</span>
+<span class='mention c7'>]<span class='entid c7'>e403</span></span>
+<span class='token'>and</span>
+<span class='token'>prepared</span>
+<span class='token'>for</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>cast</span>
+<span class='mention c8'>]<span class='entid c8'>e404</span></span>
+<span class='token'>by</span>
+<span class='token'>using</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>bright</span>
+<span class='token'>blue</span>
+<span class='token'>putty</span>
+<span class='mention c9'>]<span class='entid c9'>e405</span></span>
+<span class='token'>to</span>
+<span class='token'>build</span>
+<span class='token'>up</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>form</span>
+<span class='token'>of</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>jaw</span>
+<span class='mention c0'>]<span class='entid c0'>e407</span></span>
+<span class='mention c10'>]<span class='entid c10'>e406</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>shoring</span>
+<span class='token'>up</span>
+<span class='mention c1'>[</span>
+<span class='token'>gaps</span>
+<span class='mention c1'>]<span class='entid c1'>e408</span></span>
+<span class='token'>and</span>
+<span class='mention c2'>[</span>
+<span class='token'>holes</span>
+<span class='mention c2'>]<span class='entid c2'>e409</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S41</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>It</span>
+<span class='mention c3'>]<span class='entid c3'>e399</span></span>
+<span class='token'>get</span>
+<span class='token'>even</span>
+<span class='token'>less</span>
+<span class='token'>exciting</span>
+<span class='token'>when</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>said</span>
+<span class='mention c1'>[</span>
+<span class='token'>we</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>’d</span>
+<span class='token'>have</span>
+<span class='token'>to</span>
+<span class='token'>wait</span>
+<span class='mention c2'>[</span>
+<span class='token'>an</span>
+<span class='token'>hour</span>
+<span class='mention c2'>]<span class='entid c2'>e420</span></span>
+<span class='token'>while</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>plaster</span>
+<span class='mention c7'>]<span class='entid c7'>e403</span></span>
+<span class='token'>set</span>
+<span class='token'>real</span>
+<span class='token'>solid</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S42</h3></div><div class='sentence'><span class='token'>But</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>next</span>
+<span class='token'>time</span>
+<span class='mention c1'>[</span>
+<span class='token'>we</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>visited</span>
+<span class='mention c6'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>room</span>
+<span class='mention c6'>]<span class='entid c6'>e424</span></span>
+<span class='mention c3'>]<span class='entid c3'>e421</span></span>
+<span class='mention c1'>[</span>
+<span class='token'>we</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>got</span>
+<span class='token'>to</span>
+<span class='token'>marvel</span>
+<span class='token'>at</span>
+<span class='mention c0'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>our</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>toothy</span>
+<span class='token'>grins</span>
+<span class='token'>labelled</span>
+<span class='token'>and</span>
+<span class='token'>lined</span>
+<span class='token'>up</span>
+<span class='token'>on</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>shelf</span>
+<span class='mention c4'>]<span class='entid c4'>e257</span></span>
+<span class='mention c0'>]<span class='entid c0'>e429</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S43</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>We</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>were</span>
+<span class='token'>all</span>
+<span class='token'>perfectly</span>
+<span class='token'>happy</span>
+<span class='token'>with</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>result</span>
+<span class='mention c0'>]<span class='entid c0'>e429</span></span>
+<span class='token'>,</span>
+<span class='token'>even</span>
+<span class='token'>wanting</span>
+<span class='mention c5'>[</span>
+<span class='token'>one</span>
+<span class='token'>as</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>trophy</span>
+<span class='mention c5'>]<span class='entid c5'>e434</span></span>
+<span class='mention c5'>]<span class='entid c5'>e434</span></span>
+<span class='token'>until</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>passed</span>
+<span class='mention c8'>[</span>
+<span class='token'>an</span>
+<span class='token'>expert</span>
+<span class='token'>eye</span>
+<span class='mention c8'>]<span class='entid c8'>e437</span></span>
+<span class='token'>over</span>
+<span class='mention c0'>[</span>
+<span class='token'>them</span>
+<span class='mention c0'>]<span class='entid c0'>e429</span></span>
+<span class='token'>,</span>
+<span class='token'>pointing</span>
+<span class='token'>out</span>
+<span class='token'>here</span>
+<span class='mention c0'>[</span>
+<span class='token'>a</span>
+<span class='token'>gap</span>
+<span class='mention c0'>]<span class='entid c0'>e440</span></span>
+<span class='token'>,</span>
+<span class='token'>here</span>
+<span class='mention c1'>[</span>
+<span class='token'>a</span>
+<span class='token'>filling</span>
+<span class='mention c1'>]<span class='entid c1'>e441</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>there</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>completely</span>
+<span class='token'>misaligned</span>
+<span class='token'>incisor</span>
+<span class='mention c2'>]<span class='entid c2'>e442</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S44</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>We</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>were</span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>told</span>
+<span class='mention c1'>[</span>
+<span class='token'>us</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>mediocre</span>
+<span class='token'>specimens</span>
+<span class='token'>for</span>
+<span class='mention c5'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>collection</span>
+<span class='mention c5'>]<span class='entid c5'>e71</span></span>
+<span class='mention c10'>]<span class='entid c10'>e450</span></span>
+<span class='token'>.</span>
+<span class='mention c3'>]<span class='entid c3'>e443</span></span>
+</div></div><div class='sentid'><h3>S45</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>It</span>
+<span class='mention c0'>]<span class='entid c0'>e451</span></span>
+<span class='token'>did</span>
+<span class='token'>n’t</span>
+<span class='token'>matter</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S46</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>We</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>were</span>
+<span class='token'>all</span>
+<span class='mention c1'>[</span>
+<span class='token'>friends</span>
+<span class='mention c1'>]<span class='entid c1'>e452</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>a</span>
+<span class='token'>group</span>
+<span class='token'>bonded</span>
+<span class='token'>by</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>common</span>
+<span class='token'>experience</span>
+<span class='token'>of</span>
+<span class='token'>being</span>
+<span class='token'>able</span>
+<span class='token'>to</span>
+<span class='token'>see</span>
+<span class='mention c0'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>our</span>
+<span class='mention c1'>]<span class='entid c1'>e452</span></span>
+<span class='token'>teeth</span>
+<span class='mention c0'>]<span class='entid c0'>e462</span></span>
+<span class='token'>on</span>
+<span class='mention c4'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Steven</span>
+<span class='token'>’s</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>shelf</span>
+<span class='mention c4'>]<span class='entid c4'>e257</span></span>
+<span class='mention c10'>]<span class='entid c10'>e461</span></span>
+<span class='mention c1'>]<span class='entid c1'>e452</span></span>
+<span class='token'>.</span>
+</div></div>

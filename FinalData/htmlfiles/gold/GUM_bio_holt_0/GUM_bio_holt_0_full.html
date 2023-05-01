@@ -1,0 +1,1828 @@
+
+<meta charset="utf-8"> 
+<style>
+.sentid { font-size: 100%; }
+.mention { font-size: 100%; }
+.entid { position: relative; top: 0.5em; font-size: 95%; font-family: helvetica,sans-serif;}
+.ner { color: #555; font-size: 110%; }
+.nertype { font-size: 80%; font-style: italic; vertical-align: sub; font-family: helvetica,sans-serif; }
+
+.pos_PRP { font-weight: bold; }
+.pos_PRP_DOLLAR_ { font-weight: bold; }
+
+/* Dark2 from http://colorbrewer2.org/ */
+.c0 { color: rgb(27,158,119); } 
+.c1 { color: rgb(217,95,2); }
+.c2 { color: rgb(117,112,179); }
+.c3 { color: rgb(255, 0, 0); }
+.c4 { color: rgb(102,166,30); }
+.c5 { color: rgb(230,171,2); }
+.c6 { color: rgb(166,118,29); }
+.c7 { color: rgb(102,102,102); }
+.c8 { color: rgb(112, 61, 61);}
+.c9 { color: rgb(0, 71, 171);}
+.c10 { color: rgb(202, 44, 146);}
+.c11 { color: rgb(0, 128, 128);}
+</style>
+<div class='sentid'><h3>S0</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Brock</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+</div></div><div class='sentid'><h3>S1</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>with</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='mention c5'>[</span>
+<span class='token'>Boston</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c4'>]<span class='entid c4'>e4</span></span>
+</div></div><div class='sentid'><h3>S2</h3></div><div class='sentence'><span class='mention c4'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>Boston</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c4'>]<span class='entid c4'>e4</span></span>
+<span class='token'>–</span>
+<span class='mention c2'>[</span>
+<span class='token'>No.</span>
+<span class='token'>12</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+</div></div><div class='sentid'><h3>S3</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Second</span>
+<span class='token'>baseman</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>/</span>
+<span class='mention c2'>[</span>
+<span class='token'>Shortstop</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>/</span>
+<span class='mention c2'>[</span>
+<span class='token'>Outfielder</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+</div></div><div class='sentid'><h3>S4</h3></div><div class='sentence'><span class='token'>Born</span>
+<span class='token'>:</span>
+<span class='mention c10'>[</span>
+<span class='token'>June</span>
+<span class='token'>11</span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>1988</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>(</span>
+<span class='mention c2'>[</span>
+<span class='token'>age</span>
+<span class='token'>30</span>
+<span class='mention c2'>]<span class='entid c2'>e13</span></span>
+<span class='token'>)</span>
+</div></div><div class='sentid'><h3>S5</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Fort</span>
+<span class='token'>Worth</span>
+<span class='token'>,</span>
+<span class='mention c4'>[</span>
+<span class='token'>Texas</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+</div></div><div class='sentid'><h3>S6</h3></div><div class='sentence'><span class='token'>Bats</span>
+<span class='token'>:</span>
+<span class='token'>Left</span>
+</div></div><div class='sentid'><h3>S7</h3></div><div class='sentence'><span class='token'>Throws</span>
+<span class='token'>:</span>
+<span class='token'>Right</span>
+</div></div><div class='sentid'><h3>S8</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>MLB</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>debut</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+</div></div><div class='sentid'><h3>S9</h3></div><div class='sentence'><span class='mention c9'>[</span>
+<span class='token'>September</span>
+<span class='token'>1</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>2012</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='mention c9'>]<span class='entid c9'>e20</span></span>
+<span class='token'>,</span>
+<span class='token'>for</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='mention c2'>[</span>
+<span class='token'>Pittsburgh</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>Pirates</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+</div></div><div class='sentid'><h3>S10</h3></div><div class='sentence'><span class='mention c4'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>MLB</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>statistics</span>
+<span class='token'>(</span>
+<span class='token'>through</span>
+<span class='mention c6'>[</span>
+<span class='token'>September</span>
+<span class='token'>20</span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>2018</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='mention c6'>]<span class='entid c6'>e28</span></span>
+<span class='token'>)</span>
+<span class='mention c4'>]<span class='entid c4'>e26</span></span>
+</div></div><div class='sentid'><h3>S11</h3></div><div class='sentence'><span class='mention c9'>[</span>
+<span class='token'>Batting</span>
+<span class='token'>average</span>
+<span class='mention c9'>]<span class='entid c9'>e31</span></span>
+<span class='mention c10'>[</span>
+<span class='token'>.265</span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+</div></div><div class='sentid'><h3>S12</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>Home</span>
+<span class='token'>runs</span>
+<span class='mention c1'>]<span class='entid c1'>e34</span></span>
+<span class='mention c2'>[</span>
+<span class='token'>19</span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+</div></div><div class='sentid'><h3>S13</h3></div><div class='sentence'><span class='mention c4'>[</span>
+<span class='token'>Runs</span>
+<span class='token'>batted</span>
+<span class='token'>in</span>
+<span class='mention c4'>]<span class='entid c4'>e37</span></span>
+<span class='mention c5'>[</span>
+<span class='token'>171</span>
+<span class='mention c5'>]<span class='entid c5'>e38</span></span>
+</div></div><div class='sentid'><h3>S14</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>Teams</span>
+<span class='mention c6'>]<span class='entid c6'>e39</span></span>
+</div></div><div class='sentid'><h3>S15</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>Pittsburgh</span>
+<span class='mention c7'>]<span class='entid c7'>e84</span></span>
+<span class='token'>Pirates</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>(</span>
+<span class='mention c8'>[</span>
+<span class='token'>2012</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='token'>)</span>
+</div></div><div class='sentid'><h3>S16</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Boston</span>
+<span class='mention c3'>]<span class='entid c3'>e69</span></span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='token'>(</span>
+<span class='mention c8'>[</span>
+<span class='token'>2013</span>
+<span class='mention c8'>]<span class='entid c8'>e63</span></span>
+<span class='token'>–</span>
+<span class='mention c10'>[</span>
+<span class='token'>present</span>
+<span class='mention c10'>]<span class='entid c10'>e285</span></span>
+<span class='token'>)</span>
+</div></div><div class='sentid'><h3>S17</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>Career</span>
+<span class='mention c7'>]<span class='entid c7'>e51</span></span>
+<span class='token'>highlights</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>and</span>
+<span class='mention c8'>[</span>
+<span class='token'>awards</span>
+<span class='mention c8'>]<span class='entid c8'>e52</span></span>
+</div></div><div class='sentid'><h3>S18</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>All</span>
+<span class='token'>-</span>
+<span class='token'>Star</span>
+<span class='mention c0'>]<span class='entid c0'>e55</span></span>
+<span class='token'>(</span>
+<span class='mention c1'>[</span>
+<span class='token'>2015</span>
+<span class='mention c1'>]<span class='entid c1'>e56</span></span>
+<span class='token'>)</span>
+</div></div><div class='sentid'><h3>S19</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Hit</span>
+<span class='token'>for</span>
+<span class='token'>the</span>
+<span class='token'>cycle</span>
+<span class='mention c3'>]<span class='entid c3'>e58</span></span>
+<span class='token'>on</span>
+<span class='mention c4'>[</span>
+<span class='token'>June</span>
+<span class='token'>16</span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>2015</span>
+<span class='mention c1'>]<span class='entid c1'>e56</span></span>
+<span class='mention c4'>]<span class='entid c4'>e59</span></span>
+</div></div><div class='sentid'><h3>S20</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>World</span>
+<span class='token'>Series</span>
+<span class='mention c7'>]<span class='entid c7'>e62</span></span>
+<span class='token'>champion</span>
+<span class='mention c6'>]<span class='entid c6'>e61</span></span>
+<span class='token'>(</span>
+<span class='mention c8'>[</span>
+<span class='token'>2013</span>
+<span class='mention c8'>]<span class='entid c8'>e63</span></span>
+<span class='token'>)</span>
+</div></div><div class='sentid'><h3>S21</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Brock</span>
+<span class='token'>Wyatt</span>
+<span class='token'>Holt</span>
+<span class='token'>(</span>
+<span class='token'>born</span>
+<span class='mention c10'>[</span>
+<span class='token'>June</span>
+<span class='token'>11</span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>1988</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>)</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>is</span>
+<span class='mention c0'>[</span>
+<span class='token'>an</span>
+<span class='token'>American</span>
+<span class='mention c1'>[</span>
+<span class='token'>professional</span>
+<span class='token'>baseball</span>
+<span class='mention c1'>]<span class='entid c1'>e67</span></span>
+<span class='token'>second</span>
+<span class='token'>baseman</span>
+<span class='token'>,</span>
+<span class='token'>shortstop</span>
+<span class='token'>and</span>
+<span class='token'>outfielder</span>
+<span class='token'>for</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='mention c3'>[</span>
+<span class='token'>Boston</span>
+<span class='mention c3'>]<span class='entid c3'>e69</span></span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='token'>Major</span>
+<span class='token'>League</span>
+<span class='token'>Baseball</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>(</span>
+<span class='mention c7'>[</span>
+<span class='token'>MLB</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>)</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S22</h3></div><div class='sentence'><span class='token'>While</span>
+<span class='token'>primarily</span>
+<span class='token'>used</span>
+<span class='token'>as</span>
+<span class='mention c0'>[</span>
+<span class='token'>an</span>
+<span class='token'>infielder</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>he</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>has</span>
+<span class='token'>started</span>
+<span class='token'>in</span>
+<span class='token'>and</span>
+<span class='token'>played</span>
+<span class='token'>at</span>
+<span class='mention c7'>[</span>
+<span class='token'>every</span>
+<span class='token'>position</span>
+<span class='token'>for</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='token'>,</span>
+<span class='token'>except</span>
+<span class='token'>for</span>
+<span class='mention c8'>[</span>
+<span class='token'>pitcher</span>
+<span class='mention c8'>]<span class='entid c8'>e74</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>catcher</span>
+<span class='mention c9'>]<span class='entid c9'>e75</span></span>
+<span class='mention c7'>]<span class='entid c7'>e73</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S23</h3></div><div class='sentence'><span class='token'>Listed</span>
+<span class='token'>at</span>
+<span class='mention c1'>[</span>
+<span class='token'>5</span>
+<span class='token'>feet</span>
+<span class='token'>10</span>
+<span class='token'>inches</span>
+<span class='mention c1'>]<span class='entid c1'>e78</span></span>
+<span class='token'>(</span>
+<span class='mention c1'>[</span>
+<span class='token'>1.78</span>
+<span class='token'>m</span>
+<span class='mention c1'>]<span class='entid c1'>e78</span></span>
+<span class='token'>)</span>
+<span class='token'>and</span>
+<span class='mention c2'>[</span>
+<span class='token'>180</span>
+<span class='token'>pounds</span>
+<span class='mention c2'>]<span class='entid c2'>e79</span></span>
+<span class='token'>(</span>
+<span class='mention c2'>[</span>
+<span class='token'>82</span>
+<span class='token'>kg</span>
+<span class='mention c2'>]<span class='entid c2'>e79</span></span>
+<span class='token'>)</span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>bats</span>
+<span class='token'>left</span>
+<span class='token'>-</span>
+<span class='token'>handed</span>
+<span class='token'>and</span>
+<span class='token'>throws</span>
+<span class='token'>right</span>
+<span class='token'>-</span>
+<span class='token'>handed</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S24</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>He</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>first</span>
+<span class='token'>played</span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='token'>MLB</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>for</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>Pittsburgh</span>
+<span class='mention c7'>]<span class='entid c7'>e84</span></span>
+<span class='token'>Pirates</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>2012</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='token'>,</span>
+<span class='token'>but</span>
+<span class='token'>has</span>
+<span class='token'>played</span>
+<span class='token'>for</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='mention c0'>[</span>
+<span class='token'>every</span>
+<span class='token'>season</span>
+<span class='token'>since</span>
+<span class='mention c0'>]<span class='entid c0'>e88</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S25</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>High</span>
+<span class='token'>school</span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>career</span>
+<span class='mention c1'>]<span class='entid c1'>e89</span></span>
+</div></div><div class='sentid'><h3>S26</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>graduated</span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>2006</span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>from</span>
+<span class='mention c2'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>Stephenville</span>
+<span class='mention c6'>]<span class='entid c6'>e94</span></span>
+<span class='token'>High</span>
+<span class='token'>School</span>
+<span class='token'>in</span>
+<span class='mention c4'>[</span>
+<span class='token'>Texas</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S27</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='mention c7'>[</span>
+<span class='token'>2003</span>
+<span class='mention c7'>]<span class='entid c7'>e95</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>his</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>freshman</span>
+<span class='token'>year</span>
+<span class='mention c7'>]<span class='entid c7'>e95</span></span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>he</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>made</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='mention c3'>[</span>
+<span class='token'>District</span>
+<span class='token'>8</span>
+<span class='token'>-</span>
+<span class='token'>4A</span>
+<span class='mention c3'>]<span class='entid c3'>e102</span></span>
+<span class='token'>All</span>
+<span class='token'>-</span>
+<span class='token'>District</span>
+<span class='mention c4'>[</span>
+<span class='token'>baseball</span>
+<span class='mention c4'>]<span class='entid c4'>e103</span></span>
+<span class='token'>team</span>
+<span class='mention c2'>]<span class='entid c2'>e101</span></span>
+<span class='token'>despite</span>
+<span class='token'>batting</span>
+<span class='mention c6'>[</span>
+<span class='token'>just</span>
+<span class='token'>.227</span>
+<span class='mention c6'>]<span class='entid c6'>e105</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>shared</span>
+<span class='mention c7'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>league</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c8'>]<span class='entid c8'>e107</span></span>
+<span class='mention c9'>[</span>
+<span class='token'>Newcomer</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>Year</span>
+<span class='mention c7'>]<span class='entid c7'>e95</span></span>
+<span class='mention c9'>]<span class='entid c9'>e108</span></span>
+<span class='token'>award</span>
+<span class='mention c7'>]<span class='entid c7'>e106</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>1</span>
+<span class='mention c10'>]<span class='entid c10'>e109</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S28</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>was</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>second</span>
+<span class='token'>-</span>
+<span class='token'>team</span>
+<span class='mention c3'>[</span>
+<span class='token'>All</span>
+<span class='token'>-</span>
+<span class='token'>District</span>
+<span class='token'>8</span>
+<span class='token'>-</span>
+<span class='token'>4A</span>
+<span class='mention c3'>]<span class='entid c3'>e102</span></span>
+<span class='token'>inclusion</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='mention c3'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>sophomore</span>
+<span class='token'>year</span>
+<span class='mention c3'>]<span class='entid c3'>e113</span></span>
+<span class='token'>,</span>
+<span class='token'>batting</span>
+<span class='mention c4'>[</span>
+<span class='token'>.324</span>
+<span class='mention c4'>]<span class='entid c4'>e114</span></span>
+<span class='token'>for</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>season</span>
+<span class='mention c7'>]<span class='entid c7'>e117</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>2</span>
+<span class='mention c8'>]<span class='entid c8'>e118</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S29</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='mention c9'>[</span>
+<span class='token'>2005</span>
+<span class='mention c9'>]<span class='entid c9'>e119</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>was</span>
+<span class='token'>named</span>
+<span class='mention c2'>[</span>
+<span class='token'>defensive</span>
+<span class='token'>player</span>
+<span class='token'>of</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>year</span>
+<span class='mention c9'>]<span class='entid c9'>e119</span></span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>District</span>
+<span class='token'>6</span>
+<span class='token'>-</span>
+<span class='token'>4A</span>
+<span class='mention c2'>]<span class='entid c2'>e123</span></span>
+<span class='token'>,</span>
+<span class='token'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>3</span>
+<span class='mention c3'>]<span class='entid c3'>e124</span></span>
+<span class='token'>]</span>
+<span class='token'>and</span>
+<span class='mention c2'>[</span>
+<span class='token'>he</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>earned</span>
+<span class='mention c6'>[</span>
+<span class='token'>all</span>
+<span class='token'>-</span>
+<span class='token'>district</span>
+<span class='token'>honors</span>
+<span class='mention c6'>]<span class='entid c6'>e127</span></span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>2006</span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>senior</span>
+<span class='mention c8'>[</span>
+<span class='token'>year</span>
+<span class='mention c8'>]<span class='entid c8'>e129</span></span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>4</span>
+<span class='mention c9'>]<span class='entid c9'>e130</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S30</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>College</span>
+<span class='mention c3'>]<span class='entid c3'>e135</span></span>
+<span class='token'>career</span>
+<span class='mention c2'>]<span class='entid c2'>e134</span></span>
+</div></div><div class='sentid'><h3>S31</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>attended</span>
+<span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>Navarro</span>
+<span class='mention c7'>]<span class='entid c7'>e139</span></span>
+<span class='token'>College</span>
+<span class='mention c6'>]<span class='entid c6'>e138</span></span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>2007</span>
+<span class='mention c8'>]<span class='entid c8'>e140</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>2008</span>
+<span class='mention c9'>]<span class='entid c9'>e141</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>5</span>
+<span class='mention c10'>]<span class='entid c10'>e142</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S32</h3></div><div class='sentence'><span class='token'>After</span>
+<span class='token'>transferring</span>
+<span class='token'>to</span>
+<span class='mention c4'>[</span>
+<span class='token'>Rice</span>
+<span class='token'>University</span>
+<span class='mention c4'>]<span class='entid c4'>e147</span></span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>2009</span>
+<span class='mention c5'>]<span class='entid c5'>e148</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>he</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>posted</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>.348</span>
+<span class='token'>batting</span>
+<span class='token'>average</span>
+<span class='mention c8'>]<span class='entid c8'>e151</span></span>
+<span class='token'>with</span>
+<span class='mention c9'>[</span>
+<span class='token'>12</span>
+<span class='token'>home</span>
+<span class='token'>runs</span>
+<span class='mention c9'>]<span class='entid c9'>e152</span></span>
+<span class='token'>and</span>
+<span class='mention c10'>[</span>
+<span class='token'>43</span>
+<span class='token'>RBIs</span>
+<span class='mention c10'>]<span class='entid c10'>e153</span></span>
+<span class='token'>in</span>
+<span class='mention c0'>[</span>
+<span class='token'>59</span>
+<span class='token'>games</span>
+<span class='mention c0'>]<span class='entid c0'>e154</span></span>
+<span class='token'>for</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='mention c4'>[</span>
+<span class='token'>Rice</span>
+<span class='mention c4'>]<span class='entid c4'>e147</span></span>
+<span class='token'>Owls</span>
+<span class='mention c1'>]<span class='entid c1'>e155</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S33</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>He</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>also</span>
+<span class='token'>led</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>Owls</span>
+<span class='mention c1'>]<span class='entid c1'>e155</span></span>
+<span class='token'>with</span>
+<span class='mention c4'>[</span>
+<span class='token'>67</span>
+<span class='token'>runs</span>
+<span class='mention c4'>]<span class='entid c4'>e158</span></span>
+<span class='token'>scored</span>
+<span class='token'>and</span>
+<span class='token'>shared</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='mention c1'>[</span>
+<span class='token'>team</span>
+<span class='mention c1'>]<span class='entid c1'>e155</span></span>
+<span class='token'>lead</span>
+<span class='mention c5'>]<span class='entid c5'>e159</span></span>
+<span class='token'>with</span>
+<span class='mention c7'>[</span>
+<span class='token'>11</span>
+<span class='token'>stolen</span>
+<span class='token'>bases</span>
+<span class='mention c7'>]<span class='entid c7'>e161</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S34</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>same</span>
+<span class='token'>season</span>
+<span class='mention c8'>]<span class='entid c8'>e162</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>he</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>was</span>
+<span class='token'>named</span>
+<span class='token'>both</span>
+<span class='token'>to</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>All</span>
+<span class='token'>-</span>
+<span class='mention c0'>[</span>
+<span class='token'>NCAA</span>
+<span class='mention c0'>]<span class='entid c0'>e165</span></span>
+<span class='token'>Regional</span>
+<span class='token'>Team</span>
+<span class='mention c10'>]<span class='entid c10'>e164</span></span>
+<span class='token'>and</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='mention c3'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>All</span>
+<span class='token'>-</span>
+<span class='token'>Silver</span>
+<span class='token'>Glove</span>
+<span class='token'>Trophy</span>
+<span class='mention c4'>]<span class='entid c4'>e169</span></span>
+<span class='token'>Series</span>
+<span class='mention c3'>]<span class='entid c3'>e168</span></span>
+<span class='token'>team</span>
+<span class='mention c2'>]<span class='entid c2'>e167</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>6</span>
+<span class='mention c5'>]<span class='entid c5'>e170</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S35</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>was</span>
+<span class='token'>drafted</span>
+<span class='token'>by</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>Pittsburgh</span>
+<span class='mention c7'>]<span class='entid c7'>e84</span></span>
+<span class='token'>Pirates</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>with</span>
+<span class='mention c9'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>club</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>ninth</span>
+<span class='token'>round</span>
+<span class='token'>selection</span>
+<span class='mention c9'>]<span class='entid c9'>e174</span></span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='mention c5'>[</span>
+<span class='token'>2009</span>
+<span class='mention c5'>]<span class='entid c5'>e148</span></span>
+<span class='mention c7'>[</span>
+<span class='token'>Major</span>
+<span class='token'>League</span>
+<span class='token'>Baseball</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>Draft</span>
+<span class='mention c10'>]<span class='entid c10'>e175</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>one</span>
+<span class='token'>pick</span>
+<span class='mention c1'>]<span class='entid c1'>e177</span></span>
+<span class='token'>before</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='mention c3'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>Rice</span>
+<span class='mention c4'>]<span class='entid c4'>e147</span></span>
+<span class='token'>teammate</span>
+<span class='mention c3'>]<span class='entid c3'>e179</span></span>
+<span class='mention c3'>[</span>
+<span class='token'>Ryan</span>
+<span class='token'>Berry</span>
+<span class='mention c3'>]<span class='entid c3'>e179</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>7</span>
+<span class='mention c5'>]<span class='entid c5'>e181</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S36</h3></div><div class='sentence'><span class='mention c7'>[</span>
+<span class='token'>Professional</span>
+<span class='token'>career</span>
+<span class='mention c7'>]<span class='entid c7'>e183</span></span>
+</div></div><div class='sentid'><h3>S37</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='token'>Minor</span>
+<span class='token'>leagues</span>
+<span class='mention c8'>]<span class='entid c8'>e184</span></span>
+</div></div><div class='sentid'><h3>S38</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>began</span>
+<span class='mention c7'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>professional</span>
+<span class='token'>career</span>
+<span class='mention c7'>]<span class='entid c7'>e183</span></span>
+<span class='token'>with</span>
+<span class='mention c0'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>Pittsburgh</span>
+<span class='mention c7'>]<span class='entid c7'>e84</span></span>
+<span class='token'>Pirates</span>
+<span class='token'>&#x27;</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>short</span>
+<span class='token'>season</span>
+<span class='mention c0'>]<span class='entid c0'>e187</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Class</span>
+<span class='token'>-</span>
+<span class='token'>A</span>
+<span class='mention c3'>]<span class='entid c3'>e190</span></span>
+<span class='token'>affiliate</span>
+<span class='mention c2'>]<span class='entid c2'>e189</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>State</span>
+<span class='token'>College</span>
+<span class='token'>Spikes</span>
+<span class='mention c2'>]<span class='entid c2'>e189</span></span>
+<span class='token'>,</span>
+<span class='token'>before</span>
+<span class='token'>advancing</span>
+<span class='token'>to</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='mention c5'>[</span>
+<span class='token'>High</span>
+<span class='token'>-</span>
+<span class='token'>A</span>
+<span class='mention c5'>]<span class='entid c5'>e192</span></span>
+<span class='mention c6'>[</span>
+<span class='token'>Bradenton</span>
+<span class='mention c6'>]<span class='entid c6'>e193</span></span>
+<span class='token'>Marauders</span>
+<span class='mention c4'>]<span class='entid c4'>e191</span></span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='token'>2010</span>
+<span class='mention c7'>]<span class='entid c7'>e194</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S39</h3></div><div class='sentence'><span class='mention c10'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>His</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='mention c7'>[</span>
+<span class='token'>2010</span>
+<span class='mention c7'>]<span class='entid c7'>e194</span></span>
+<span class='token'>season</span>
+<span class='mention c10'>]<span class='entid c10'>e197</span></span>
+<span class='token'>was</span>
+<span class='token'>cut</span>
+<span class='token'>short</span>
+<span class='token'>due</span>
+<span class='token'>to</span>
+<span class='mention c2'>[</span>
+<span class='token'>injury</span>
+<span class='token'>to</span>
+<span class='mention c3'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>medial</span>
+<span class='token'>collateral</span>
+<span class='token'>ligament</span>
+<span class='token'>,</span>
+<span class='token'>which</span>
+<span class='token'>required</span>
+<span class='mention c4'>[</span>
+<span class='token'>surgery</span>
+<span class='mention c4'>]<span class='entid c4'>e202</span></span>
+<span class='mention c3'>]<span class='entid c3'>e201</span></span>
+<span class='mention c2'>]<span class='entid c2'>e200</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>8</span>
+<span class='mention c5'>]<span class='entid c5'>e203</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S40</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>He</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>began</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='mention c0'>[</span>
+<span class='token'>2011</span>
+<span class='mention c0'>]<span class='entid c0'>e209</span></span>
+<span class='token'>season</span>
+<span class='mention c10'>]<span class='entid c10'>e208</span></span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>Pirates</span>
+<span class='token'>&#x27;</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>Double</span>
+<span class='token'>-</span>
+<span class='token'>A</span>
+<span class='token'>affiliate</span>
+<span class='mention c2'>]<span class='entid c2'>e211</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>Altoona</span>
+<span class='token'>Curve</span>
+<span class='mention c2'>]<span class='entid c2'>e211</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S41</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c3'>[</span>
+<span class='token'>July</span>
+<span class='token'>13</span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>2011</span>
+<span class='mention c0'>]<span class='entid c0'>e209</span></span>
+<span class='mention c3'>]<span class='entid c3'>e212</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>was</span>
+<span class='token'>named</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>MVP</span>
+<span class='token'>of</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>Eastern</span>
+<span class='token'>League</span>
+<span class='mention c7'>]<span class='entid c7'>e216</span></span>
+<span class='token'>All</span>
+<span class='token'>-</span>
+<span class='token'>Star</span>
+<span class='token'>Game</span>
+<span class='mention c6'>]<span class='entid c6'>e215</span></span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>after</span>
+<span class='token'>hitting</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>two</span>
+<span class='token'>-</span>
+<span class='token'>run</span>
+<span class='token'>homer</span>
+<span class='mention c8'>]<span class='entid c8'>e217</span></span>
+<span class='token'>in</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>ninth</span>
+<span class='token'>inning</span>
+<span class='mention c9'>]<span class='entid c9'>e218</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>9</span>
+<span class='mention c10'>]<span class='entid c10'>e219</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S42</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>opened</span>
+<span class='mention c8'>[</span>
+<span class='token'>2012</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='token'>Altoona</span>
+<span class='mention c2'>]<span class='entid c2'>e211</span></span>
+<span class='token'>and</span>
+<span class='token'>later</span>
+<span class='token'>joined</span>
+<span class='mention c4'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>Triple</span>
+<span class='token'>-</span>
+<span class='token'>A</span>
+<span class='mention c5'>]<span class='entid c5'>e225</span></span>
+<span class='mention c6'>[</span>
+<span class='token'>Indianapolis</span>
+<span class='mention c6'>]<span class='entid c6'>e226</span></span>
+<span class='token'>Indians</span>
+<span class='mention c4'>]<span class='entid c4'>e224</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S43</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>He</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>was</span>
+<span class='token'>promoted</span>
+<span class='token'>to</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>Pittsburgh</span>
+<span class='mention c7'>]<span class='entid c7'>e84</span></span>
+<span class='token'>Pirates</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>from</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>minors</span>
+<span class='mention c8'>]<span class='entid c8'>e184</span></span>
+<span class='mention c8'>]<span class='entid c8'>e228</span></span>
+<span class='token'>as</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>major</span>
+<span class='token'>league</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>rosters</span>
+<span class='mention c0'>]<span class='entid c0'>e231</span></span>
+<span class='token'>expanded</span>
+<span class='token'>on</span>
+<span class='mention c1'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>September</span>
+<span class='mention c2'>]<span class='entid c2'>e233</span></span>
+<span class='token'>1</span>
+<span class='mention c1'>]<span class='entid c1'>e232</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S44</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>made</span>
+<span class='mention c7'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='mention c7'>[</span>
+<span class='token'>Major</span>
+<span class='token'>League</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>debut</span>
+<span class='mention c7'>]<span class='entid c7'>e238</span></span>
+<span class='token'>on</span>
+<span class='mention c1'>[</span>
+<span class='token'>September</span>
+<span class='token'>1</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>2012</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='mention c1'>]<span class='entid c1'>e232</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S45</h3></div><div class='sentence'><span class='token'>At</span>
+<span class='token'>the</span>
+<span class='token'>time</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>promotion</span>
+<span class='mention c10'>]<span class='entid c10'>e241</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>he</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>had</span>
+<span class='token'>hit</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>.322</span>
+<span class='token'>average</span>
+<span class='mention c2'>]<span class='entid c2'>e244</span></span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>102</span>
+<span class='token'>games</span>
+<span class='mention c3'>]<span class='entid c3'>e245</span></span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='token'>Altoona</span>
+<span class='mention c2'>]<span class='entid c2'>e211</span></span>
+<span class='token'>and</span>
+<span class='mention c4'>[</span>
+<span class='token'>.432</span>
+<span class='mention c4'>]<span class='entid c4'>e246</span></span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='token'>24</span>
+<span class='token'>games</span>
+<span class='mention c7'>]<span class='entid c7'>e249</span></span>
+<span class='token'>for</span>
+<span class='mention c4'>[</span>
+<span class='token'>Indianapolis</span>
+<span class='mention c4'>]<span class='entid c4'>e224</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>10</span>
+<span class='mention c8'>]<span class='entid c8'>e250</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S46</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c0'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>September</span>
+<span class='mention c2'>]<span class='entid c2'>e233</span></span>
+<span class='token'>4</span>
+<span class='mention c0'>]<span class='entid c0'>e253</span></span>
+<span class='token'>,</span>
+<span class='token'>against</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='mention c3'>[</span>
+<span class='token'>Houston</span>
+<span class='mention c3'>]<span class='entid c3'>e256</span></span>
+<span class='token'>Astros</span>
+<span class='mention c2'>]<span class='entid c2'>e255</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>became</span>
+<span class='mention c2'>[</span>
+<span class='token'>only</span>
+<span class='token'>the</span>
+<span class='token'>second</span>
+<span class='mention c6'>[</span>
+<span class='token'>Pirates</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>player</span>
+<span class='token'>since</span>
+<span class='mention c6'>[</span>
+<span class='token'>1900</span>
+<span class='mention c6'>]<span class='entid c6'>e259</span></span>
+<span class='token'>to</span>
+<span class='token'>have</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>four</span>
+<span class='token'>-</span>
+<span class='token'>hit</span>
+<span class='token'>game</span>
+<span class='token'>within</span>
+<span class='mention c10'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>his</span>
+<span class='mention c0'>]<span class='entid c0'>e264</span></span>
+<span class='token'>first</span>
+<span class='token'>four</span>
+<span class='mention c1'>[</span>
+<span class='token'>career</span>
+<span class='mention c1'>]<span class='entid c1'>e265</span></span>
+<span class='token'>games</span>
+<span class='mention c10'>]<span class='entid c10'>e263</span></span>
+<span class='mention c9'>]<span class='entid c9'>e262</span></span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>majors</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S47</h3></div><div class='sentence'><span class='mention c4'>[</span>
+<span class='token'>The</span>
+<span class='token'>only</span>
+<span class='token'>other</span>
+<span class='mention c6'>[</span>
+<span class='token'>Pirates</span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='token'>player</span>
+<span class='mention c4'>]<span class='entid c4'>e268</span></span>
+<span class='token'>to</span>
+<span class='token'>have</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>four</span>
+<span class='token'>-</span>
+<span class='token'>hit</span>
+<span class='token'>game</span>
+<span class='mention c9'>]<span class='entid c9'>e262</span></span>
+<span class='token'>so</span>
+<span class='token'>early</span>
+<span class='token'>in</span>
+<span class='mention c6'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>his</span>
+<span class='mention c4'>]<span class='entid c4'>e268</span></span>
+<span class='token'>career</span>
+<span class='mention c6'>]<span class='entid c6'>e270</span></span>
+<span class='token'>was</span>
+<span class='mention c4'>[</span>
+<span class='token'>Jack</span>
+<span class='token'>Merson</span>
+<span class='token'>,</span>
+<span class='token'>who</span>
+<span class='token'>went</span>
+<span class='token'>4</span>
+<span class='token'>-</span>
+<span class='token'>for</span>
+<span class='token'>-</span>
+<span class='token'>5</span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>his</span>
+<span class='mention c4'>]<span class='entid c4'>e268</span></span>
+<span class='token'>second</span>
+<span class='mention c7'>[</span>
+<span class='token'>major</span>
+<span class='token'>league</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>game</span>
+<span class='mention c8'>]<span class='entid c8'>e272</span></span>
+<span class='token'>on</span>
+<span class='mention c10'>[</span>
+<span class='token'>September</span>
+<span class='token'>15</span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>1951</span>
+<span class='mention c0'>]<span class='entid c0'>e275</span></span>
+<span class='mention c10'>]<span class='entid c10'>e274</span></span>
+<span class='mention c4'>]<span class='entid c4'>e268</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>11</span>
+<span class='mention c1'>]<span class='entid c1'>e276</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S48</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='mention c4'>[</span>
+<span class='token'>24</span>
+<span class='token'>games</span>
+<span class='mention c4'>]<span class='entid c4'>e279</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>batted</span>
+<span class='mention c5'>[</span>
+<span class='token'>.292</span>
+<span class='mention c5'>]<span class='entid c5'>e280</span></span>
+<span class='token'>with</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>triple</span>
+<span class='mention c8'>]<span class='entid c8'>e283</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>3</span>
+<span class='token'>RBI</span>
+<span class='mention c9'>]<span class='entid c9'>e284</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S49</h3></div><div class='sentence'><span class='mention c8'>[</span>
+<span class='token'>2013</span>
+<span class='mention c8'>]<span class='entid c8'>e63</span></span>
+</div></div><div class='sentid'><h3>S50</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c4'>[</span>
+<span class='token'>December</span>
+<span class='token'>26</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>2012</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='mention c4'>]<span class='entid c4'>e290</span></span>
+<span class='mention c2'>[</span>
+<span class='token'>he</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>was</span>
+<span class='token'>traded</span>
+<span class='token'>to</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='mention c3'>[</span>
+<span class='token'>Boston</span>
+<span class='mention c3'>]<span class='entid c3'>e69</span></span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='token'>(</span>
+<span class='token'>along</span>
+<span class='token'>with</span>
+<span class='mention c8'>[</span>
+<span class='token'>Joel</span>
+<span class='token'>Hanrahan</span>
+<span class='mention c8'>]<span class='entid c8'>e294</span></span>
+<span class='token'>)</span>
+<span class='token'>for</span>
+<span class='mention c9'>[</span>
+<span class='token'>Jerry</span>
+<span class='token'>Sands</span>
+<span class='mention c9'>]<span class='entid c9'>e295</span></span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>Stolmy</span>
+<span class='token'>Pimentel</span>
+<span class='mention c10'>]<span class='entid c10'>e296</span></span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>Mark</span>
+<span class='token'>Melancon</span>
+<span class='mention c0'>]<span class='entid c0'>e297</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='mention c1'>[</span>
+<span class='token'>Iván</span>
+<span class='token'>DeJesús</span>
+<span class='token'>,</span>
+<span class='token'>Jr.</span>
+<span class='mention c1'>]<span class='entid c1'>e298</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>12</span>
+<span class='mention c2'>]<span class='entid c2'>e299</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S51</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>started</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='mention c8'>[</span>
+<span class='token'>2013</span>
+<span class='mention c8'>]<span class='entid c8'>e63</span></span>
+<span class='token'>season</span>
+<span class='mention c5'>]<span class='entid c5'>e302</span></span>
+<span class='token'>with</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='mention c5'>[</span>
+<span class='token'>Triple</span>
+<span class='token'>-</span>
+<span class='token'>A</span>
+<span class='mention c5'>]<span class='entid c5'>e225</span></span>
+<span class='mention c8'>[</span>
+<span class='token'>Pawtucket</span>
+<span class='mention c8'>]<span class='entid c8'>e305</span></span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c7'>]<span class='entid c7'>e304</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S52</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>He</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>debuted</span>
+<span class='token'>for</span>
+<span class='mention c2'>[</span>
+<span class='token'>Boston</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='token'>after</span>
+<span class='token'>getting</span>
+<span class='token'>called</span>
+<span class='token'>up</span>
+<span class='token'>on</span>
+<span class='mention c1'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>July</span>
+<span class='mention c2'>]<span class='entid c2'>e310</span></span>
+<span class='token'>6</span>
+<span class='mention c1'>]<span class='entid c1'>e309</span></span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>Anaheim</span>
+<span class='mention c3'>]<span class='entid c3'>e311</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S53</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='mention c8'>[</span>
+<span class='token'>2013</span>
+<span class='mention c8'>]<span class='entid c8'>e63</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>played</span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>26</span>
+<span class='token'>games</span>
+<span class='mention c8'>]<span class='entid c8'>e316</span></span>
+<span class='token'>,</span>
+<span class='token'>hitting</span>
+<span class='mention c9'>[</span>
+<span class='token'>.203</span>
+<span class='mention c9'>]<span class='entid c9'>e317</span></span>
+<span class='token'>with</span>
+<span class='mention c0'>[</span>
+<span class='token'>11</span>
+<span class='token'>RBI</span>
+<span class='mention c0'>]<span class='entid c0'>e319</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S54</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>received</span>
+<span class='mention c2'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>first</span>
+<span class='mention c3'>[</span>
+<span class='token'>championship</span>
+<span class='mention c3'>]<span class='entid c3'>e322</span></span>
+<span class='token'>ring</span>
+<span class='mention c2'>]<span class='entid c2'>e321</span></span>
+<span class='token'>when</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>Red</span>
+<span class='token'>Sox</span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='token'>won</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>World</span>
+<span class='token'>Series</span>
+<span class='mention c7'>]<span class='entid c7'>e62</span></span>
+<span class='token'>over</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='mention c7'>[</span>
+<span class='token'>St.</span>
+<span class='token'>Louis</span>
+<span class='mention c7'>]<span class='entid c7'>e326</span></span>
+<span class='token'>Cardinals</span>
+<span class='mention c6'>]<span class='entid c6'>e325</span></span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>six</span>
+<span class='token'>games</span>
+<span class='mention c8'>]<span class='entid c8'>e327</span></span>
+<span class='token'>,</span>
+<span class='token'>despite</span>
+<span class='token'>not</span>
+<span class='token'>playing</span>
+<span class='token'>in</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>postseason</span>
+<span class='mention c9'>]<span class='entid c9'>e328</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S55</h3></div><div class='sentence'><span class='mention c10'>[</span>
+<span class='token'>2014</span>
+<span class='mention c10'>]<span class='entid c10'>e329</span></span>
+</div></div><div class='sentid'><h3>S56</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>again</span>
+<span class='token'>started</span>
+<span class='mention c10'>[</span>
+<span class='token'>2014</span>
+<span class='mention c10'>]<span class='entid c10'>e329</span></span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Triple</span>
+<span class='token'>-</span>
+<span class='token'>A</span>
+<span class='mention c5'>]<span class='entid c5'>e225</span></span>
+<span class='token'>,</span>
+<span class='token'>but</span>
+<span class='token'>was</span>
+<span class='token'>called</span>
+<span class='token'>up</span>
+<span class='mention c3'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>May</span>
+<span class='mention c4'>]<span class='entid c4'>e334</span></span>
+<span class='token'>17</span>
+<span class='mention c3'>]<span class='entid c3'>e333</span></span>
+<span class='token'>after</span>
+<span class='mention c6'>[</span>
+<span class='token'>an</span>
+<span class='token'>injury</span>
+<span class='token'>to</span>
+<span class='mention c7'>[</span>
+<span class='token'>Will</span>
+<span class='token'>Middlebrooks</span>
+<span class='mention c7'>]<span class='entid c7'>e337</span></span>
+<span class='mention c6'>]<span class='entid c6'>e336</span></span>
+<span class='token'>and</span>
+<span class='token'>hit</span>
+<span class='token'>leadoff</span>
+<span class='token'>for</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>rest</span>
+<span class='token'>of</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>season</span>
+<span class='mention c9'>]<span class='entid c9'>e339</span></span>
+<span class='mention c8'>]<span class='entid c8'>e338</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S57</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c10'>[</span>
+<span class='token'>May</span>
+<span class='token'>31</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>2014</span>
+<span class='mention c10'>]<span class='entid c10'>e329</span></span>
+<span class='mention c10'>]<span class='entid c10'>e340</span></span>
+<span class='token'>,</span>
+<span class='token'>against</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Tampa</span>
+<span class='mention c3'>]<span class='entid c3'>e344</span></span>
+<span class='token'>Bay</span>
+<span class='mention c2'>]<span class='entid c2'>e343</span></span>
+<span class='token'>Rays</span>
+<span class='mention c1'>]<span class='entid c1'>e342</span></span>
+<span class='token'>at</span>
+<span class='mention c5'>[</span>
+<span class='token'>Fenway</span>
+<span class='token'>Park</span>
+<span class='mention c5'>]<span class='entid c5'>e346</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>hit</span>
+<span class='mention c7'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>first</span>
+<span class='mention c7'>[</span>
+<span class='token'>Major</span>
+<span class='token'>League</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>home</span>
+<span class='token'>run</span>
+<span class='mention c7'>]<span class='entid c7'>e348</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S58</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c9'>[</span>
+<span class='token'>June</span>
+<span class='token'>8</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>2014</span>
+<span class='mention c10'>]<span class='entid c10'>e329</span></span>
+<span class='mention c9'>]<span class='entid c9'>e350</span></span>
+<span class='token'>,</span>
+<span class='token'>in</span>
+<span class='token'>order</span>
+<span class='token'>to</span>
+<span class='token'>allow</span>
+<span class='mention c0'>[</span>
+<span class='token'>Xander</span>
+<span class='token'>Bogaerts</span>
+<span class='mention c0'>]<span class='entid c0'>e352</span></span>
+<span class='token'>to</span>
+<span class='token'>play</span>
+<span class='mention c1'>[</span>
+<span class='token'>3rd</span>
+<span class='token'>base</span>
+<span class='mention c1'>]<span class='entid c1'>e353</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>moved</span>
+<span class='token'>to</span>
+<span class='mention c3'>[</span>
+<span class='token'>left</span>
+<span class='token'>field</span>
+<span class='mention c3'>]<span class='entid c3'>e355</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S59</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>He</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>immediately</span>
+<span class='token'>impressed</span>
+<span class='token'>,</span>
+<span class='token'>making</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>sensational</span>
+<span class='token'>catch</span>
+<span class='mention c5'>]<span class='entid c5'>e357</span></span>
+<span class='token'>on</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>warning</span>
+<span class='token'>track</span>
+<span class='mention c6'>]<span class='entid c6'>e358</span></span>
+<span class='token'>to</span>
+<span class='token'>rob</span>
+<span class='mention c7'>[</span>
+<span class='token'>Ian</span>
+<span class='token'>Kinsler</span>
+<span class='mention c7'>]<span class='entid c7'>e359</span></span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>hit</span>
+<span class='mention c8'>]<span class='entid c8'>e360</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S60</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c9'>[</span>
+<span class='token'>July</span>
+<span class='token'>9</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>2014</span>
+<span class='mention c10'>]<span class='entid c10'>e329</span></span>
+<span class='mention c9'>]<span class='entid c9'>e361</span></span>
+<span class='token'>,</span>
+<span class='token'>against</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='mention c1'>[</span>
+<span class='token'>Chicago</span>
+<span class='mention c1'>]<span class='entid c1'>e364</span></span>
+<span class='token'>White</span>
+<span class='token'>Sox</span>
+<span class='mention c0'>]<span class='entid c0'>e363</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>drove</span>
+<span class='token'>in</span>
+<span class='mention c4'>[</span>
+<span class='token'>Daniel</span>
+<span class='token'>Nava</span>
+<span class='mention c4'>]<span class='entid c4'>e367</span></span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>bottom</span>
+<span class='token'>of</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>9th</span>
+<span class='token'>inning</span>
+<span class='mention c6'>]<span class='entid c6'>e369</span></span>
+<span class='mention c5'>]<span class='entid c5'>e368</span></span>
+<span class='token'>for</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>first</span>
+<span class='token'>walk</span>
+<span class='token'>-</span>
+<span class='token'>off</span>
+<span class='token'>hit</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>career</span>
+<span class='mention c7'>]<span class='entid c7'>e51</span></span>
+<span class='mention c7'>]<span class='entid c7'>e370</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>13</span>
+<span class='mention c8'>]<span class='entid c8'>e371</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S61</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c0'>[</span>
+<span class='token'>June</span>
+<span class='token'>1</span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>2015</span>
+<span class='mention c1'>]<span class='entid c1'>e56</span></span>
+<span class='mention c0'>]<span class='entid c0'>e374</span></span>
+<span class='token'>,</span>
+<span class='token'>while</span>
+<span class='token'>starting</span>
+<span class='token'>at</span>
+<span class='mention c2'>[</span>
+<span class='token'>first</span>
+<span class='token'>base</span>
+<span class='mention c2'>]<span class='entid c2'>e376</span></span>
+<span class='token'>for</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>first</span>
+<span class='token'>time</span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>his</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>career</span>
+<span class='mention c7'>]<span class='entid c7'>e51</span></span>
+<span class='mention c3'>]<span class='entid c3'>e377</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>went</span>
+<span class='mention c6'>[</span>
+<span class='token'>4</span>
+<span class='token'>-</span>
+<span class='token'>for</span>
+<span class='token'>-</span>
+<span class='token'>4</span>
+<span class='mention c6'>]<span class='entid c6'>e380</span></span>
+<span class='token'>with</span>
+<span class='mention c6'>[</span>
+<span class='mention c7'>[</span>
+<span class='token'>four</span>
+<span class='token'>doubles</span>
+<span class='mention c7'>]<span class='entid c7'>e381</span></span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>walk</span>
+<span class='mention c8'>]<span class='entid c8'>e382</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>two</span>
+<span class='mention c9'>[</span>
+<span class='token'>RBI</span>
+<span class='mention c9'>]<span class='entid c9'>e383</span></span>
+<span class='mention c6'>]<span class='entid c6'>e380</span></span>
+<span class='token'>against</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='mention c2'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>Tampa</span>
+<span class='mention c3'>]<span class='entid c3'>e344</span></span>
+<span class='token'>Bay</span>
+<span class='mention c2'>]<span class='entid c2'>e343</span></span>
+<span class='token'>Rays</span>
+<span class='mention c0'>]<span class='entid c0'>e385</span></span>
+<span class='token'>to</span>
+<span class='token'>win</span>
+<span class='mention c1'>[</span>
+<span class='token'>4</span>
+<span class='mention c1'>]<span class='entid c1'>e386</span></span>
+<span class='token'>to</span>
+<span class='mention c2'>[</span>
+<span class='token'>0</span>
+<span class='mention c2'>]<span class='entid c2'>e387</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>14</span>
+<span class='mention c3'>]<span class='entid c3'>e388</span></span>
+<span class='token'>]</span>
+</div></div><div class='sentid'><h3>S62</h3></div><div class='sentence'><span class='token'>By</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>end</span>
+<span class='token'>of</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>season</span>
+<span class='mention c9'>]<span class='entid c9'>e394</span></span>
+<span class='mention c8'>]<span class='entid c8'>e393</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Holt</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>had</span>
+<span class='token'>started</span>
+<span class='mention c10'>[</span>
+<span class='token'>games</span>
+<span class='mention c10'>]<span class='entid c10'>e395</span></span>
+<span class='token'>at</span>
+<span class='mention c7'>[</span>
+<span class='token'>every</span>
+<span class='token'>position</span>
+<span class='token'>except</span>
+<span class='mention c8'>[</span>
+<span class='token'>pitcher</span>
+<span class='mention c8'>]<span class='entid c8'>e74</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>catcher</span>
+<span class='mention c9'>]<span class='entid c9'>e75</span></span>
+<span class='mention c7'>]<span class='entid c7'>e73</span></span>
+<span class='token'>.</span>
+<span class='token'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>15</span>
+<span class='mention c2'>]<span class='entid c2'>e398</span></span>
+<span class='token'>]</span>
+</div></div>

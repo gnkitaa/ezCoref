@@ -1,0 +1,812 @@
+
+<meta charset="utf-8"> 
+<style>
+.sentid { font-size: 100%; }
+.mention { font-size: 100%; }
+.entid { position: relative; top: 0.5em; font-size: 95%; font-family: helvetica,sans-serif;}
+.ner { color: #555; font-size: 110%; }
+.nertype { font-size: 80%; font-style: italic; vertical-align: sub; font-family: helvetica,sans-serif; }
+
+.pos_PRP { font-weight: bold; }
+.pos_PRP_DOLLAR_ { font-weight: bold; }
+
+/* Dark2 from http://colorbrewer2.org/ */
+.c0 { color: rgb(27,158,119); } 
+.c1 { color: rgb(217,95,2); }
+.c2 { color: rgb(117,112,179); }
+.c3 { color: rgb(255, 0, 0); }
+.c4 { color: rgb(102,166,30); }
+.c5 { color: rgb(230,171,2); }
+.c6 { color: rgb(166,118,29); }
+.c7 { color: rgb(102,102,102); }
+.c8 { color: rgb(112, 61, 61);}
+.c9 { color: rgb(0, 71, 171);}
+.c10 { color: rgb(202, 44, 146);}
+.c11 { color: rgb(0, 128, 128);}
+</style>
+<div class='sentid'><h3>S0</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='token'>Semi-liberated</span>
+<span class='token'>area</span>
+<span class='token'>&quot;</span>
+</div></div><div class='sentid'><h3>S1</h3></div><div class='sentence'><span class='token'>Perhaps</span>
+<span class='token'>the</span>
+<span class='token'>reason</span>
+<span class='token'>for</span>
+<span class='token'>the</span>
+<span class='token'>apparent</span>
+<span class='token'>lack</span>
+<span class='token'>of</span>
+<span class='token'>attachment</span>
+<span class='token'>to</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>among</span>
+<span class='token'>the</span>
+<span class='token'>many</span>
+<span class='token'>returned</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>alumni</span>
+<span class='token'>can</span>
+<span class='token'>be</span>
+<span class='token'>traced</span>
+<span class='token'>to</span>
+<span class='token'>historical</span>
+<span class='token'>factors</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S2</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='token'>1966</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>was</span>
+<span class='token'>convulsed</span>
+<span class='token'>by</span>
+<span class='mention c1'>[</span>
+<span class='token'>rioting</span>
+<span class='token'>in</span>
+<span class='token'>which</span>
+<span class='token'>several</span>
+<span class='token'>people</span>
+<span class='token'>were</span>
+<span class='token'>shot</span>
+<span class='token'>and</span>
+<span class='token'>killed</span>
+<span class='token'>by</span>
+<span class='token'>Portuguese</span>
+<span class='token'>security</span>
+<span class='token'>forces</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S3</h3></div><div class='sentence'><span class='mention c10'>[</span>
+<span class='token'>The</span>
+<span class='token'>enclave</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>left</span>
+<span class='token'>-</span>
+<span class='token'>wing</span>
+<span class='token'>groups</span>
+<span class='token'>,</span>
+<span class='token'>which</span>
+<span class='token'>were</span>
+<span class='token'>closely</span>
+<span class='token'>allied</span>
+<span class='token'>with</span>
+<span class='token'>Beijing</span>
+<span class='token'>,</span>
+<span class='token'>took</span>
+<span class='token'>advantage</span>
+<span class='token'>of</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>situation</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>to</span>
+<span class='token'>get</span>
+<span class='mention c7'>[</span>
+<span class='token'>KMT</span>
+<span class='token'>organizations</span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>shut</span>
+<span class='token'>down</span>
+<span class='token'>and</span>
+<span class='mention c7'>[</span>
+<span class='token'>their</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>people</span>
+<span class='token'>expelled</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S4</h3></div><div class='sentence'><span class='token'>Ever</span>
+<span class='token'>since</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>has</span>
+<span class='token'>been</span>
+<span class='token'>regarded</span>
+<span class='token'>in</span>
+<span class='token'>certain</span>
+<span class='token'>circles</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>as</span>
+<span class='token'>a</span>
+<span class='token'>&quot;</span>
+<span class='token'>semi-liberated</span>
+<span class='token'>area</span>
+<span class='token'>.</span>
+<span class='token'>&quot;</span>
+</div></div><div class='sentid'><h3>S5</h3></div><div class='sentence'><span class='token'>But</span>
+<span class='token'>if</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>pro-Beijing</span>
+<span class='token'>forces</span>
+<span class='token'>are</span>
+<span class='token'>that</span>
+<span class='token'>strong</span>
+<span class='token'>,</span>
+<span class='token'>how</span>
+<span class='token'>come</span>
+<span class='mention c3'>[</span>
+<span class='token'>so</span>
+<span class='token'>many</span>
+<span class='token'>students</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c5'>[</span>
+<span class='token'>come</span>
+<span class='mention c5'>]<span class='entid c5'>e49</span></span>
+<span class='token'>to</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>to</span>
+<span class='token'>get</span>
+<span class='mention c3'>[</span>
+<span class='token'>their</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>degrees</span>
+<span class='token'>?</span>
+</div></div><div class='sentid'><h3>S6</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='token'>There</span>
+<span class='token'>are</span>
+<span class='token'>historical</span>
+<span class='token'>reasons</span>
+<span class='token'>for</span>
+<span class='mention c5'>[</span>
+<span class='token'>this</span>
+<span class='mention c5'>]<span class='entid c5'>e49</span></span>
+<span class='token'>too</span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>says</span>
+<span class='token'>Ou</span>
+<span class='token'>Jinrong</span>
+<span class='token'>,</span>
+<span class='token'>former</span>
+<span class='token'>president</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>Taiwan</span>
+<span class='token'>Alumni</span>
+<span class='token'>Association</span>
+<span class='token'>and</span>
+<span class='token'>a</span>
+<span class='token'>member</span>
+<span class='token'>both</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>Macau</span>
+<span class='token'>SAR</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>first</span>
+<span class='token'>Selection</span>
+<span class='token'>Committee</span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='mention c2'>[</span>
+<span class='token'>its</span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>Preparatory</span>
+<span class='token'>Committee</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S7</h3></div><div class='sentence'><span class='token'>Prior</span>
+<span class='token'>to</span>
+<span class='token'>the</span>
+<span class='token'>1980s</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>lacked</span>
+<span class='mention c10'>[</span>
+<span class='token'>its</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>own</span>
+<span class='token'>colleges</span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>students</span>
+<span class='token'>had</span>
+<span class='token'>to</span>
+<span class='token'>go</span>
+<span class='token'>overseas</span>
+<span class='token'>for</span>
+<span class='token'>higher</span>
+<span class='token'>education</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S8</h3></div><div class='sentence'><span class='token'>Also</span>
+<span class='token'>,</span>
+<span class='token'>colleges</span>
+<span class='token'>on</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>mainland</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='token'>did</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>start</span>
+<span class='token'>enrolling</span>
+<span class='token'>overseas</span>
+<span class='token'>students</span>
+<span class='token'>until</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>mid-1980s</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>,</span>
+<span class='token'>while</span>
+<span class='token'>it</span>
+<span class='token'>was</span>
+<span class='token'>difficult</span>
+<span class='token'>to</span>
+<span class='token'>gain</span>
+<span class='token'>admission</span>
+<span class='token'>to</span>
+<span class='token'>university</span>
+<span class='token'>in</span>
+<span class='mention c0'>[</span>
+<span class='token'>Hong</span>
+<span class='token'>Kong</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S9</h3></div><div class='sentence'><span class='token'>Under</span>
+<span class='token'>these</span>
+<span class='token'>circumstances</span>
+<span class='token'>,</span>
+<span class='token'>Taiwanese</span>
+<span class='token'>universities</span>
+<span class='token'>,</span>
+<span class='token'>which</span>
+<span class='token'>actively</span>
+<span class='token'>recruited</span>
+<span class='token'>abroad</span>
+<span class='token'>,</span>
+<span class='token'>were</span>
+<span class='token'>a</span>
+<span class='token'>natural</span>
+<span class='token'>choice</span>
+<span class='token'>for</span>
+<span class='token'>many</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>students</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S10</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='token'>In</span>
+<span class='token'>terms</span>
+<span class='token'>of</span>
+<span class='token'>the</span>
+<span class='token'>return</span>
+<span class='token'>you</span>
+<span class='token'>get</span>
+<span class='token'>on</span>
+<span class='token'>your</span>
+<span class='token'>investment</span>
+<span class='token'>,</span>
+<span class='token'>taking</span>
+<span class='token'>your</span>
+<span class='token'>degree</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>is</span>
+<span class='token'>well</span>
+<span class='token'>worth</span>
+<span class='token'>it</span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>says</span>
+<span class='mention c8'>[</span>
+<span class='token'>Wang</span>
+<span class='token'>Yun</span>
+<span class='token'>,</span>
+<span class='token'>acting</span>
+<span class='token'>head</span>
+<span class='token'>of</span>
+<span class='token'>the</span>
+<span class='token'>sanitation</span>
+<span class='token'>and</span>
+<span class='token'>environment</span>
+<span class='token'>division</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>urban</span>
+<span class='token'>administration</span>
+<span class='token'>office</span>
+<span class='token'>,</span>
+<span class='token'>who</span>
+<span class='token'>graduated</span>
+<span class='token'>in</span>
+<span class='token'>civil</span>
+<span class='token'>engineering</span>
+<span class='token'>from</span>
+<span class='mention c9'>[</span>
+<span class='token'>National</span>
+<span class='token'>Cheng</span>
+<span class='token'>Kung</span>
+<span class='token'>University</span>
+<span class='token'>-LRB-</span>
+<span class='token'>NCKU</span>
+<span class='token'>-RRB-</span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>in</span>
+<span class='token'>Tainan</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S11</h3></div><div class='sentence'><span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>universities</span>
+<span class='token'>have</span>
+<span class='token'>good</span>
+<span class='token'>teachers</span>
+<span class='token'>and</span>
+<span class='token'>decent</span>
+<span class='token'>facilities</span>
+<span class='token'>,</span>
+<span class='token'>says</span>
+<span class='mention c8'>[</span>
+<span class='token'>Wang</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='mention c5'>[</span>
+<span class='token'>students</span>
+<span class='token'>from</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='mention c5'>]<span class='entid c5'>e82</span></span>
+<span class='token'>can</span>
+<span class='token'>learn</span>
+<span class='token'>much</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>that</span>
+<span class='token'>will</span>
+<span class='token'>benefit</span>
+<span class='mention c5'>[</span>
+<span class='token'>them</span>
+<span class='mention c5'>]<span class='entid c5'>e82</span></span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>their</span>
+<span class='mention c5'>]<span class='entid c5'>e82</span></span>
+<span class='token'>careers</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S12</h3></div><div class='sentence'><span class='token'>Unlike</span>
+<span class='token'>the</span>
+<span class='token'>colonial</span>
+<span class='token'>administration</span>
+<span class='token'>in</span>
+<span class='mention c0'>[</span>
+<span class='token'>Hong</span>
+<span class='token'>Kong</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>,</span>
+<span class='token'>the</span>
+<span class='token'>government</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>under</span>
+<span class='token'>the</span>
+<span class='token'>Portuguese</span>
+<span class='token'>recognized</span>
+<span class='token'>academic</span>
+<span class='token'>credentials</span>
+<span class='token'>issued</span>
+<span class='token'>by</span>
+<span class='token'>Taiwanese</span>
+<span class='token'>institutions</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S13</h3></div><div class='sentence'><span class='token'>It</span>
+<span class='token'>was</span>
+<span class='token'>only</span>
+<span class='token'>in</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>mid-1980s</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>,</span>
+<span class='token'>once</span>
+<span class='token'>the</span>
+<span class='token'>timetable</span>
+<span class='token'>for</span>
+<span class='token'>the</span>
+<span class='token'>handover</span>
+<span class='token'>of</span>
+<span class='mention c0'>[</span>
+<span class='token'>Hong</span>
+<span class='token'>Kong</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>and</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>had</span>
+<span class='token'>been</span>
+<span class='token'>agreed</span>
+<span class='token'>,</span>
+<span class='token'>that</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>government</span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>began</span>
+<span class='token'>to</span>
+<span class='token'>localize</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>civil</span>
+<span class='token'>service</span>
+<span class='mention c2'>]<span class='entid c2'>e46</span></span>
+<span class='token'>in</span>
+<span class='token'>preparation</span>
+<span class='token'>for</span>
+<span class='token'>the</span>
+<span class='token'>transition</span>
+<span class='token'>to</span>
+<span class='token'>&quot;</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>people</span>
+<span class='token'>running</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>.</span>
+<span class='token'>&quot;</span>
+</div></div><div class='sentid'><h3>S14</h3></div><div class='sentence'><span class='token'>A</span>
+<span class='token'>number</span>
+<span class='token'>of</span>
+<span class='token'>graduates</span>
+<span class='token'>who</span>
+<span class='token'>had</span>
+<span class='token'>returned</span>
+<span class='token'>from</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>to</span>
+<span class='token'>work</span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>private</span>
+<span class='token'>sector</span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+<span class='token'>then</span>
+<span class='token'>shifted</span>
+<span class='token'>to</span>
+<span class='token'>government</span>
+<span class='token'>jobs</span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>have</span>
+<span class='token'>come</span>
+<span class='token'>to</span>
+<span class='token'>form</span>
+<span class='token'>an</span>
+<span class='token'>influential</span>
+<span class='token'>part</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>administration</span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S15</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='token'>Little</span>
+<span class='token'>prawns</span>
+<span class='token'>grow</span>
+<span class='token'>into</span>
+<span class='token'>big</span>
+<span class='token'>lobsters</span>
+<span class='token'>if</span>
+<span class='token'>there</span>
+<span class='token'>are</span>
+<span class='token'>no</span>
+<span class='token'>fish</span>
+<span class='token'>in</span>
+<span class='token'>the</span>
+<span class='token'>sea</span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>smiles</span>
+<span class='mention c9'>[</span>
+<span class='token'>Leong</span>
+<span class='token'>Kam</span>
+<span class='token'>Chun</span>
+<span class='token'>,</span>
+<span class='token'>who</span>
+<span class='token'>graduated</span>
+<span class='token'>in</span>
+<span class='token'>business</span>
+<span class='token'>administration</span>
+<span class='token'>from</span>
+<span class='token'>NTU</span>
+<span class='token'>in</span>
+<span class='token'>1973</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S16</h3></div><div class='sentence'><span class='token'>Compared</span>
+<span class='token'>with</span>
+<span class='token'>the</span>
+<span class='token'>many</span>
+<span class='token'>Macau</span>
+<span class='token'>students</span>
+<span class='token'>who</span>
+<span class='token'>went</span>
+<span class='token'>to</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>mainland</span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='token'>to</span>
+<span class='token'>study</span>
+<span class='token'>from</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>mid-1980s</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>onwards</span>
+<span class='token'>,</span>
+<span class='mention c5'>[</span>
+<span class='token'>those</span>
+<span class='token'>who</span>
+<span class='token'>graduated</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='mention c5'>]<span class='entid c5'>e93</span></span>
+<span class='token'>returned</span>
+<span class='token'>and</span>
+<span class='token'>joined</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>civil</span>
+<span class='token'>service</span>
+<span class='mention c2'>]<span class='entid c2'>e46</span></span>
+<span class='token'>earlier</span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>seem</span>
+<span class='token'>to</span>
+<span class='token'>have</span>
+<span class='token'>made</span>
+<span class='token'>faster</span>
+<span class='token'>progress</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>their</span>
+<span class='mention c5'>]<span class='entid c5'>e93</span></span>
+<span class='token'>careers</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S17</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='token'>There</span>
+<span class='token'>&#x27;s</span>
+<span class='token'>no</span>
+<span class='token'>denying</span>
+<span class='token'>that</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>universities</span>
+<span class='token'>have</span>
+<span class='token'>given</span>
+<span class='token'>us</span>
+<span class='token'>a</span>
+<span class='token'>good</span>
+<span class='token'>education</span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>smiles</span>
+<span class='token'>Leong</span>
+<span class='token'>Hong</span>
+<span class='token'>Sai</span>
+<span class='token'>,</span>
+<span class='token'>secretary</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>Taiwan</span>
+<span class='token'>Universities</span>
+<span class='token'>Alumni</span>
+<span class='token'>Association</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S18</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='token'>addition</span>
+<span class='token'>to</span>
+<span class='token'>the</span>
+<span class='token'>government</span>
+<span class='token'>officials</span>
+<span class='token'>who</span>
+<span class='token'>studied</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Taiwan</span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>many</span>
+<span class='token'>returned</span>
+<span class='token'>graduates</span>
+<span class='mention c3'>]<span class='entid c3'>e80</span></span>
+<span class='token'>have</span>
+<span class='token'>become</span>
+<span class='token'>influential</span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>through</span>
+<span class='mention c3'>[</span>
+<span class='token'>their</span>
+<span class='mention c3'>]<span class='entid c3'>e80</span></span>
+<span class='token'>success</span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>private</span>
+<span class='token'>sector</span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S19</h3></div><div class='sentence'><span class='mention c9'>[</span>
+<span class='token'>Leong</span>
+<span class='token'>Kam</span>
+<span class='token'>Chun</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>,</span>
+<span class='token'>for</span>
+<span class='token'>instance</span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>one</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>territory</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>first</span>
+<span class='token'>group</span>
+<span class='token'>of</span>
+<span class='token'>professional</span>
+<span class='token'>accountants</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>,</span>
+<span class='token'>has</span>
+<span class='token'>also</span>
+<span class='token'>served</span>
+<span class='token'>on</span>
+<span class='token'>the</span>
+<span class='token'>legislative</span>
+<span class='token'>council</span>
+<span class='token'>and</span>
+<span class='token'>is</span>
+<span class='token'>a</span>
+<span class='token'>member</span>
+<span class='token'>of</span>
+<span class='token'>the</span>
+<span class='token'>Macau</span>
+<span class='token'>SAR</span>
+<span class='token'>Selection</span>
+<span class='token'>Committee</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S20</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>Leong</span>
+<span class='token'>Man</span>
+<span class='token'>Io</span>
+<span class='token'>,</span>
+<span class='token'>current</span>
+<span class='token'>president</span>
+<span class='token'>of</span>
+<span class='token'>the</span>
+<span class='token'>Taiwan</span>
+<span class='token'>Universities</span>
+<span class='token'>Alumni</span>
+<span class='token'>Association</span>
+<span class='mention c0'>]<span class='entid c0'>e33</span></span>
+<span class='token'>,</span>
+<span class='token'>who</span>
+<span class='token'>graduated</span>
+<span class='token'>in</span>
+<span class='token'>civil</span>
+<span class='token'>engineering</span>
+<span class='token'>from</span>
+<span class='mention c9'>[</span>
+<span class='token'>NCKU</span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>,</span>
+<span class='token'>is</span>
+<span class='token'>one</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>most</span>
+<span class='token'>prominent</span>
+<span class='token'>civil</span>
+<span class='token'>engineers</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S21</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>He</span>
+<span class='mention c0'>]<span class='entid c0'>e33</span></span>
+<span class='token'>has</span>
+<span class='token'>supervised</span>
+<span class='token'>several</span>
+<span class='token'>major</span>
+<span class='token'>projects</span>
+<span class='token'>such</span>
+<span class='token'>as</span>
+<span class='token'>landscaping</span>
+<span class='mention c10'>[</span>
+<span class='token'>Macau</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>Maritime</span>
+<span class='token'>Museum</span>
+<span class='token'>and</span>
+<span class='token'>setting</span>
+<span class='token'>up</span>
+<span class='token'>venues</span>
+<span class='token'>for</span>
+<span class='token'>the</span>
+<span class='token'>handover</span>
+<span class='token'>events</span>
+<span class='token'>.</span>
+</div></div>

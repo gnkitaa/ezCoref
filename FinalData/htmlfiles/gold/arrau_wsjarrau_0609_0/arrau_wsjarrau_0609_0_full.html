@@ -1,0 +1,2218 @@
+
+<meta charset="utf-8"> 
+<style>
+.sentid { font-size: 100%; }
+.mention { font-size: 100%; }
+.entid { position: relative; top: 0.5em; font-size: 95%; font-family: helvetica,sans-serif;}
+.ner { color: #555; font-size: 110%; }
+.nertype { font-size: 80%; font-style: italic; vertical-align: sub; font-family: helvetica,sans-serif; }
+
+.pos_PRP { font-weight: bold; }
+.pos_PRP_DOLLAR_ { font-weight: bold; }
+
+/* Dark2 from http://colorbrewer2.org/ */
+.c0 { color: rgb(27,158,119); } 
+.c1 { color: rgb(217,95,2); }
+.c2 { color: rgb(117,112,179); }
+.c3 { color: rgb(255, 0, 0); }
+.c4 { color: rgb(102,166,30); }
+.c5 { color: rgb(230,171,2); }
+.c6 { color: rgb(166,118,29); }
+.c7 { color: rgb(102,102,102); }
+.c8 { color: rgb(112, 61, 61);}
+.c9 { color: rgb(0, 71, 171);}
+.c10 { color: rgb(202, 44, 146);}
+.c11 { color: rgb(0, 128, 128);}
+</style>
+<div class='sentid'><h3>S0</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>President</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>insists</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>would</span>
+<span class='token'>be</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>great</span>
+<span class='token'>tool</span>
+<span class='token'>for</span>
+<span class='token'>curbing</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>budget</span>
+<span class='token'>deficit</span>
+<span class='mention c5'>]<span class='entid c5'>e27</span></span>
+<span class='token'>and</span>
+<span class='token'>slicing</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>lard</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>out</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>government</span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>programs</span>
+<span class='mention c7'>]<span class='entid c7'>e51</span></span>
+<span class='mention c5'>]<span class='entid c5'>e49</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S1</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>He</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>wants</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>now</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S2</h3></div><div class='sentence'><span class='token'>Not</span>
+<span class='token'>so</span>
+<span class='token'>fast</span>
+<span class='token'>,</span>
+<span class='token'>says</span>
+<span class='mention c3'>[</span>
+<span class='token'>Rep.</span>
+<span class='token'>Mickey</span>
+<span class='token'>Edwards</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>Oklahoma</span>
+<span class='mention c8'>]<span class='entid c8'>e52</span></span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>fellow</span>
+<span class='token'>Republican</span>
+<span class='mention c9'>]<span class='entid c9'>e53</span></span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c3'>[</span>
+<span class='token'>I</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>consider</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='mention c10'>[</span>
+<span class='token'>one</span>
+<span class='token'>of</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>stupidest</span>
+<span class='token'>ideas</span>
+<span class='token'>of</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>20th</span>
+<span class='token'>century</span>
+<span class='mention c1'>]<span class='entid c1'>e56</span></span>
+<span class='mention c0'>]<span class='entid c0'>e55</span></span>
+<span class='mention c10'>]<span class='entid c10'>e54</span></span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>says</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S3</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>It</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>procedure</span>
+<span class='token'>that</span>
+<span class='token'>would</span>
+<span class='token'>allow</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>president</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>to</span>
+<span class='token'>kill</span>
+<span class='mention c4'>[</span>
+<span class='token'>individual</span>
+<span class='token'>items</span>
+<span class='token'>in</span>
+<span class='mention c4'>[</span>
+<span class='token'>a</span>
+<span class='token'>big</span>
+<span class='token'>spending</span>
+<span class='token'>bill</span>
+<span class='token'>passed</span>
+<span class='token'>by</span>
+<span class='mention c5'>[</span>
+<span class='token'>Congress</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='mention c4'>]<span class='entid c4'>e4</span></span>
+<span class='token'>without</span>
+<span class='token'>vetoing</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>entire</span>
+<span class='token'>bill</span>
+<span class='mention c4'>]<span class='entid c4'>e4</span></span>
+<span class='mention c4'>]<span class='entid c4'>e59</span></span>
+<span class='mention c3'>]<span class='entid c3'>e58</span></span>
+<span class='mention c2'>]<span class='entid c2'>e57</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S4</h3></div><div class='sentence'><span class='mention c5'>[</span>
+<span class='token'>Whatever</span>
+<span class='mention c6'>[</span>
+<span class='token'>one</span>
+<span class='mention c6'>]<span class='entid c6'>e61</span></span>
+<span class='token'>thinks</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>idea</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='mention c5'>]<span class='entid c5'>e60</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c7'>[</span>
+<span class='token'>far</span>
+<span class='token'>more</span>
+<span class='token'>than</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>budgetary</span>
+<span class='token'>gimmick</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>may</span>
+<span class='token'>seem</span>
+<span class='token'>at</span>
+<span class='mention c9'>[</span>
+<span class='token'>first</span>
+<span class='token'>glance</span>
+<span class='mention c9'>]<span class='entid c9'>e64</span></span>
+<span class='mention c8'>]<span class='entid c8'>e63</span></span>
+<span class='mention c7'>]<span class='entid c7'>e62</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S5</h3></div><div class='sentence'><span class='token'>Rather</span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>[</span>
+<span class='token'>a</span>
+<span class='token'>device</span>
+<span class='token'>that</span>
+<span class='token'>could</span>
+<span class='token'>send</span>
+<span class='mention c0'>[</span>
+<span class='token'>shock</span>
+<span class='token'>waves</span>
+<span class='mention c0'>]<span class='entid c0'>e66</span></span>
+<span class='token'>through</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='mention c1'>[</span>
+<span class='token'>president</span>
+<span class='token'>&#x27;s</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>entire</span>
+<span class='token'>relationship</span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>Democrats</span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+<span class='token'>and</span>
+<span class='mention c3'>[</span>
+<span class='token'>Republicans</span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='mention c2'>]<span class='entid c2'>e68</span></span>
+<span class='token'>alike</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Congress</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='mention c1'>]<span class='entid c1'>e67</span></span>
+<span class='token'>,</span>
+<span class='token'>fundamentally</span>
+<span class='token'>enhance</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>power</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>presidency</span>
+<span class='mention c4'>]<span class='entid c4'>e70</span></span>
+<span class='mention c3'>]<span class='entid c3'>e69</span></span>
+<span class='token'>and</span>
+<span class='token'>transform</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>way</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>government</span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>does</span>
+<span class='mention c6'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>its</span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>business</span>
+<span class='mention c6'>]<span class='entid c6'>e72</span></span>
+<span class='mention c5'>]<span class='entid c5'>e71</span></span>
+<span class='mention c10'>]<span class='entid c10'>e65</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S6</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>President</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>badly</span>
+<span class='token'>wants</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>and</span>
+<span class='token'>has</span>
+<span class='token'>long</span>
+<span class='token'>called</span>
+<span class='token'>for</span>
+<span class='mention c7'>[</span>
+<span class='token'>a</span>
+<span class='token'>law</span>
+<span class='token'>giving</span>
+<span class='mention c2'>[</span>
+<span class='token'>it</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>to</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>president</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='mention c7'>]<span class='entid c7'>e73</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S7</h3></div><div class='sentence'><span class='token'>Now</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>White</span>
+<span class='token'>House</span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='token'>is</span>
+<span class='token'>declaring</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>might</span>
+<span class='token'>not</span>
+<span class='token'>rely</span>
+<span class='token'>on</span>
+<span class='mention c5'>[</span>
+<span class='token'>Congress</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='token'>--</span>
+<span class='mention c5'>[</span>
+<span class='token'>which</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='token'>has</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>shown</span>
+<span class='mention c8'>[</span>
+<span class='token'>any</span>
+<span class='token'>willingness</span>
+<span class='token'>to</span>
+<span class='token'>surrender</span>
+<span class='mention c7'>[</span>
+<span class='token'>such</span>
+<span class='token'>authority</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='mention c8'>]<span class='entid c8'>e74</span></span>
+<span class='token'>--</span>
+<span class='token'>to</span>
+<span class='token'>pass</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='token'>law</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>seeks</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S8</h3></div><div class='sentence'><span class='mention c9'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>White</span>
+<span class='token'>House</span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='token'>spokesmen</span>
+<span class='mention c9'>]<span class='entid c9'>e75</span></span>
+<span class='mention c10'>[</span>
+<span class='token'>last</span>
+<span class='token'>week</span>
+<span class='mention c10'>]<span class='entid c10'>e76</span></span>
+<span class='token'>said</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>is</span>
+<span class='token'>considering</span>
+<span class='token'>simply</span>
+<span class='token'>declaring</span>
+<span class='token'>that</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>Constitution</span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='token'>gives</span>
+<span class='mention c1'>[</span>
+<span class='token'>him</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>power</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='token'>,</span>
+<span class='token'>exercising</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>and</span>
+<span class='token'>inviting</span>
+<span class='mention c0'>[</span>
+<span class='token'>a</span>
+<span class='token'>court</span>
+<span class='token'>challenge</span>
+<span class='token'>to</span>
+<span class='token'>decide</span>
+<span class='token'>whether</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>has</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>right</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='mention c0'>]<span class='entid c0'>e77</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S9</h3></div><div class='sentence'><span class='token'>Although</span>
+<span class='mention c0'>[</span>
+<span class='token'>that</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>may</span>
+<span class='token'>sound</span>
+<span class='token'>like</span>
+<span class='mention c1'>[</span>
+<span class='token'>an</span>
+<span class='token'>arcane</span>
+<span class='token'>maneuver</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>little</span>
+<span class='token'>interest</span>
+<span class='mention c2'>]<span class='entid c2'>e79</span></span>
+<span class='token'>outside</span>
+<span class='mention c8'>[</span>
+<span class='token'>Washington</span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='mention c1'>]<span class='entid c1'>e78</span></span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>it</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>would</span>
+<span class='token'>set</span>
+<span class='token'>off</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>political</span>
+<span class='token'>earthquake</span>
+<span class='mention c3'>]<span class='entid c3'>e80</span></span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c4'>[</span>
+<span class='token'>The</span>
+<span class='token'>ramifications</span>
+<span class='mention c4'>]<span class='entid c4'>e81</span></span>
+<span class='token'>are</span>
+<span class='token'>enormous</span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>says</span>
+<span class='mention c1'>[</span>
+<span class='token'>Rep.</span>
+<span class='token'>Don</span>
+<span class='token'>Edwards</span>
+<span class='token'>,</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>California</span>
+<span class='token'>Democrat</span>
+<span class='token'>who</span>
+<span class='token'>is</span>
+<span class='mention c6'>[</span>
+<span class='token'>a</span>
+<span class='token'>senior</span>
+<span class='token'>member</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>House</span>
+<span class='token'>Judiciary</span>
+<span class='token'>Committee</span>
+<span class='mention c7'>]<span class='entid c7'>e84</span></span>
+<span class='mention c6'>]<span class='entid c6'>e83</span></span>
+<span class='mention c5'>]<span class='entid c5'>e82</span></span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c0'>[</span>
+<span class='token'>It</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>real</span>
+<span class='token'>face-to-face</span>
+<span class='token'>arm</span>
+<span class='token'>wrestling</span>
+<span class='token'>challenge</span>
+<span class='token'>to</span>
+<span class='mention c5'>[</span>
+<span class='token'>Congress</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='mention c8'>]<span class='entid c8'>e85</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S10</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='mention c9'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>White</span>
+<span class='token'>House</span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='token'>aides</span>
+<span class='mention c9'>]<span class='entid c9'>e86</span></span>
+<span class='token'>know</span>
+<span class='mention c0'>[</span>
+<span class='token'>it</span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c10'>[</span>
+<span class='token'>a</span>
+<span class='token'>step</span>
+<span class='token'>that</span>
+<span class='token'>ca</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>be</span>
+<span class='token'>taken</span>
+<span class='token'>lightly</span>
+<span class='mention c10'>]<span class='entid c10'>e87</span></span>
+<span class='token'>--</span>
+<span class='token'>and</span>
+<span class='token'>for</span>
+<span class='mention c0'>[</span>
+<span class='token'>that</span>
+<span class='token'>reason</span>
+<span class='mention c0'>]<span class='entid c0'>e88</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>president</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>may</span>
+<span class='token'>back</span>
+<span class='token'>down</span>
+<span class='token'>from</span>
+<span class='token'>launching</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>test</span>
+<span class='token'>case</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='mention c1'>[</span>
+<span class='token'>this</span>
+<span class='token'>year</span>
+<span class='mention c1'>]<span class='entid c1'>e89</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S11</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>Some</span>
+<span class='token'>senior</span>
+<span class='token'>advisers</span>
+<span class='mention c1'>]<span class='entid c1'>e12</span></span>
+<span class='token'>argue</span>
+<span class='token'>that</span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='token'>further</span>
+<span class='token'>fights</span>
+<span class='token'>over</span>
+<span class='mention c4'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>capital-gains</span>
+<span class='token'>tax</span>
+<span class='token'>cut</span>
+<span class='mention c3'>]<span class='entid c3'>e91</span></span>
+<span class='token'>and</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>budget-reduction</span>
+<span class='token'>bill</span>
+<span class='mention c5'>]<span class='entid c5'>e93</span></span>
+<span class='mention c4'>]<span class='entid c4'>e92</span></span>
+<span class='mention c2'>]<span class='entid c2'>e90</span></span>
+<span class='token'>looming</span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>already</span>
+<span class='token'>has</span>
+<span class='mention c6'>[</span>
+<span class='token'>enough</span>
+<span class='token'>pending</span>
+<span class='token'>confrontations</span>
+<span class='token'>with</span>
+<span class='mention c5'>[</span>
+<span class='token'>Congress</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='mention c6'>]<span class='entid c6'>e94</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S12</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>They</span>
+<span class='mention c1'>]<span class='entid c1'>e12</span></span>
+<span class='token'>prefer</span>
+<span class='token'>to</span>
+<span class='token'>put</span>
+<span class='token'>off</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>until</span>
+<span class='mention c7'>[</span>
+<span class='token'>at</span>
+<span class='token'>least</span>
+<span class='token'>next</span>
+<span class='token'>year</span>
+<span class='mention c7'>]<span class='entid c7'>e95</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S13</h3></div><div class='sentence'><span class='token'>Still</span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>some</span>
+<span class='token'>other</span>
+<span class='token'>aides</span>
+<span class='mention c9'>]<span class='entid c9'>e97</span></span>
+<span class='mention c8'>]<span class='entid c8'>e96</span></span>
+<span class='token'>are</span>
+<span class='token'>strongly</span>
+<span class='token'>drawn</span>
+<span class='token'>to</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>idea</span>
+<span class='token'>of</span>
+<span class='token'>trying</span>
+<span class='token'>out</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='mention c2'>]<span class='entid c2'>e13</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S14</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>The</span>
+<span class='token'>issue</span>
+<span class='mention c2'>]<span class='entid c2'>e13</span></span>
+<span class='token'>arose</span>
+<span class='mention c10'>[</span>
+<span class='token'>last</span>
+<span class='token'>week</span>
+<span class='mention c10'>]<span class='entid c10'>e98</span></span>
+<span class='token'>when</span>
+<span class='mention c0'>[</span>
+<span class='token'>Vice</span>
+<span class='token'>President</span>
+<span class='token'>Dan</span>
+<span class='token'>Quayle</span>
+<span class='mention c0'>]<span class='entid c0'>e99</span></span>
+<span class='token'>told</span>
+<span class='mention c1'>[</span>
+<span class='token'>an</span>
+<span class='token'>audience</span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>Chicago</span>
+<span class='mention c2'>]<span class='entid c2'>e101</span></span>
+<span class='mention c1'>]<span class='entid c1'>e100</span></span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>was</span>
+<span class='token'>looking</span>
+<span class='token'>for</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>test</span>
+<span class='token'>case</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S15</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>White</span>
+<span class='token'>House</span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='token'>Press</span>
+<span class='token'>Secretary</span>
+<span class='token'>Marlin</span>
+<span class='token'>Fitzwater</span>
+<span class='mention c3'>]<span class='entid c3'>e102</span></span>
+<span class='token'>confirmed</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>was</span>
+<span class='token'>interested</span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>idea</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='token'>,</span>
+<span class='token'>but</span>
+<span class='token'>cautioned</span>
+<span class='token'>that</span>
+<span class='mention c4'>[</span>
+<span class='token'>there</span>
+<span class='mention c4'>]<span class='entid c4'>e103</span></span>
+<span class='token'>was</span>
+<span class='token'>n&#x27;t</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>firm</span>
+<span class='token'>decision</span>
+<span class='token'>to</span>
+<span class='token'>try</span>
+<span class='mention c3'>[</span>
+<span class='token'>it</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='mention c5'>]<span class='entid c5'>e104</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S16</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>former</span>
+<span class='token'>President</span>
+<span class='token'>Reagan</span>
+<span class='mention c7'>]<span class='entid c7'>e106</span></span>
+<span class='token'>and</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>host</span>
+<span class='token'>of</span>
+<span class='mention c9'>[</span>
+<span class='token'>conservative</span>
+<span class='token'>activists</span>
+<span class='mention c9'>]<span class='entid c9'>e108</span></span>
+<span class='mention c8'>]<span class='entid c8'>e107</span></span>
+<span class='mention c6'>]<span class='entid c6'>e105</span></span>
+<span class='token'>have</span>
+<span class='token'>been</span>
+<span class='token'>arguing</span>
+<span class='token'>that</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>would</span>
+<span class='token'>go</span>
+<span class='mention c10'>[</span>
+<span class='token'>a</span>
+<span class='token'>long</span>
+<span class='token'>way</span>
+<span class='mention c10'>]<span class='entid c10'>e109</span></span>
+<span class='token'>in</span>
+<span class='token'>restoring</span>
+<span class='mention c0'>[</span>
+<span class='token'>discipline</span>
+<span class='mention c0'>]<span class='entid c0'>e110</span></span>
+<span class='token'>to</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>budget</span>
+<span class='token'>process</span>
+<span class='mention c1'>]<span class='entid c1'>e111</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S17</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>They</span>
+<span class='mention c2'>]<span class='entid c2'>e112</span></span>
+<span class='token'>maintain</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>a</span>
+<span class='token'>president</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>needs</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>ability</span>
+<span class='token'>to</span>
+<span class='token'>surgically</span>
+<span class='token'>remove</span>
+<span class='mention c4'>[</span>
+<span class='token'>pork-barrel</span>
+<span class='token'>spending</span>
+<span class='token'>projects</span>
+<span class='token'>that</span>
+<span class='token'>are</span>
+<span class='token'>attached</span>
+<span class='token'>to</span>
+<span class='mention c4'>[</span>
+<span class='token'>big</span>
+<span class='token'>omnibus</span>
+<span class='token'>spending</span>
+<span class='token'>bills</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='mention c4'>]<span class='entid c4'>e114</span></span>
+<span class='mention c3'>]<span class='entid c3'>e113</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S18</h3></div><div class='sentence'><span class='mention c4'>[</span>
+<span class='token'>Those</span>
+<span class='token'>bills</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='token'>ca</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>easily</span>
+<span class='token'>be</span>
+<span class='token'>vetoed</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='mention c4'>[</span>
+<span class='token'>their</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='token'>entirety</span>
+<span class='mention c5'>]<span class='entid c5'>e115</span></span>
+<span class='token'>because</span>
+<span class='mention c4'>[</span>
+<span class='token'>they</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='token'>often</span>
+<span class='token'>are</span>
+<span class='token'>needed</span>
+<span class='token'>to</span>
+<span class='token'>keep</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>government</span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>operating</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S19</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>Conservatives</span>
+<span class='mention c6'>]<span class='entid c6'>e116</span></span>
+<span class='token'>note</span>
+<span class='token'>that</span>
+<span class='mention c7'>[</span>
+<span class='token'>43</span>
+<span class='token'>governors</span>
+<span class='mention c7'>]<span class='entid c7'>e117</span></span>
+<span class='token'>have</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='token'>to</span>
+<span class='token'>use</span>
+<span class='token'>on</span>
+<span class='mention c9'>[</span>
+<span class='token'>state</span>
+<span class='token'>budgets</span>
+<span class='mention c9'>]<span class='entid c9'>e119</span></span>
+<span class='mention c8'>]<span class='entid c8'>e118</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S20</h3></div><div class='sentence'><span class='token'>More</span>
+<span class='token'>provocatively</span>
+<span class='token'>,</span>
+<span class='mention c6'>[</span>
+<span class='token'>some</span>
+<span class='token'>conservative</span>
+<span class='token'>legal</span>
+<span class='token'>theorists</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+<span class='token'>have</span>
+<span class='token'>begun</span>
+<span class='token'>arguing</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>does</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>need</span>
+<span class='token'>to</span>
+<span class='token'>wait</span>
+<span class='token'>for</span>
+<span class='mention c10'>[</span>
+<span class='token'>a</span>
+<span class='token'>law</span>
+<span class='token'>giving</span>
+<span class='mention c1'>[</span>
+<span class='token'>him</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='mention c10'>]<span class='entid c10'>e120</span></span>
+<span class='token'>because</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>power</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>already</span>
+<span class='token'>is</span>
+<span class='token'>implicit</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>Constitution</span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S21</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>They</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+<span class='token'>base</span>
+<span class='mention c8'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>their</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+<span class='token'>argument</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='token'>on</span>
+<span class='mention c7'>[</span>
+<span class='token'>a</span>
+<span class='token'>clause</span>
+<span class='token'>buried</span>
+<span class='token'>in</span>
+<span class='mention c0'>[</span>
+<span class='token'>Article</span>
+<span class='token'>I</span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>Section</span>
+<span class='token'>7</span>
+<span class='mention c1'>]<span class='entid c1'>e122</span></span>
+<span class='token'>,</span>
+<span class='token'>of</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>Constitution</span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='mention c0'>]<span class='entid c0'>e121</span></span>
+<span class='token'>that</span>
+<span class='token'>states</span>
+<span class='token'>:</span>
+<span class='token'>``</span>
+<span class='mention c2'>[</span>
+<span class='token'>Every</span>
+<span class='mention c7'>[</span>
+<span class='token'>order</span>
+<span class='mention c7'>]<span class='entid c7'>e40</span></span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>resolution</span>
+<span class='mention c8'>]<span class='entid c8'>e41</span></span>
+<span class='token'>,</span>
+<span class='token'>or</span>
+<span class='mention c9'>[</span>
+<span class='token'>vote</span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>to</span>
+<span class='token'>which</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>concurrence</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>Senate</span>
+<span class='mention c0'>]<span class='entid c0'>e44</span></span>
+<span class='token'>and</span>
+<span class='mention c1'>[</span>
+<span class='token'>House</span>
+<span class='token'>of</span>
+<span class='token'>Representatives</span>
+<span class='mention c1'>]<span class='entid c1'>e45</span></span>
+<span class='mention c3'>]<span class='entid c3'>e124</span></span>
+<span class='mention c10'>]<span class='entid c10'>e43</span></span>
+<span class='token'>may</span>
+<span class='token'>be</span>
+<span class='token'>necessary</span>
+<span class='token'>(</span>
+<span class='token'>except</span>
+<span class='token'>on</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>question</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>adjournment</span>
+<span class='mention c3'>]<span class='entid c3'>e47</span></span>
+<span class='mention c2'>]<span class='entid c2'>e46</span></span>
+<span class='mention c2'>]<span class='entid c2'>e123</span></span>
+<span class='token'>)</span>
+<span class='token'>shall</span>
+<span class='token'>be</span>
+<span class='token'>presented</span>
+<span class='token'>to</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>President</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>United</span>
+<span class='token'>States</span>
+<span class='mention c4'>]<span class='entid c4'>e48</span></span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>;</span>
+<span class='token'>and</span>
+<span class='token'>before</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>same</span>
+<span class='mention c4'>]<span class='entid c4'>e125</span></span>
+<span class='token'>shall</span>
+<span class='token'>take</span>
+<span class='token'>effect</span>
+<span class='token'>,</span>
+<span class='token'>shall</span>
+<span class='token'>be</span>
+<span class='token'>approved</span>
+<span class='token'>by</span>
+<span class='mention c1'>[</span>
+<span class='token'>him</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>or</span>
+<span class='token'>...</span>
+<span class='token'>disapproved</span>
+<span class='token'>by</span>
+<span class='mention c1'>[</span>
+<span class='token'>him</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>...</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S22</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='mention c7'>[</span>
+<span class='token'>This</span>
+<span class='token'>clause</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>,</span>
+<span class='mention c6'>[</span>
+<span class='token'>they</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+<span class='token'>argue</span>
+<span class='token'>,</span>
+<span class='token'>is</span>
+<span class='token'>designed</span>
+<span class='token'>to</span>
+<span class='token'>go</span>
+<span class='token'>beyond</span>
+<span class='mention c5'>[</span>
+<span class='token'>an</span>
+<span class='token'>earlier</span>
+<span class='token'>clause</span>
+<span class='token'>specifying</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>president</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>can</span>
+<span class='token'>veto</span>
+<span class='token'>a</span>
+<span class='token'>``</span>
+<span class='mention c6'>[</span>
+<span class='token'>bill</span>
+<span class='mention c6'>]<span class='entid c6'>e127</span></span>
+<span class='mention c5'>]<span class='entid c5'>e126</span></span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>and</span>
+<span class='token'>is</span>
+<span class='token'>broad</span>
+<span class='token'>enough</span>
+<span class='token'>to</span>
+<span class='token'>allow</span>
+<span class='mention c1'>[</span>
+<span class='token'>him</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>to</span>
+<span class='token'>strike</span>
+<span class='token'>out</span>
+<span class='mention c7'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>items</span>
+<span class='mention c8'>]<span class='entid c8'>e129</span></span>
+<span class='token'>and</span>
+<span class='mention c9'>[</span>
+<span class='token'>riders</span>
+<span class='token'>within</span>
+<span class='mention c10'>[</span>
+<span class='token'>bills</span>
+<span class='mention c10'>]<span class='entid c10'>e131</span></span>
+<span class='mention c9'>]<span class='entid c9'>e130</span></span>
+<span class='mention c7'>]<span class='entid c7'>e128</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S23</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>Senate</span>
+<span class='token'>Minority</span>
+<span class='token'>Leader</span>
+<span class='token'>Robert</span>
+<span class='token'>Dole</span>
+<span class='token'>(</span>
+<span class='mention c1'>[</span>
+<span class='token'>R.</span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Kan.</span>
+<span class='mention c2'>]<span class='entid c2'>e134</span></span>
+<span class='mention c1'>]<span class='entid c1'>e133</span></span>
+<span class='token'>)</span>
+<span class='mention c0'>]<span class='entid c0'>e132</span></span>
+<span class='token'>,</span>
+<span class='token'>for</span>
+<span class='mention c3'>[</span>
+<span class='token'>one</span>
+<span class='mention c3'>]<span class='entid c3'>e135</span></span>
+<span class='token'>,</span>
+<span class='token'>accepts</span>
+<span class='mention c8'>[</span>
+<span class='token'>this</span>
+<span class='token'>argument</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='token'>and</span>
+<span class='mention c4'>[</span>
+<span class='token'>earlier</span>
+<span class='token'>this</span>
+<span class='token'>year</span>
+<span class='mention c4'>]<span class='entid c4'>e136</span></span>
+<span class='token'>publicly</span>
+<span class='token'>urged</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>``</span>
+<span class='token'>to</span>
+<span class='token'>use</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>and</span>
+<span class='token'>allow</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>courts</span>
+<span class='mention c9'>]<span class='entid c9'>e20</span></span>
+<span class='token'>to</span>
+<span class='token'>decide</span>
+<span class='token'>whether</span>
+<span class='token'>or</span>
+<span class='token'>not</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>is</span>
+<span class='token'>constitutional</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S24</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='mention c5'>[</span>
+<span class='token'>There</span>
+<span class='mention c5'>]<span class='entid c5'>e137</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c6'>[</span>
+<span class='token'>little</span>
+<span class='token'>doubt</span>
+<span class='mention c6'>]<span class='entid c6'>e138</span></span>
+<span class='token'>that</span>
+<span class='mention c10'>[</span>
+<span class='token'>such</span>
+<span class='token'>a</span>
+<span class='token'>move</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='token'>would</span>
+<span class='token'>be</span>
+<span class='token'>immediately</span>
+<span class='token'>challenged</span>
+<span class='token'>in</span>
+<span class='mention c9'>[</span>
+<span class='token'>court</span>
+<span class='mention c9'>]<span class='entid c9'>e20</span></span>
+<span class='token'>--</span>
+<span class='token'>and</span>
+<span class='token'>that</span>
+<span class='mention c10'>[</span>
+<span class='token'>it</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='token'>would</span>
+<span class='token'>quickly</span>
+<span class='token'>make</span>
+<span class='mention c7'>[</span>
+<span class='mention c10'>[</span>
+<span class='token'>its</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='token'>way</span>
+<span class='mention c7'>]<span class='entid c7'>e139</span></span>
+<span class='token'>to</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>Supreme</span>
+<span class='token'>Court</span>
+<span class='mention c0'>]<span class='entid c0'>e22</span></span>
+<span class='token'>to</span>
+<span class='token'>be</span>
+<span class='token'>ultimately</span>
+<span class='token'>resolved</span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c10'>[</span>
+<span class='token'>It</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c8'>[</span>
+<span class='token'>a</span>
+<span class='token'>major</span>
+<span class='token'>issue</span>
+<span class='mention c8'>]<span class='entid c8'>e140</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='mention c0'>[</span>
+<span class='token'>they</span>
+<span class='mention c0'>]<span class='entid c0'>e22</span></span>
+<span class='token'>would</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>want</span>
+<span class='token'>to</span>
+<span class='token'>leave</span>
+<span class='mention c10'>[</span>
+<span class='token'>it</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='token'>at</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>lower</span>
+<span class='token'>level</span>
+<span class='mention c9'>]<span class='entid c9'>e141</span></span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>says</span>
+<span class='mention c10'>[</span>
+<span class='token'>Stephen</span>
+<span class='token'>Glazier</span>
+<span class='token'>,</span>
+<span class='mention c10'>[</span>
+<span class='token'>a</span>
+<span class='token'>New</span>
+<span class='token'>York</span>
+<span class='token'>attorney</span>
+<span class='mention c0'>[</span>
+<span class='token'>whose</span>
+<span class='token'>writings</span>
+<span class='mention c0'>]<span class='entid c0'>e143</span></span>
+<span class='token'>have</span>
+<span class='token'>been</span>
+<span class='token'>instrumental</span>
+<span class='token'>in</span>
+<span class='token'>pushing</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>idea</span>
+<span class='token'>that</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>president</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>already</span>
+<span class='token'>has</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='mention c1'>]<span class='entid c1'>e144</span></span>
+<span class='mention c10'>]<span class='entid c10'>e142</span></span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S25</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>Rep.</span>
+<span class='token'>Edwards</span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>California</span>
+<span class='token'>Democrat</span>
+<span class='mention c2'>]<span class='entid c2'>e145</span></span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>,</span>
+<span class='token'>is</span>
+<span class='mention c3'>[</span>
+<span class='token'>one</span>
+<span class='token'>who</span>
+<span class='token'>pledges</span>
+<span class='token'>that</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>would</span>
+<span class='token'>immediately</span>
+<span class='token'>challenge</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>in</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>courts</span>
+<span class='mention c9'>]<span class='entid c9'>e20</span></span>
+<span class='token'>,</span>
+<span class='token'>arguing</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>would</span>
+<span class='token'>expand</span>
+<span class='mention c4'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>president</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>&#x27;s</span>
+<span class='token'>powers</span>
+<span class='mention c4'>]<span class='entid c4'>e147</span></span>
+<span class='token'>far</span>
+<span class='token'>beyond</span>
+<span class='mention c5'>[</span>
+<span class='token'>anything</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>framers</span>
+<span class='token'>of</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>Constitution</span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='mention c6'>]<span class='entid c6'>e149</span></span>
+<span class='token'>had</span>
+<span class='token'>in</span>
+<span class='mention c7'>[</span>
+<span class='token'>mind</span>
+<span class='mention c7'>]<span class='entid c7'>e150</span></span>
+<span class='mention c5'>]<span class='entid c5'>e148</span></span>
+<span class='mention c3'>]<span class='entid c3'>e146</span></span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c9'>[</span>
+<span class='token'>It</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>puts</span>
+<span class='mention c1'>[</span>
+<span class='token'>this</span>
+<span class='token'>president</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>legislative</span>
+<span class='token'>business</span>
+<span class='mention c8'>]<span class='entid c8'>e151</span></span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>declares</span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c9'>[</span>
+<span class='token'>That</span>
+<span class='mention c9'>]<span class='entid c9'>e152</span></span>
+<span class='token'>&#x27;s</span>
+<span class='token'>not</span>
+<span class='mention c10'>[</span>
+<span class='token'>what</span>
+<span class='mention c0'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>our</span>
+<span class='mention c1'>]<span class='entid c1'>e155</span></span>
+<span class='token'>fathers</span>
+<span class='mention c0'>]<span class='entid c0'>e154</span></span>
+<span class='token'>had</span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>mind</span>
+<span class='mention c2'>]<span class='entid c2'>e156</span></span>
+<span class='mention c10'>]<span class='entid c10'>e153</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S26</h3></div><div class='sentence'><span class='token'>&quot;</span>
+<span class='token'>In</span>
+<span class='token'>addition</span>
+<span class='token'>to</span>
+<span class='token'>giving</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>president</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='mention c3'>[</span>
+<span class='token'>powers</span>
+<span class='token'>to</span>
+<span class='token'>rewrite</span>
+<span class='mention c4'>[</span>
+<span class='token'>spending</span>
+<span class='token'>bills</span>
+<span class='token'>meant</span>
+<span class='token'>to</span>
+<span class='token'>be</span>
+<span class='token'>written</span>
+<span class='token'>in</span>
+<span class='mention c5'>[</span>
+<span class='token'>Congress</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='mention c4'>]<span class='entid c4'>e158</span></span>
+<span class='mention c3'>]<span class='entid c3'>e157</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>Rep.</span>
+<span class='token'>Edwards</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>argues</span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>would</span>
+<span class='token'>allow</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>chief</span>
+<span class='token'>executive</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>to</span>
+<span class='token'>blackmail</span>
+<span class='mention c0'>[</span>
+<span class='token'>lawmakers</span>
+<span class='mention c0'>]<span class='entid c0'>e33</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S27</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>He</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>notes</span>
+<span class='token'>that</span>
+<span class='token'>,</span>
+<span class='token'>as</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>lawmaker</span>
+<span class='token'>from</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>San</span>
+<span class='token'>Francisco</span>
+<span class='token'>area</span>
+<span class='mention c6'>]<span class='entid c6'>e160</span></span>
+<span class='mention c5'>]<span class='entid c5'>e159</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>fights</span>
+<span class='mention c7'>[</span>
+<span class='token'>each</span>
+<span class='token'>year</span>
+<span class='mention c7'>]<span class='entid c7'>e161</span></span>
+<span class='token'>to</span>
+<span class='token'>preserve</span>
+<span class='mention c3'>[</span>
+<span class='token'>federal</span>
+<span class='token'>funds</span>
+<span class='token'>for</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>Bay</span>
+<span class='token'>Area</span>
+<span class='token'>Rapid</span>
+<span class='token'>Transit</span>
+<span class='token'>system</span>
+<span class='mention c8'>]<span class='entid c8'>e162</span></span>
+<span class='mention c3'>]<span class='entid c3'>e25</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S28</h3></div><div class='sentence'><span class='token'>If</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>president</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>had</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>and</span>
+<span class='token'>wanted</span>
+<span class='token'>to</span>
+<span class='token'>force</span>
+<span class='mention c1'>[</span>
+<span class='token'>him</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>to</span>
+<span class='token'>support</span>
+<span class='mention c4'>[</span>
+<span class='token'>a</span>
+<span class='token'>controversial</span>
+<span class='token'>foreign-policy</span>
+<span class='token'>initiative</span>
+<span class='mention c4'>]<span class='entid c4'>e26</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>Rep.</span>
+<span class='token'>Edwards</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>says</span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>president</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>could</span>
+<span class='token'>call</span>
+<span class='token'>and</span>
+<span class='token'>declare</span>
+<span class='token'>that</span>
+<span class='mention c2'>[</span>
+<span class='token'>he</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>would</span>
+<span class='token'>single-handedly</span>
+<span class='token'>kill</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>BART</span>
+<span class='token'>funds</span>
+<span class='mention c3'>]<span class='entid c3'>e25</span></span>
+<span class='token'>unless</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>congressman</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>``</span>
+<span class='token'>shapes</span>
+<span class='token'>up</span>
+<span class='token'>&quot;</span>
+<span class='token'>on</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>foreign-policy</span>
+<span class='token'>issue</span>
+<span class='mention c4'>]<span class='entid c4'>e26</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S29</h3></div><div class='sentence'><span class='mention c9'>[</span>
+<span class='token'>Proponents</span>
+<span class='mention c9'>]<span class='entid c9'>e31</span></span>
+<span class='token'>maintain</span>
+<span class='token'>that</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>president</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>would</span>
+<span class='token'>choose</span>
+<span class='token'>to</span>
+<span class='token'>use</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>more</span>
+<span class='token'>judiciously</span>
+<span class='token'>than</span>
+<span class='mention c9'>[</span>
+<span class='token'>that</span>
+<span class='mention c9'>]<span class='entid c9'>e163</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S30</h3></div><div class='sentence'><span class='token'>But</span>
+<span class='mention c10'>[</span>
+<span class='token'>there</span>
+<span class='mention c10'>]<span class='entid c10'>e164</span></span>
+<span class='token'>may</span>
+<span class='token'>be</span>
+<span class='mention c0'>[</span>
+<span class='token'>another</span>
+<span class='token'>problem</span>
+<span class='token'>with</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>device</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='mention c0'>]<span class='entid c0'>e165</span></span>
+<span class='token'>:</span>
+<span class='token'>Despite</span>
+<span class='mention c1'>[</span>
+<span class='token'>all</span>
+<span class='token'>the</span>
+<span class='token'>political</span>
+<span class='token'>angst</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>would</span>
+<span class='token'>cause</span>
+<span class='mention c1'>]<span class='entid c1'>e166</span></span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>might</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>be</span>
+<span class='token'>effective</span>
+<span class='token'>in</span>
+<span class='token'>cutting</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>deficit</span>
+<span class='mention c5'>]<span class='entid c5'>e27</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S31</h3></div><div class='sentence'><span class='mention c2'>[</span>
+<span class='token'>Big</span>
+<span class='token'>chunks</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='mention c6'>[</span>
+<span class='token'>government</span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>budget</span>
+<span class='mention c3'>]<span class='entid c3'>e168</span></span>
+<span class='token'>,</span>
+<span class='token'>like</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>entitlement</span>
+<span class='token'>programs</span>
+<span class='token'>of</span>
+<span class='mention c5'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>Social</span>
+<span class='token'>Security</span>
+<span class='mention c6'>]<span class='entid c6'>e171</span></span>
+<span class='token'>and</span>
+<span class='mention c7'>[</span>
+<span class='token'>Medicare</span>
+<span class='mention c7'>]<span class='entid c7'>e172</span></span>
+<span class='mention c5'>]<span class='entid c5'>e170</span></span>
+<span class='mention c4'>]<span class='entid c4'>e169</span></span>
+<span class='mention c2'>]<span class='entid c2'>e167</span></span>
+<span class='token'>,</span>
+<span class='token'>would</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>be</span>
+<span class='token'>affected</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S32</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>Governors</span>
+<span class='mention c6'>]<span class='entid c6'>e28</span></span>
+<span class='token'>have</span>
+<span class='token'>found</span>
+<span class='token'>that</span>
+<span class='mention c6'>[</span>
+<span class='token'>they</span>
+<span class='mention c6'>]<span class='entid c6'>e28</span></span>
+<span class='token'>have</span>
+<span class='token'>to</span>
+<span class='token'>use</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>device</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>sparingly</span>
+<span class='token'>to</span>
+<span class='token'>maintain</span>
+<span class='mention c8'>[</span>
+<span class='token'>political</span>
+<span class='token'>comity</span>
+<span class='mention c8'>]<span class='entid c8'>e173</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S33</h3></div><div class='sentence'><span class='token'>And</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e174</span></span>
+<span class='token'>is</span>
+<span class='token'>n&#x27;t</span>
+<span class='token'>even</span>
+<span class='token'>clear</span>
+<span class='token'>that</span>
+<span class='mention c7'>[</span>
+<span class='token'>some</span>
+<span class='token'>pork-barrel</span>
+<span class='token'>projects</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>can</span>
+<span class='token'>be</span>
+<span class='token'>hit</span>
+<span class='token'>with</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>because</span>
+<span class='mention c7'>[</span>
+<span class='token'>they</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>tend</span>
+<span class='token'>to</span>
+<span class='token'>be</span>
+<span class='token'>listed</span>
+<span class='token'>in</span>
+<span class='mention c10'>[</span>
+<span class='token'>informal</span>
+<span class='token'>conference</span>
+<span class='token'>reports</span>
+<span class='token'>accompanying</span>
+<span class='mention c0'>[</span>
+<span class='token'>spending</span>
+<span class='token'>bills</span>
+<span class='mention c0'>]<span class='entid c0'>e176</span></span>
+<span class='mention c10'>]<span class='entid c10'>e175</span></span>
+<span class='token'>rather</span>
+<span class='token'>than</span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>official</span>
+<span class='token'>bills</span>
+<span class='mention c8'>[</span>
+<span class='token'>themselves</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S34</h3></div><div class='sentence'><span class='token'>Still</span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>proponents</span>
+<span class='mention c9'>]<span class='entid c9'>e31</span></span>
+<span class='token'>contend</span>
+<span class='token'>that</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>would</span>
+<span class='token'>have</span>
+<span class='mention c1'>[</span>
+<span class='token'>what</span>
+<span class='mention c10'>[</span>
+<span class='token'>Mr.</span>
+<span class='token'>Glazier</span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+<span class='token'>calls</span>
+<span class='mention c2'>[</span>
+<span class='token'>an</span>
+<span class='token'>important</span>
+<span class='token'>``</span>
+<span class='token'>chilling</span>
+<span class='token'>effect</span>
+<span class='token'>&quot;</span>
+<span class='token'>on</span>
+<span class='mention c3'>[</span>
+<span class='token'>all</span>
+<span class='token'>manner</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>appropriations</span>
+<span class='token'>bills</span>
+<span class='mention c4'>]<span class='entid c4'>e180</span></span>
+<span class='mention c3'>]<span class='entid c3'>e179</span></span>
+<span class='mention c2'>]<span class='entid c2'>e178</span></span>
+<span class='mention c1'>]<span class='entid c1'>e177</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S35</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>Lawmakers</span>
+<span class='mention c0'>]<span class='entid c0'>e33</span></span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>they</span>
+<span class='mention c9'>]<span class='entid c9'>e31</span></span>
+<span class='token'>say</span>
+<span class='token'>,</span>
+<span class='token'>would</span>
+<span class='token'>avoid</span>
+<span class='token'>putting</span>
+<span class='mention c1'>[</span>
+<span class='token'>many</span>
+<span class='token'>spending</span>
+<span class='token'>projects</span>
+<span class='token'>into</span>
+<span class='mention c5'>[</span>
+<span class='token'>legislation</span>
+<span class='mention c5'>]<span class='entid c5'>e181</span></span>
+<span class='token'>in</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>first</span>
+<span class='token'>place</span>
+<span class='mention c6'>]<span class='entid c6'>e182</span></span>
+<span class='mention c1'>]<span class='entid c1'>e34</span></span>
+<span class='token'>for</span>
+<span class='mention c7'>[</span>
+<span class='token'>fear</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>embarrassment</span>
+<span class='token'>of</span>
+<span class='token'>having</span>
+<span class='mention c1'>[</span>
+<span class='token'>them</span>
+<span class='mention c1'>]<span class='entid c1'>e34</span></span>
+<span class='token'>singled</span>
+<span class='token'>out</span>
+<span class='token'>for</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>later</span>
+<span class='mention c8'>]<span class='entid c8'>e184</span></span>
+<span class='mention c7'>]<span class='entid c7'>e183</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S36</h3></div><div class='sentence'><span class='token'>Whatever</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>outcome</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>test</span>
+<span class='token'>case</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='mention c9'>]<span class='entid c9'>e185</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>President</span>
+<span class='token'>Bush</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>would</span>
+<span class='token'>have</span>
+<span class='token'>to</span>
+<span class='token'>move</span>
+<span class='token'>cautiously</span>
+<span class='token'>becase</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>very</span>
+<span class='token'>attempt</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='token'>would</span>
+<span class='token'>``</span>
+<span class='token'>antagonize</span>
+<span class='mention c10'>[</span>
+<span class='mention c2'>[</span>
+<span class='token'>not</span>
+<span class='token'>just</span>
+<span class='token'>Democrats</span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+<span class='token'>but</span>
+<span class='mention c3'>[</span>
+<span class='token'>Republicans</span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='mention c10'>]<span class='entid c10'>e186</span></span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='token'>says</span>
+<span class='mention c4'>[</span>
+<span class='token'>Louis</span>
+<span class='token'>Fisher</span>
+<span class='token'>,</span>
+<span class='mention c0'>[</span>
+<span class='token'>a</span>
+<span class='token'>scholar</span>
+<span class='token'>at</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>Congressional</span>
+<span class='token'>Research</span>
+<span class='token'>Service</span>
+<span class='mention c1'>]<span class='entid c1'>e188</span></span>
+<span class='token'>who</span>
+<span class='token'>specializes</span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>executive-legislative</span>
+<span class='token'>relations</span>
+<span class='mention c2'>]<span class='entid c2'>e189</span></span>
+<span class='mention c0'>]<span class='entid c0'>e187</span></span>
+<span class='mention c4'>]<span class='entid c4'>e37</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S37</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Republicans</span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='token'>have</span>
+<span class='mention c3'>[</span>
+<span class='token'>as</span>
+<span class='token'>much</span>
+<span class='token'>interest</span>
+<span class='token'>as</span>
+<span class='mention c2'>[</span>
+<span class='token'>Democrats</span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+<span class='token'>in</span>
+<span class='token'>``</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>way</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>system</span>
+<span class='mention c5'>]<span class='entid c5'>e192</span></span>
+<span class='token'>works</span>
+<span class='mention c4'>]<span class='entid c4'>e191</span></span>
+<span class='mention c3'>]<span class='entid c3'>e190</span></span>
+<span class='token'>,</span>
+<span class='token'>&quot;</span>
+<span class='mention c4'>[</span>
+<span class='token'>he</span>
+<span class='mention c4'>]<span class='entid c4'>e37</span></span>
+<span class='token'>notes</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S38</h3></div><div class='sentence'><span class='token'>Indeed</span>
+<span class='token'>,</span>
+<span class='token'>although</span>
+<span class='mention c6'>[</span>
+<span class='token'>a</span>
+<span class='token'>majority</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>Republican</span>
+<span class='token'>lawmakers</span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='mention c6'>]<span class='entid c6'>e193</span></span>
+<span class='token'>favor</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>some</span>
+<span class='mention c7'>]<span class='entid c7'>e194</span></span>
+<span class='token'>,</span>
+<span class='token'>ranging</span>
+<span class='token'>from</span>
+<span class='mention c8'>[</span>
+<span class='token'>liberal</span>
+<span class='token'>Oregon</span>
+<span class='token'>Sen.</span>
+<span class='token'>Mark</span>
+<span class='token'>Hatfield</span>
+<span class='mention c8'>]<span class='entid c8'>e195</span></span>
+<span class='token'>to</span>
+<span class='mention c1'>[</span>
+<span class='token'>conservative</span>
+<span class='token'>Rep.</span>
+<span class='token'>Edwards</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>are</span>
+<span class='token'>opposed</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S39</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>Rep.</span>
+<span class='token'>Edwards</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>voices</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>traditional</span>
+<span class='token'>conservative</span>
+<span class='token'>view</span>
+<span class='token'>that</span>
+<span class='mention c10'>[</span>
+<span class='token'>it</span>
+<span class='mention c10'>]<span class='entid c10'>e197</span></span>
+<span class='token'>&#x27;s</span>
+<span class='mention c0'>[</span>
+<span class='token'>a</span>
+<span class='token'>mistake</span>
+<span class='mention c0'>]<span class='entid c0'>e198</span></span>
+<span class='token'>to</span>
+<span class='token'>put</span>
+<span class='mention c1'>[</span>
+<span class='token'>too</span>
+<span class='token'>much</span>
+<span class='token'>power</span>
+<span class='mention c1'>]<span class='entid c1'>e199</span></span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>hands</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>a</span>
+<span class='token'>single</span>
+<span class='token'>person</span>
+<span class='mention c3'>]<span class='entid c3'>e201</span></span>
+<span class='mention c2'>]<span class='entid c2'>e200</span></span>
+<span class='mention c9'>]<span class='entid c9'>e196</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S40</h3></div><div class='sentence'><span class='mention c6'>[</span>
+<span class='token'>Conservatives</span>
+<span class='token'>pushing</span>
+<span class='token'>for</span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='token'>line-item</span>
+<span class='token'>veto</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='mention c4'>[</span>
+<span class='token'>now</span>
+<span class='mention c4'>]<span class='entid c4'>e202</span></span>
+<span class='mention c6'>]<span class='entid c6'>e39</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>he</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>notes</span>
+<span class='token'>,</span>
+<span class='token'>may</span>
+<span class='token'>regret</span>
+<span class='mention c9'>[</span>
+<span class='token'>it</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>later</span>
+<span class='token'>:</span>
+<span class='token'>``</span>
+<span class='token'>Sometime</span>
+<span class='token'>,</span>
+<span class='mention c5'>[</span>
+<span class='token'>you</span>
+<span class='mention c5'>]<span class='entid c5'>e203</span></span>
+<span class='token'>&#x27;re</span>
+<span class='token'>going</span>
+<span class='token'>to</span>
+<span class='token'>have</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>Democratic</span>
+<span class='token'>president</span>
+<span class='token'>again</span>
+<span class='token'>&quot;</span>
+<span class='token'>who</span>
+<span class='token'>&#x27;ll</span>
+<span class='token'>use</span>
+<span class='mention c9'>[</span>
+<span class='mention c5'>[</span>
+<span class='token'>his</span>
+<span class='mention c5'>]<span class='entid c5'>e38</span></span>
+<span class='token'>expanded</span>
+<span class='token'>powers</span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>against</span>
+<span class='mention c6'>[</span>
+<span class='token'>those</span>
+<span class='token'>very</span>
+<span class='token'>same</span>
+<span class='token'>conservatives</span>
+<span class='mention c6'>]<span class='entid c6'>e39</span></span>
+<span class='mention c5'>]<span class='entid c5'>e38</span></span>
+<span class='token'>.</span>
+<span class='token'>``</span>
+<span class='mention c6'>[</span>
+<span class='token'>Every</span>
+<span class='mention c7'>[</span>
+<span class='token'>order</span>
+<span class='mention c7'>]<span class='entid c7'>e40</span></span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>resolution</span>
+<span class='mention c8'>]<span class='entid c8'>e41</span></span>
+<span class='token'>,</span>
+<span class='token'>or</span>
+<span class='mention c9'>[</span>
+<span class='token'>vote</span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>to</span>
+<span class='token'>which</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>concurrence</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>Senate</span>
+<span class='mention c0'>]<span class='entid c0'>e44</span></span>
+<span class='token'>and</span>
+<span class='mention c1'>[</span>
+<span class='token'>House</span>
+<span class='token'>of</span>
+<span class='token'>Representatives</span>
+<span class='mention c1'>]<span class='entid c1'>e45</span></span>
+<span class='mention c7'>]<span class='entid c7'>e205</span></span>
+<span class='mention c10'>]<span class='entid c10'>e43</span></span>
+<span class='token'>may</span>
+<span class='token'>be</span>
+<span class='token'>necessary</span>
+<span class='token'>(</span>
+<span class='token'>except</span>
+<span class='token'>on</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>question</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>adjournment</span>
+<span class='mention c3'>]<span class='entid c3'>e47</span></span>
+<span class='mention c2'>]<span class='entid c2'>e46</span></span>
+<span class='token'>)</span>
+<span class='mention c6'>]<span class='entid c6'>e204</span></span>
+<span class='token'>shall</span>
+<span class='token'>be</span>
+<span class='token'>presented</span>
+<span class='token'>to</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>President</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>United</span>
+<span class='token'>States</span>
+<span class='mention c4'>]<span class='entid c4'>e48</span></span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>;</span>
+<span class='token'>and</span>
+<span class='token'>before</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>same</span>
+<span class='mention c8'>]<span class='entid c8'>e206</span></span>
+<span class='token'>shall</span>
+<span class='token'>take</span>
+<span class='token'>effect</span>
+<span class='token'>,</span>
+<span class='token'>shall</span>
+<span class='token'>be</span>
+<span class='token'>approved</span>
+<span class='token'>by</span>
+<span class='mention c2'>[</span>
+<span class='token'>him</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>,</span>
+<span class='token'>or</span>
+<span class='token'>being</span>
+<span class='token'>disapproved</span>
+<span class='token'>by</span>
+<span class='mention c2'>[</span>
+<span class='token'>him</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>,</span>
+<span class='token'>shall</span>
+<span class='token'>be</span>
+<span class='token'>repassed</span>
+<span class='token'>by</span>
+<span class='mention c9'>[</span>
+<span class='token'>two-thirds</span>
+<span class='token'>of</span>
+<span class='mention c10'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>Senate</span>
+<span class='mention c0'>]<span class='entid c0'>e44</span></span>
+<span class='token'>and</span>
+<span class='mention c1'>[</span>
+<span class='token'>House</span>
+<span class='token'>of</span>
+<span class='token'>Representatives</span>
+<span class='mention c1'>]<span class='entid c1'>e45</span></span>
+<span class='mention c10'>]<span class='entid c10'>e208</span></span>
+<span class='mention c9'>]<span class='entid c9'>e207</span></span>
+<span class='token'>,</span>
+<span class='token'>according</span>
+<span class='token'>to</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='mention c1'>[</span>
+<span class='token'>rules</span>
+<span class='mention c1'>]<span class='entid c1'>e210</span></span>
+<span class='token'>and</span>
+<span class='mention c2'>[</span>
+<span class='token'>limitations</span>
+<span class='token'>prescribed</span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>case</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>a</span>
+<span class='token'>bill</span>
+<span class='mention c4'>]<span class='entid c4'>e213</span></span>
+<span class='mention c3'>]<span class='entid c3'>e212</span></span>
+<span class='mention c2'>]<span class='entid c2'>e211</span></span>
+<span class='mention c0'>]<span class='entid c0'>e209</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S41</h3></div><div class='sentence'><span class='token'>&quot;</span>
+</div></div>

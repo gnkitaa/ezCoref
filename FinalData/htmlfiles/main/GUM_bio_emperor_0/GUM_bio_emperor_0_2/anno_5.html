@@ -1,0 +1,370 @@
+
+<meta charset="utf-8"> 
+<style>
+.sentid { font-size: 100%; }
+.mention { font-size: 100%; }
+.entid { position: relative; top: 0.5em; font-size: 95%; font-family: helvetica,sans-serif;}
+.ner { color: #555; font-size: 110%; }
+.nertype { font-size: 80%; font-style: italic; vertical-align: sub; font-family: helvetica,sans-serif; }
+
+.pos_PRP { font-weight: bold; }
+.pos_PRP_DOLLAR_ { font-weight: bold; }
+
+/* Dark2 from http://colorbrewer2.org/ */
+.c0 { color: rgb(27,158,119); } 
+.c1 { color: rgb(217,95,2); }
+.c2 { color: rgb(117,112,179); }
+.c3 { color: rgb(255, 0, 0); }
+.c4 { color: rgb(102,166,30); }
+.c5 { color: rgb(230,171,2); }
+.c6 { color: rgb(166,118,29); }
+.c7 { color: rgb(102,102,102); }
+.c8 { color: rgb(112, 61, 61);}
+.c9 { color: rgb(0, 71, 171);}
+.c10 { color: rgb(202, 44, 146);}
+.c11 { color: rgb(0, 128, 128);}
+</style>
+<div class='sentid'><h3>S0</h3></div><div class='sentence'><span class='token'>Nearly</span>
+<span class='mention c0'>[</span>
+<span class='token'>30,000</span>
+<span class='token'>people</span>
+<span class='mention c0'>]<span class='entid c0'>e0</span></span>
+<span class='token'>packed</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>streets</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>San</span>
+<span class='token'>Francisco</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>to</span>
+<span class='token'>pay</span>
+<span class='mention c3'>[</span>
+<span class='token'>him</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c4'>[</span>
+<span class='token'>homage</span>
+<span class='mention c4'>]<span class='entid c4'>e4</span></span>
+<span class='token'>at</span>
+<span class='mention c5'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>funeral</span>
+<span class='mention c5'>]<span class='entid c5'>e5</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S1</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Norton</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>has</span>
+<span class='token'>been</span>
+<span class='token'>immortalized</span>
+<span class='token'>as</span>
+<span class='mention c6'>[</span>
+<span class='token'>the</span>
+<span class='token'>basis</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='token'>characters</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='token'>in</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>literature</span>
+<span class='token'>of</span>
+<span class='mention c0'>[</span>
+<span class='mention c9'>[</span>
+<span class='token'>writers</span>
+<span class='mention c10'>[</span>
+<span class='token'>Mark</span>
+<span class='token'>Twain</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>Robert</span>
+<span class='token'>Louis</span>
+<span class='token'>Stevenson</span>
+<span class='mention c1'>]<span class='entid c1'>e12</span></span>
+<span class='token'>,</span>
+<span class='mention c2'>[</span>
+<span class='token'>Christopher</span>
+<span class='token'>Moore</span>
+<span class='mention c2'>]<span class='entid c2'>e13</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Morris</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='token'>and</span>
+<span class='mention c4'>[</span>
+<span class='token'>Goscinny</span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='token'>,</span>
+<span class='mention c5'>[</span>
+<span class='token'>Selma</span>
+<span class='token'>Lagerlöf</span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='mention c6'>[</span>
+<span class='token'>Neil</span>
+<span class='token'>Gaiman</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S2</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Norton</span>
+<span class='token'>I</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>,</span>
+<span class='mention c7'>[</span>
+<span class='token'>Emperor</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>United</span>
+<span class='token'>States</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>,</span>
+<span class='mention c9'>[</span>
+<span class='token'>photograph</span>
+<span class='mention c9'>]<span class='entid c9'>e20</span></span>
+<span class='token'>,</span>
+<span class='token'>c.</span>
+<span class='mention c10'>[</span>
+<span class='token'>1871</span>
+<span class='token'>–</span>
+<span class='token'>72</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+</div></div><div class='sentid'><h3>S3</h3></div><div class='sentence'><span class='token'>Declares</span>
+<span class='mention c3'>[</span>
+<span class='token'>himself</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c7'>[</span>
+<span class='token'>emperor</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+</div></div><div class='sentid'><h3>S4</h3></div><div class='sentence'><span class='mention c3'>[</span>
+<span class='token'>Emperor</span>
+<span class='mention c3'>[</span>
+<span class='token'>Joshua</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c3'>[</span>
+<span class='token'>Norton</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>,</span>
+<span class='token'>in</span>
+<span class='mention c0'>[</span>
+<span class='token'>full</span>
+<span class='token'>military</span>
+<span class='token'>regalia</span>
+<span class='token'>,</span>
+<span class='token'>circa</span>
+<span class='token'>1880</span>
+<span class='mention c0'>]<span class='entid c0'>e22</span></span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>or</span>
+<span class='token'>earlier</span>
+</div></div><div class='sentid'><h3>S5</h3></div><div class='sentence'><span class='token'>By</span>
+<span class='mention c1'>[</span>
+<span class='token'>1859</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Norton</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>had</span>
+<span class='token'>become</span>
+<span class='token'>completely</span>
+<span class='token'>disgruntled</span>
+<span class='token'>with</span>
+<span class='mention c2'>[</span>
+<span class='token'>what</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>considered</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>inadequacies</span>
+<span class='token'>of</span>
+<span class='mention c4'>[</span>
+<span class='token'>the</span>
+<span class='token'>legal</span>
+<span class='token'>and</span>
+<span class='token'>political</span>
+<span class='token'>structures</span>
+<span class='token'>of</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>United</span>
+<span class='token'>States</span>
+<span class='mention c5'>]<span class='entid c5'>e27</span></span>
+<span class='mention c4'>]<span class='entid c4'>e26</span></span>
+<span class='mention c3'>]<span class='entid c3'>e25</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S6</h3></div><div class='sentence'><span class='token'>On</span>
+<span class='mention c6'>[</span>
+<span class='token'>September</span>
+<span class='token'>17</span>
+<span class='mention c6'>]<span class='entid c6'>e28</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>1859</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>he</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>took</span>
+<span class='mention c3'>[</span>
+<span class='token'>matters</span>
+<span class='mention c3'>]<span class='entid c3'>e25</span></span>
+<span class='token'>into</span>
+<span class='mention c7'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>his</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>own</span>
+<span class='token'>hands</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>and</span>
+<span class='token'>distributed</span>
+<span class='mention c8'>[</span>
+<span class='token'>letters</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>to</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='token'>various</span>
+<span class='token'>newspapers</span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>city</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='mention c9'>]<span class='entid c9'>e31</span></span>
+<span class='token'>,</span>
+<span class='token'>proclaiming</span>
+<span class='mention c3'>[</span>
+<span class='token'>himself</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>&quot;</span>
+<span class='mention c7'>[</span>
+<span class='token'>Emperor</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>these</span>
+<span class='token'>United</span>
+<span class='token'>States</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>&quot;</span>
+<span class='token'>:</span>
+</div></div><div class='sentid'><h3>S7</h3></div><div class='sentence'><span class='token'>At</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='mention c0'>[</span>
+<span class='token'>peremptory</span>
+<span class='token'>request</span>
+<span class='token'>and</span>
+<span class='mention c1'>[</span>
+<span class='token'>desire</span>
+<span class='mention c1'>]<span class='entid c1'>e34</span></span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>a</span>
+<span class='token'>large</span>
+<span class='token'>majority</span>
+<span class='token'>of</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>citizens</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>these</span>
+<span class='token'>United</span>
+<span class='token'>States</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+<span class='mention c0'>]<span class='entid c0'>e33</span></span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+<span class='token'>,</span>
+<span class='mention c5'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>I</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='token'>,</span>
+<span class='mention c3'>[</span>
+<span class='token'>Joshua</span>
+<span class='token'>Norton</span>
+<span class='token'>,</span>
+<span class='token'>formerly</span>
+<span class='token'>of</span>
+<span class='mention c7'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>Algoa</span>
+<span class='token'>Bay</span>
+<span class='mention c6'>]<span class='entid c6'>e39</span></span>
+<span class='token'>,</span>
+<span class='mention c8'>[</span>
+<span class='token'>Cape</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>Good</span>
+<span class='token'>Hope</span>
+<span class='mention c8'>]<span class='entid c8'>e41</span></span>
+<span class='mention c8'>]<span class='entid c8'>e41</span></span>
+<span class='mention c7'>]<span class='entid c7'>e40</span></span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c5'>]<span class='entid c5'>e38</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>now</span>
+<span class='token'>for</span>
+<span class='mention c9'>[</span>
+<span class='token'>the</span>
+<span class='mention c10'>[</span>
+<span class='token'>last</span>
+<span class='token'>9</span>
+<span class='token'>years</span>
+<span class='mention c10'>]<span class='entid c10'>e43</span></span>
+<span class='token'>and</span>
+<span class='mention c0'>[</span>
+<span class='token'>10</span>
+<span class='token'>months</span>
+<span class='token'>past</span>
+<span class='token'>of</span>
+<span class='mention c2'>[</span>
+<span class='token'>S.F.</span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='mention c0'>]<span class='entid c0'>e44</span></span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>[</span>
+<span class='token'>Cal</span>
+<span class='token'>.</span>
+<span class='mention c1'>]<span class='entid c1'>e45</span></span>
+<span class='token'>,</span>
+<span class='token'>declare</span>
+<span class='token'>and</span>
+<span class='token'>proclaim</span>
+<span class='mention c3'>[</span>
+<span class='token'>myself</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c7'>[</span>
+<span class='token'>Emperor</span>
+<span class='token'>of</span>
+<span class='mention c8'>[</span>
+<span class='token'>these</span>
+<span class='token'>U.S.</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>;</span>
+</div></div>

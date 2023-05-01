@@ -1,0 +1,431 @@
+
+<meta charset="utf-8"> 
+<style>
+.sentid { font-size: 100%; }
+.mention { font-size: 100%; }
+.entid { position: relative; top: 0.5em; font-size: 95%; font-family: helvetica,sans-serif;}
+.ner { color: #555; font-size: 110%; }
+.nertype { font-size: 80%; font-style: italic; vertical-align: sub; font-family: helvetica,sans-serif; }
+
+.pos_PRP { font-weight: bold; }
+.pos_PRP_DOLLAR_ { font-weight: bold; }
+
+/* Dark2 from http://colorbrewer2.org/ */
+.c0 { color: rgb(27,158,119); } 
+.c1 { color: rgb(217,95,2); }
+.c2 { color: rgb(117,112,179); }
+.c3 { color: rgb(255, 0, 0); }
+.c4 { color: rgb(102,166,30); }
+.c5 { color: rgb(230,171,2); }
+.c6 { color: rgb(166,118,29); }
+.c7 { color: rgb(102,102,102); }
+.c8 { color: rgb(112, 61, 61);}
+.c9 { color: rgb(0, 71, 171);}
+.c10 { color: rgb(202, 44, 146);}
+.c11 { color: rgb(0, 128, 128);}
+</style>
+<div class='sentid'><h3>S0</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>The</span>
+<span class='token'>first</span>
+<span class='token'>recorded</span>
+<span class='token'>mention</span>
+<span class='token'>of</span>
+<span class='mention c1'>[</span>
+<span class='token'>the</span>
+<span class='token'>food</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c0'>]<span class='entid c0'>e0</span></span>
+<span class='token'>was</span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>the</span>
+<span class='token'>Daily</span>
+<span class='token'>Record</span>
+<span class='token'>,</span>
+<span class='token'>August</span>
+<span class='token'>24</span>
+<span class='token'>,</span>
+<span class='token'>1995</span>
+<span class='token'>,</span>
+<span class='token'>in</span>
+<span class='mention c3'>[</span>
+<span class='token'>an</span>
+<span class='token'>article</span>
+<span class='mention c3'>]<span class='entid c3'>e3</span></span>
+<span class='mention c2'>]<span class='entid c2'>e2</span></span>
+<span class='token'>titled</span>
+<span class='token'>&quot;</span>
+<span class='mention c4'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>supper</span>
+<span class='mention c4'>]<span class='entid c4'>e4</span></span>
+<span class='token'>,</span>
+<span class='token'>please</span>
+<span class='token'>&quot;</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S1</h3></div><div class='sentence'><span class='mention c1'>[</span>
+<span class='token'>Deep-fried</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c1'>[</span>
+<span class='token'>Bars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>were</span>
+<span class='token'>already</span>
+<span class='mention c6'>[</span>
+<span class='token'>a</span>
+<span class='token'>gag</span>
+<span class='token'>food</span>
+<span class='token'>item</span>
+<span class='token'>,</span>
+<span class='token'>with</span>
+<span class='mention c7'>[</span>
+<span class='token'>the</span>
+<span class='token'>mention</span>
+<span class='mention c7'>]<span class='entid c7'>e7</span></span>
+<span class='mention c6'>]<span class='entid c6'>e6</span></span>
+<span class='token'>being</span>
+<span class='token'>unrelated</span>
+<span class='token'>to</span>
+<span class='mention c9'>[</span>
+<span class='mention c8'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>their</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>actual</span>
+<span class='token'>preparation</span>
+<span class='mention c8'>]<span class='entid c8'>e8</span></span>
+<span class='token'>or</span>
+<span class='mention c10'>[</span>
+<span class='token'>consumption</span>
+<span class='mention c10'>]<span class='entid c10'>e10</span></span>
+<span class='mention c9'>]<span class='entid c9'>e9</span></span>
+<span class='token'>,</span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='mention c0'>[</span>
+<span class='token'>Rod</span>
+<span class='mention c1'>[</span>
+<span class='token'>Quantock</span>
+<span class='mention c1'>]<span class='entid c1'>e12</span></span>
+<span class='mention c0'>]<span class='entid c0'>e11</span></span>
+<span class='token'>&#x27;s</span>
+<span class='token'>cooking</span>
+<span class='token'>segment</span>
+<span class='token'>parody</span>
+<span class='mention c2'>]<span class='entid c2'>e13</span></span>
+<span class='token'>&quot;</span>
+<span class='token'>How</span>
+<span class='token'>to</span>
+<span class='token'>cook</span>
+<span class='mention c1'>[</span>
+<span class='token'>a</span>
+<span class='token'>Mars</span>
+<span class='token'>Bar</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>&quot;</span>
+<span class='token'>on</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>1983</span>
+<span class='token'>Australian</span>
+<span class='token'>sketch</span>
+<span class='token'>comedy</span>
+<span class='token'>series</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='mention c3'>[</span>
+<span class='token'>Australia</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='mention c3'>[</span>
+<span class='token'>You</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='token'>&#x27;re</span>
+<span class='token'>Standing</span>
+<span class='token'>In</span>
+<span class='mention c3'>[</span>
+<span class='token'>It.</span>
+<span class='mention c3'>]<span class='entid c3'>e14</span></span>
+<span class='token'>&quot;</span>
+<span class='mention c4'>[</span>
+<span class='token'>Cooking</span>
+<span class='token'>with</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mars</span>
+<span class='mention c1'>[</span>
+<span class='token'>Bars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c4'>]<span class='entid c4'>e15</span></span>
+<span class='token'>&quot;</span>
+<span class='token'>was</span>
+<span class='mention c5'>[</span>
+<span class='token'>a</span>
+<span class='token'>regular</span>
+<span class='token'>segment</span>
+<span class='token'>on</span>
+<span class='mention c7'>[</span>
+<span class='mention c6'>[</span>
+<span class='token'>Quantock</span>
+<span class='mention c6'>]<span class='entid c6'>e17</span></span>
+<span class='token'>&#x27;s</span>
+<span class='token'>earlier</span>
+<span class='token'>1981</span>
+<span class='token'>&quot;</span>
+<span class='mention c7'>[</span>
+<span class='token'>Ratbags</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>&quot;</span>
+<span class='token'>series</span>
+<span class='mention c7'>]<span class='entid c7'>e18</span></span>
+<span class='token'>,</span>
+<span class='token'>with</span>
+<span class='mention c5'>[</span>
+<span class='token'>the</span>
+<span class='token'>segment</span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='mention c5'>]<span class='entid c5'>e16</span></span>
+<span class='token'>presented</span>
+<span class='token'>by</span>
+<span class='mention c8'>[</span>
+<span class='token'>John</span>
+<span class='token'>Derum</span>
+<span class='mention c8'>]<span class='entid c8'>e19</span></span>
+<span class='token'>in</span>
+<span class='mention c9'>[</span>
+<span class='token'>which</span>
+<span class='mention c9'>]<span class='entid c9'>e20</span></span>
+<span class='token'>all</span>
+<span class='mention c10'>[</span>
+<span class='token'>the</span>
+<span class='token'>recipes</span>
+<span class='mention c10'>]<span class='entid c10'>e21</span></span>
+<span class='token'>were</span>
+<span class='token'>consumed</span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S2</h3></div><div class='sentence'><span class='token'>In</span>
+<span class='mention c0'>[</span>
+<span class='token'>a</span>
+<span class='token'>study</span>
+<span class='mention c0'>]<span class='entid c0'>e22</span></span>
+<span class='token'>published</span>
+<span class='token'>in</span>
+<span class='mention c1'>[</span>
+<span class='token'>The</span>
+<span class='token'>Lancet</span>
+<span class='mention c1'>]<span class='entid c1'>e23</span></span>
+<span class='token'>in</span>
+<span class='mention c2'>[</span>
+<span class='token'>December</span>
+<span class='token'>2004</span>
+<span class='mention c2'>]<span class='entid c2'>e24</span></span>
+<span class='token'>,</span>
+<span class='mention c4'>[</span>
+<span class='mention c3'>[</span>
+<span class='token'>David</span>
+<span class='token'>Morrison</span>
+<span class='mention c3'>]<span class='entid c3'>e25</span></span>
+<span class='token'>(</span>
+<span class='token'>Greater</span>
+<span class='token'>Glasgow</span>
+<span class='token'>NHS</span>
+<span class='token'>Board</span>
+<span class='token'>,</span>
+<span class='token'>UK</span>
+<span class='token'>)</span>
+<span class='token'>and</span>
+<span class='mention c5'>[</span>
+<span class='token'>Mark</span>
+<span class='token'>Petticrew</span>
+<span class='mention c5'>]<span class='entid c5'>e27</span></span>
+<span class='mention c4'>]<span class='entid c4'>e26</span></span>
+<span class='token'>(</span>
+<span class='mention c6'>[</span>
+<span class='token'>MRC</span>
+<span class='mention c6'>]<span class='entid c6'>e28</span></span>
+<span class='token'>Social</span>
+<span class='token'>&amp;amp</span>
+<span class='token'>;</span>
+<span class='mention c7'>[</span>
+<span class='token'>Public</span>
+<span class='token'>Health</span>
+<span class='token'>Sciences</span>
+<span class='token'>Unit</span>
+<span class='mention c7'>]<span class='entid c7'>e29</span></span>
+<span class='token'>)</span>
+<span class='token'>surveyed</span>
+<span class='token'>around</span>
+<span class='mention c8'>[</span>
+<span class='mention c8'>[</span>
+<span class='token'>300</span>
+<span class='token'>Scottish</span>
+<span class='token'>fish</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>and</span>
+<span class='mention c8'>[</span>
+<span class='token'>chip</span>
+<span class='token'>shops</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>:</span>
+<span class='mention c9'>[</span>
+<span class='token'>22</span>
+<span class='mention c9'>]<span class='entid c9'>e31</span></span>
+<span class='token'>%</span>
+<span class='token'>sold</span>
+<span class='token'>deep</span>
+<span class='token'>-</span>
+<span class='mention c1'>[</span>
+<span class='token'>fried</span>
+<span class='token'>Mars</span>
+<span class='token'>Bars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>,</span>
+<span class='token'>while</span>
+<span class='token'>an</span>
+<span class='token'>additional</span>
+<span class='mention c10'>[</span>
+<span class='token'>17</span>
+<span class='mention c10'>]<span class='entid c10'>e32</span></span>
+<span class='token'>%</span>
+<span class='token'>of</span>
+<span class='token'>those</span>
+<span class='token'>surveyed</span>
+<span class='token'>had</span>
+<span class='token'>sold</span>
+<span class='mention c1'>[</span>
+<span class='token'>them</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>in</span>
+<span class='mention c0'>[</span>
+<span class='token'>the</span>
+<span class='token'>past</span>
+<span class='mention c0'>]<span class='entid c0'>e33</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S3</h3></div><div class='sentence'><span class='token'>Of</span>
+<span class='mention c8'>[</span>
+<span class='token'>the</span>
+<span class='token'>shops</span>
+<span class='mention c8'>]<span class='entid c8'>e30</span></span>
+<span class='token'>selling</span>
+<span class='mention c1'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>deep</span>
+<span class='token'>-</span>
+<span class='token'>fried</span>
+<span class='mention c1'>[</span>
+<span class='token'>Mars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c1'>[</span>
+<span class='token'>bars</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>,</span>
+<span class='mention c1'>]<span class='entid c1'>e34</span></span>
+<span class='mention c2'>[</span>
+<span class='token'>three</span>
+<span class='token'>-</span>
+<span class='token'>quarters</span>
+<span class='mention c2'>]<span class='entid c2'>e35</span></span>
+<span class='token'>had</span>
+<span class='token'>only</span>
+<span class='token'>been</span>
+<span class='token'>selling</span>
+<span class='mention c1'>[</span>
+<span class='token'>them</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='token'>for</span>
+<span class='mention c3'>[</span>
+<span class='token'>the</span>
+<span class='token'>past</span>
+<span class='token'>3</span>
+<span class='token'>years</span>
+<span class='mention c3'>]<span class='entid c3'>e36</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S4</h3></div><div class='sentence'><span class='mention c4'>[</span>
+<span class='token'>Average</span>
+<span class='token'>sales</span>
+<span class='mention c4'>]<span class='entid c4'>e37</span></span>
+<span class='token'>were</span>
+<span class='mention c5'>[</span>
+<span class='token'>23</span>
+<span class='token'>bars</span>
+<span class='token'>per</span>
+<span class='mention c10'>[</span>
+<span class='token'>week</span>
+<span class='mention c10'>]<span class='entid c10'>e43</span></span>
+<span class='mention c5'>]<span class='entid c5'>e38</span></span>
+<span class='token'>,</span>
+<span class='token'>although</span>
+<span class='mention c7'>[</span>
+<span class='token'>10</span>
+<span class='token'>outlets</span>
+<span class='mention c7'>]<span class='entid c7'>e40</span></span>
+<span class='token'>sold</span>
+<span class='token'>between</span>
+<span class='mention c8'>[</span>
+<span class='token'>50</span>
+<span class='token'>and</span>
+<span class='token'>200</span>
+<span class='token'>bars</span>
+<span class='mention c8'>]<span class='entid c8'>e41</span></span>
+<span class='mention c9'>[</span>
+<span class='token'>a</span>
+<span class='mention c10'>[</span>
+<span class='token'>week</span>
+<span class='mention c10'>]<span class='entid c10'>e43</span></span>
+<span class='mention c9'>]<span class='entid c9'>e42</span></span>
+<span class='token'>.</span>
+</div></div><div class='sentid'><h3>S5</h3></div><div class='sentence'><span class='mention c0'>[</span>
+<span class='token'>The</span>
+<span class='token'>average</span>
+<span class='token'>price</span>
+<span class='token'>per</span>
+<span class='mention c1'>[</span>
+<span class='token'>bar</span>
+<span class='mention c1'>]<span class='entid c1'>e1</span></span>
+<span class='mention c0'>]<span class='entid c0'>e44</span></span>
+<span class='token'>was</span>
+<span class='mention c2'>[</span>
+<span class='mention c1'>[</span>
+<span class='token'>60</span>
+<span class='token'>pence</span>
+<span class='mention c1'>]<span class='entid c1'>e45</span></span>
+<span class='token'>,</span>
+<span class='token'>and</span>
+<span class='token'>the</span>
+<span class='token'>younger</span>
+<span class='token'>generation</span>
+<span class='token'>were</span>
+<span class='token'>the</span>
+<span class='mention c3'>[</span>
+<span class='token'>main</span>
+<span class='token'>purchasers</span>
+<span class='mention c3'>]<span class='entid c3'>e47</span></span>
+<span class='mention c2'>]<span class='entid c2'>e46</span></span>
+<span class='token'>--</span>
+<span class='mention c4'>[</span>
+<span class='token'>three</span>
+<span class='token'>-</span>
+<span class='token'>quarters</span>
+<span class='mention c4'>]<span class='entid c4'>e48</span></span>
+<span class='token'>were</span>
+<span class='token'>sold</span>
+<span class='token'>to</span>
+<span class='mention c5'>[</span>
+<span class='token'>children</span>
+<span class='mention c5'>]<span class='entid c5'>e49</span></span>
+<span class='token'>and</span>
+<span class='mention c6'>[</span>
+<span class='token'>15</span>
+<span class='mention c6'>]<span class='entid c6'>e50</span></span>
+<span class='token'>%</span>
+<span class='token'>to</span>
+<span class='mention c7'>[</span>
+<span class='token'>adolescents</span>
+<span class='mention c7'>]<span class='entid c7'>e51</span></span>
+<span class='token'>.</span>
+</div></div>
