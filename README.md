@@ -6,9 +6,9 @@
 
 This is the official repository for our preprint, [ezCoref: Towards unifying annotation guidelines for coreference resolution](https://arxiv.org/abs/2210.07188). ezCoref is an annoation methodology for coreference resolution, comprising of a crowdsourcing-friendly annotation tool and an interative tutorial. ezCoref has been validated on Amazon Mechanical Turk and recieved overwhelmingly positive [response](https://github.com/gnkitaa/ezCoref/blob/main/mturk_reviews)!
 
-This repository contains a demo of [ezCoref tutorial in action](http://azkaban.cs.umass.edu:8876/tutorial), code for launching ezCoref (Tool) and crowdsourced annotations collected via ezCoref (Data).
+This repository contains code for launching ezCoref (Tool and Tutorial) and crowdsourced annotations collected via ezCoref.
 
-Try out annotating a portion of ["Alice in Wonderland"](http://azkaban.cs.umass.edu:8876/passage/?debugDoc=lb_11_alices_adventures_in_wonderland_brat_0&debugChunk=lb_11_alices_adventures_in_wonderland_brat_0_2) using ezCoref.
+Try out a demo of [ezCoref tutorial](http://azkaban.cs.umass.edu:8876/tutorial) and annotating a portion of ["Alice in Wonderland"](http://azkaban.cs.umass.edu:8876/passage/?debugDoc=lb_11_alices_adventures_in_wonderland_brat_0&debugChunk=lb_11_alices_adventures_in_wonderland_brat_0_2) using ezCoref.
 
 
 ### Citation Information
