@@ -6,6 +6,7 @@ Welcome to our coreference annotation tool.
 
 - [Setup](#setup)
 - [Data Preparation](#data-preparation)
+- [Annotation Directory](#prepare-a-directory-to-save-annotations)
 - [Running Backend](#running-backend)
 - [Running Frontend](#running-frontend)
 - [Integration with AMT](#integration-with-amt)
@@ -27,24 +28,28 @@ pip install -r requirements.txt
 
 Next, call `conda develop .` from the root of this repository.
 
-Then, download the spacy's model by running python -m spacy download en_core_web_lg 
+Then, download the spaCy's model for English by running 
 
+```
+python -m spacy download en_core_web_lg 
+```
 
-#### Installation
-Install an environment with python 3.6 and the following packages:
-```
-pip install botocore==1.20.101 spacy==3.0.6 flask==2.0.1 boto3==1.17.101 waitress==2.0.0 paste==3.5.0 yacs
-python -m spacy download en_core_web_lg
-```
+If you are working with other langauges, please download the respective model.
 
 #### Data Preparation
 
-#### Directory Preparation
-For a new experiment, make sure that in the experiment directory `experiments/exp_name`
-- the annotator manager pickle file does not exist;
-- annotator profiles exist for existing workers -- 
-each profile is a dictionary with "submissions", "tutorial", and optionally "annotator_id" as keys;
-- annotations directory is empty or does not exist.
+
+
+#### Prepare a directory to save annotations
+For any new experiment, the annotations are saved under `experiments/exp_name` directory. Make sure that this directory is empty before running a new annotation round.
+
+After an annotation round is completed, this directory will contain
+- `annotator manager pickle file`: A pickle file that stores the annotation status.
+- `annotator profiles`: The tool maintains a dictionary for each annotator with keys: "annotator_id", "submissions", "tutorial"
+- `annotations`: The mention-level annotations
+
+In case you are collecting new annotations and you are allowing annotators from previous annotation rounds, make sure that the annotator profiles of such annotators are included in the `experiments/exp_name` directory before running the annotation round. 
+
 
 #### Run Backend
 - Create a tmux session by `tmux new -s backend`.
