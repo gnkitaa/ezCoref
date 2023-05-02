@@ -36,11 +36,11 @@ python -m spacy download en_core_web_lg
 
 If you are working with other langauges, please download the respective model.
 
-#### Data Preparation
+## Data Preparation
 
 
 
-#### Prepare a directory to save annotations
+## Prepare a directory to save annotations
 For any new experiment, the annotations are saved under `experiments/exp_name` directory. Make sure that this directory is empty before running a new annotation round.
 
 After an annotation round is completed, this directory will contain
@@ -51,7 +51,7 @@ After an annotation round is completed, this directory will contain
 In case you are collecting new annotations and you are allowing annotators from previous annotation rounds, make sure that the annotator profiles of such annotators are included in the `experiments/exp_name` directory before running the annotation round. 
 
 
-#### Run Backend
+## Run Backend
 - Create a tmux session by `tmux new -s backend`.
 - `waitress_server.py`: set the backend port, e.g. `8000`, and
 change the host to the server name, e.g. `azkaban.cs.umass.edu`. 
@@ -66,7 +66,7 @@ which has functions for interacting with the frontend.
 `receive_annotations` receives annotations from the frontend and saves them.
 Annotators and annotations are managed by the `AnnotationManager` class in `annotation_manager.py`.
 
-#### Run Frontend
+## Run Frontend
 - Create another tmux session by `tmux new -s frontend`. 
 - `coref-frontend/src/components/{Tutorial,AnnotationPage}.js`: 
 change all urls according to the backend server and port. 
@@ -76,7 +76,7 @@ The frontend is available at `http://SERVER:FRONTEND_PORT`, e.g. `http://azkaban
 - For launching, In `coref-frontend` run following commands: npm run build, npx serve -s build -l 8001
 - Detach from the tmux session.
 
-#### Amazon Mechanical Turk (MTurk)
+## Amazon Mechanical Turk (MTurk)
 `mturk` contains MTurk-related python scripts. 
 The `Developer Guide` and `API Reference` [documents](https://docs.aws.amazon.com/mturk/index.html) 
 how to programmatically use MTurk. The python API is 
