@@ -19,7 +19,7 @@ If you use ezCoref, please cite it as follows:
 ```
 @inproceedings{gupta-etal-2023-ezcoref,
     title = "ez{C}oref: Towards Unifying Annotation Guidelines for Coreference Resolution",
-    author = "Gupta, Ankita  and Karpinska, Marzena  and Zhao, Wenlong  and Krishna, Kalpesh  and Merullo, Jack  and Yeh, Luke  and Iyyer, Mohit  and O{'}connor, Brendan",
+    author = "Gupta, Ankita  and Karpinska, Marzena  and Zhao, Wenlong  and Krishna, Kalpesh  and Merullo, Jack  and Yeh, Luke  and Iyyer, Mohit  and O{'}Connor, Brendan",
     booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
     year = "2023",
     address = "Dubrovnik, Croatia",
