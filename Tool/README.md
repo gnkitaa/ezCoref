@@ -1,5 +1,33 @@
-# Coreference Annotation Tool
+# ezCoref Annotation Tool
 Welcome to our coreference annotation tool.
+
+
+## Outline
+
+- [Setup](#setup)
+- [Data Preparation](#data-preparation)
+- [Running Backend](#running-backend)
+- [Running Frontend](#running-frontend)
+- [Integration with AMT](#integration-with-amt)
+
+
+## Setup
+
+We recommend setting up a Conda environment:
+
+```bash
+conda create --name ezcoref python=3.6 conda-build
+```
+
+Then, install required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Next, call `conda develop .` from the root of this repository.
+
+Then, download the spacy's model by running python -m spacy download en_core_web_lg 
 
 
 #### Installation
