@@ -10,7 +10,7 @@ This repository contains code for launching ezCoref (Tool and Tutorial) and crow
 
 Try out a demo of [ezCoref tutorial](http://azkaban.cs.umass.edu:8876/tutorial) and annotating a portion of ["Alice in Wonderland"](http://azkaban.cs.umass.edu:8876/passage/?debugDoc=lb_11_alices_adventures_in_wonderland_brat_0&debugChunk=lb_11_alices_adventures_in_wonderland_brat_0_2) using ezCoref.
 
-**Update (May 2023)**: Code for tool and annotated data are now available. Apologies for the delay.
+**Update (May 2023)**: Code for tool and annotated data are now available.
 
 **Update (Feb 2023)**: Demo of the tool and tutorial are now available. 
 
