@@ -8,7 +8,7 @@ This is the official repository for our paper, [ezCoref: Towards unifying annota
 
 This repository contains code for launching ezCoref (Tool and Tutorial) and crowdsourced annotations collected via ezCoref.
 
-Try out a demo of [ezCoref tutorial](http://azkaban.cs.umass.edu:8876/tutorial) and annotating a portion of ["Alice in Wonderland"](http://azkaban.cs.umass.edu:8876/passage/?debugDoc=lb_11_alices_adventures_in_wonderland_brat_0&debugChunk=lb_11_alices_adventures_in_wonderland_brat_0_2) using ezCoref.
+Try out a demo of [ezCoref tutorial](http://azkaban.cs.umass.edu:8877/tutorial) and annotating a portion of ["Alice in Wonderland"](http://azkaban.cs.umass.edu:8876/passage/?debugDoc=lb_11_alices_adventures_in_wonderland_brat_0&debugChunk=lb_11_alices_adventures_in_wonderland_brat_0_2) using ezCoref.
 
 **Update (May 2023)**: Code for tool and annotated data are now available.
 
