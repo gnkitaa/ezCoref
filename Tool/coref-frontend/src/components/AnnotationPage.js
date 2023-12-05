@@ -84,7 +84,8 @@ let messages = {
   SUBMIT_DISABLED: "Complete annotations for all spans before submitting."
 };
 
-let port = '8852';
+let port = '8853';
+let server = 'http://xyz.abc.edu'
 
 class AnnotationPage extends Component {
   constructor(props) {
@@ -151,7 +152,7 @@ class AnnotationPage extends Component {
 
     //AG: when this url is accessed by frontend, any function in the backend with /code argument in app route decorator gets invoked. 
     let url =
-        "http://azkaban.cs.umass.edu:"+port+"/code?hitId=" +
+        server+":"+port+"/code?hitId=" +
         hitId +
         "&assignmentId=" +
         assignmentId+
@@ -196,7 +197,7 @@ class AnnotationPage extends Component {
 
     //AG: reading from this url
     let url =
-            "http://azkaban.cs.umass.edu:"+port+"/passage?hitId=" +
+            server+":"+port+"/passage?hitId=" +
             hitId +
             "&assignmentId=" +
             assignmentId+
@@ -678,14 +679,12 @@ class AnnotationPage extends Component {
     
 
     let url =
-        "http://azkaban.cs.umass.edu:"+port+"/annotations?hitId=" +
+        server+":"+port+"/annotations?hitId=" +
         hitId +
         "&assignmentId=" +
         assignmentId+
         "&workerId="+
         workerId;
-
-    //let url = "http://azkaban.cs.umass.edu:"+port+"/annotations";
 
 
     let data = new FormData();

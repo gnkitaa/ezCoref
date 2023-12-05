@@ -1,5 +1,7 @@
 import sys
-sys.path.append('./')
+# sys.path.append('./')
+sys.path.append('./mturk')
+sys.path.append('./Tutorial_B3')
 from typing import Any, Dict, List, Tuple
 from collections import Counter
 import numpy as np
@@ -150,17 +152,18 @@ def compute_metrics(doc, sys_annotations, gold_annotations, mention2annotation, 
     return muc_score, b_cubed_score, ceaf_score
 
 
+base_dir = os.getcwd()
 
-with open('./tutorial_example_5.json', "r") as f:
+with open(base_dir+'/Tutorial_B3/tutorial_example_5.json', "r") as f:
     example_5 = json.load(f)
     
-with open('./gold_annotations.txt', 'r') as f:
+with open(base_dir+'/Tutorial_B3/gold_annotations.txt', 'r') as f:
     gold_annotations = eval(f.read())
     
-with open('./mention2annotations.txt', 'r') as f:
+with open(base_dir+'/Tutorial_B3/mention2annotations.txt', 'r') as f:
     mention2annotation = eval(f.read())
     
-with open('./mention2spans.txt', 'r') as f:
+with open(base_dir+'/Tutorial_B3/mention2spans.txt', 'r') as f:
     mention2span = eval(f.read())
 
 def get_score(annotations):

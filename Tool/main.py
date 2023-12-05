@@ -2,6 +2,7 @@ import argparse
 import sys
 sys.path.append('./mturk')
 sys.path.append('./Tutorial_B3')
+sys.path.append('./Tutorial_B3/')
 import json
 import os
 import pickle
@@ -15,7 +16,7 @@ from create_client import create_client
 from score import get_score
 
 
-EXP_NAME = "main_launch"
+EXP_NAME = "test"
 
 ########## Setup ##########
 CFG_EXP = CFG_EXP[EXP_NAME]

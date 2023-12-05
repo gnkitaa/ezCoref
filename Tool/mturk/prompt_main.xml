@@ -38,7 +38,7 @@ In the examples below, the following words are coreferences (they refer to the s
                 document.getElementById("url").innerHTML = "Link will become available once you accept the HIT.";
             }
             else{
-                document.getElementById("url").href = "http://azkaban.cs.umass.edu:8877/passage?hitId="+ vars.hitId +"&assignmentId=" + vars.assignmentId + "&workerId=" + vars.workerId;
+                document.getElementById("url").href = "http://xyz.abc.edu:8877/passage?hitId="+ vars.hitId +"&assignmentId=" + vars.assignmentId + "&workerId=" + vars.workerId;
             }
 		</script>
 		<p><b>Submit your code below:</b></p>

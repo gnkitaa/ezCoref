@@ -2,8 +2,8 @@ import os
 here = os.path.dirname(os.path.realpath(__file__))
 
 CFG_QUALIFICATION = {
-    "ID_1": ""
-    "ID_2": ""
+    "ID_1": "",
+    "ID_2": "",
     "QUALIFIED": {
         "VALUE":            1,
         "EMAIL_SUBJECT":    "Coreference Annotation Qualification",

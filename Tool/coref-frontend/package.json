@@ -22,7 +22,7 @@
     "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
-    "start": "HOST=0.0.0.0 PORT=8877 react-scripts start",
+    "start": "HOST=0.0.0.0 PORT=8878 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

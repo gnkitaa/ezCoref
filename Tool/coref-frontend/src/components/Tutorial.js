@@ -108,7 +108,8 @@ let messages = {
     CLICK_ON_ACTIVE: "Please click on spans other than the active target."
 };
 
-let port = '8852';
+let port = '8853';
+let server = 'http://xyz.abc.edu'
 
 class Tutorial extends Component {
     constructor(props) {
@@ -182,7 +183,7 @@ class Tutorial extends Component {
 
         //AG: when this url is accessed by frontend, any function in the backend with /code argument in app route decorator gets invoked. 
         let url =
-            "http://azkaban.cs.umass.edu:"+port+"/code?hitId=" +
+            server+":"+port+"/code?hitId=" +
             hitId +
             "&assignmentId=" +
             assignmentId+
@@ -681,14 +682,12 @@ class Tutorial extends Component {
         
 
         let url =
-            "http://azkaban.cs.umass.edu:"+port+"/annotations?hitId=" +
+            server+":"+port+"/annotations?hitId=" +
             hitId +
             "&assignmentId=" +
             assignmentId+
             "&workerId="+
             workerId;
-
-        //let url = "http://azkaban.cs.umass.edu:"+port+"/annotations";
 
 
         let data = new FormData();
@@ -1336,7 +1335,7 @@ class Tutorial extends Component {
 	};
 
 	setValidMoves = (tutorialMode, step) => {
-        let url = "http://azkaban.cs.umass.edu:"+port+"/tutorial?tutorialexcercise=" + tutorialMode;
+        let url = server+":"+port+"/tutorial?tutorialexcercise=" + tutorialMode;
         console.log(url);
         fetch(url)
             .then(u => u.json())
@@ -1358,7 +1357,7 @@ class Tutorial extends Component {
         if (tutorialMode === undefined) {
             return
         }
-        let url = "http://azkaban.cs.umass.edu:"+port+"/tutorial?tutorialexcercise=" + tutorialMode;
+        let url = server+":"+port+"/tutorial?tutorialexcercise=" + tutorialMode;
 		//console.log(url);
         fetch(url)
             .then(u => u.json())
@@ -1444,7 +1443,7 @@ class Tutorial extends Component {
         let data = new FormData();
         data.append("json", JSON.stringify(obj));
 
-        let url = "http://azkaban.cs.umass.edu:"+port+"/qualification"
+        let url = server+":"+port+"/qualification"
         fetch(url, {
             method: "POST",
             body: data
