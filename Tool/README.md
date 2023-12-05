@@ -40,6 +40,7 @@ If you are working with other langauges, please download the respective model.
 - Save the documents to annotated at: `Tool/static/data/main/`.
 - Make a seperate folder for each dataset. Make a .json file within dataset folder for each document to be annotated. If each document is longer than 150 words, split the document into chunks and create a .json file for each chunk. 
 - The structure of json file is as follows: 
+```
 [
     {
         "doc_id": "11_alices_adventures_in_wonderland_brat_0",
@@ -116,19 +117,21 @@ If you are working with other langauges, please download the respective model.
     }
     
 ]
+```
 
 Each sentence is represented by a dictionary. Each sentence contains a list of tokens. Each token specifies word text to show on interface, its part of speech tag, the boundary spans (left and right offsets) and whether this token should be considered as mention or not. A token can be part of longer span, in which case the offsets are relative to the first token of the span (e.g., see the span 'her tea' in above example).
 
 Note: ezCoref tool is not dependent on any particular mention detection algorithm and thus any custom algorithm and tokenizer can be supported. 
 
-If you would like to use the mention detection algorithm used in the paper, refer to section 'Mention detector'
 
 ## Mention Detector
+The mention detection algorithm used in the paper is provided in the notebook `/MentionDetection/MentionDetector.ipynb`. The notebook provides the algorithm and code to convert a text document into the format accepted by the frontend.
+
 
 ## Prepare a directory to save annotations
 For any new experiment, the annotations are saved under `experiments/exp_name` directory. Create an empty folder with name `exp_name` in the `experiments directory`. Make sure that this folder is empty before running a new annotation round. For instance, you can use the following command to create a `test` folder.
 
-- `mkdir -r experiments/test`
+- `mkdir -p experiments/test`
 
 
 ## Specify configurations
@@ -136,12 +139,14 @@ Specify the configurations of your experiment in the `config_exp.py` file.
 
 Create a new entry in the `config_exp.py` with `exp_name` as the key and following values, specifying configurations for the experiment. For instance, for `exp_name`=`test`
 
+```
 CFG_EXP['test'] = {
     "EXPERIMENT_DIR":           './experiments/test', # absolute path
     'TUTORIAL_CONFIG':          'static/data/tutorial/tutorial_config.json', #path to tutorial config directory
     'DOCS_DIR':                 'static/data/main', # path to documents which are to be annotated 
     'N_ASSIGNMENTS_PER_CHUNK':  3 #number of annotations to collect per document
 }
+```
 
 
 ## Run Backend
