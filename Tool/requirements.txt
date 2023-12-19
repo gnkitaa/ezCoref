@@ -5,3 +5,4 @@ boto3==1.17.101
 waitress==2.0.0 
 paste==3.5.0 
 yacs==0.1.8
+stanza==1.2.3
